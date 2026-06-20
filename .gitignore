@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Brand data must NEVER be committed (lives in ~/.brandbrain; guard against per-project copies)
+.brandbrain/
+
+# Skill working output
+**/cta/
+
+# Logs
+*.log
