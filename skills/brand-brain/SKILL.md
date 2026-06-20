@@ -73,7 +73,8 @@ This is how the rest of the library uses the brain. When invoked **by another sk
    - the active **slug**,
    - the absolute **path** to `brand.md`,
    - a compact **digest**: voice adjectives, banned words/phrases, offer mechanics (free/trial/card/guarantee + primary destination URLs), real proof points, positioning line, ICP + awareness tendency.
-   The caller reads the full `brand.md` if it needs more.
+   - pointers to any **companion files** present that fit the caller's task (`competitors.md`, `objections.md`, `proof.md`, `personas.md`, `style-guide.md`).
+   The caller reads the full `brand.md` (and any relevant companion) if it needs more.
 3. If the brand has **no** `ACTIVE` brain → run **Bootstrap** (Mode B) first, then return as above. Tell the user in one line that you're setting the brand up once so every future run is instant.
 
 Keep Serve fast and silent on the happy path: no scan, no questions when a brain already exists.
@@ -85,7 +86,7 @@ Keep Serve fast and silent on the happy path: no scan, no questions when a brain
 Run when the target brand has no `ACTIVE` brain. **Produce nothing downstream until this completes.**
 
 1. **Scan** existing context — follow `references/brand-context-sources.md` in full. Probe each source only if present; skip silently otherwise. Pull anything mapping to a `brand.md` field, noting the source per fact.
-2. **(Optional) Delegate deep sections to component skills** — if installed, call them instead of synthesizing inline; see `references/component-skills.md`. (Graceful: synthesize inline when they're absent.)
+2. **Delegate to the component skills** (all eight are built — see `references/component-skills.md`): call them in the recommended waves, passing each the scanned context (active slug + draft `brand.md` + raw inputs) so they don't recurse. Each returns its `brand.md` section(s) and/or writes a companion file. Synthesize a section inline only if its component is somehow unavailable.
 3. **Synthesize** a draft `brand.md` from the `references/brand-template.md` schema. De-dupe across sources; on conflict prefer the most authoritative + recent and flag it. Mark every unconfirmed number `[verify]`. Set `confidence` and list `sources`.
 4. **Interview the gaps only** — follow `references/interview.md`. Show the user what the scan already established, then ask **only** for still-missing / low-confidence fields (never re-ask what the scan found). Batch the questions.
 5. **Write & activate** — write `brands/<slug>/brand.md` (`status: ACTIVE`, `sources`, `confidence`, today's dates); write `<slug>` to `brands/.active` (unless mid-task on another brand). Confirm in one line: *"Brand saved to `<root>/brands/<slug>/brand.md` — every library skill reads it now. Run `brand-brain refresh <slug>` anytime."*
@@ -110,7 +111,7 @@ If `brand-brain` is not installed, a caller may fall back to reading `~/.brandbr
 
 ## How this skill calls OTHER skills (interconnection — downward)
 
-During a deep Bootstrap/Refresh, delegate specialized sections to component skills when they're installed (see `references/component-skills.md`): e.g. `brand-voice-codifier` for the Voice section, `icp-persona-builder` for ICP(s), `positioning-messaging-architect` for positioning, `competitive-intelligence-dossier` for competitors. Each returns its section, which this skill folds into `brand.md`. When a component skill is absent, synthesize that section inline. This keeps the brain authoritative while letting deeper skills do deeper work.
+During a deep Bootstrap/Refresh, delegate to the **eight built component skills** (full map + recommended wave order in `references/component-skills.md`): `brand-voice-codifier` (voice/banned/lexicon), `icp-persona-builder` (ICP + `personas.md`), `positioning-messaging-architect` (positioning + value prop), `competitive-intelligence-dossier` (`competitors.md`), `offer-pricing-brain` (offer + CTAs), `proof-vault` (proof + `proof.md`), `objection-library-builder` (`objections.md`), `editorial-style-guide` (`style-guide.md`). Pass each the active slug + current `brand.md` + scanned inputs so it doesn't recurse; fold the returned section(s) into `brand.md`, keep companion files alongside, and note each in `sources`. Synthesize inline only when a component is unavailable. This keeps the brain authoritative while specialist skills do the deep work.
 
 ---
 

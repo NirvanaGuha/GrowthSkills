@@ -53,6 +53,10 @@ Colors, font, tagline — for commissioned assets, not body copy.
 
 ## Notes / do-not
 Idiosyncrasies a skill must know: claims rules, legal lines, competitor-linking policy, segment nuances.
+
+## Companion files
+One-line pointer to each deep artifact a component wrote alongside this file (list only those that exist):
+- Personas → `personas.md` · Competitors → `competitors.md` · Proof vault → `proof.md` · Objections → `objections.md` · Style guide → `style-guide.md`
 ```
 
 ## Minimum viable brand

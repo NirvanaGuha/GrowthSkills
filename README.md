@@ -14,8 +14,16 @@ This folder is the whole project: strategy docs, the built skills, and the regis
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY.md      v1 catalog (170 skills, 16 layers)
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY_v2.md   v2 master catalog (35 layers, ~1,137 skills)
 │   └── GROWTH_SKILL_LIBRARY_PRIORITIZED.md   de-duped build list (412 canonical, scored + tiered)
-└── skills/
+└── skills/                      (10 skills)
     ├── brand-brain/              Layer 0 — system of record; every copy skill calls it
+    ├── brand-voice-codifier/         ┐
+    ├── icp-persona-builder/          │
+    ├── positioning-messaging-architect/  │ Layer-1 "organs" of the brand brain —
+    ├── competitive-intelligence-dossier/ │ each owns one part, called by brand-brain
+    ├── offer-pricing-brain/          │ (and runnable standalone)
+    ├── proof-vault/                  │
+    ├── objection-library-builder/    │
+    ├── editorial-style-guide/        ┘
     └── cta-variant-generator/    quick + battery CTA generation; calls brand-brain
 ```
 
@@ -37,7 +45,7 @@ Canonical source lives here; each skill is **symlinked into `~/.claude/skills/<s
 
 ## Status
 
-- **Built:** `brand-brain` (Layer 0) · `cta-variant-generator`.
-- **Published (AM Skills):** `cta-variant-generator` v1, public. `brand-brain` not yet (publish it before re-publishing CTA v2, which now depends on it).
+- **Built (10):** `brand-brain` (Layer 0) · its 8 Layer-1 components (`brand-voice-codifier`, `icp-persona-builder`, `positioning-messaging-architect`, `competitive-intelligence-dossier`, `offer-pricing-brain`, `proof-vault`, `objection-library-builder`, `editorial-style-guide`) · `cta-variant-generator`.
+- **Publishing:** GitHub public (this repo). AM Skills publishing is paused for now — `cta-variant-generator` v1 remains public there from earlier.
 - **Brands built:** `pushengage` (`~/.brandbrain/brands/pushengage/brand.md`, confidence high).
-- **Next:** the rest of Tier 1 from the prioritized list — each calling `brand-brain` from day one.
+- **Next:** more Tier-1 skills from the prioritized list (e.g. `headline-hook-generator`) — each calling `brand-brain` from day one.
