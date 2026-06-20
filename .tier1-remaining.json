@@ -1,0 +1,1102 @@
+[
+ {
+  "name": "Headline & Hook Generator",
+  "slug": "headline-hook-generator",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 5,
+  "e": 1,
+  "desc": "Draft title or topic → ranked headline variants plus opening-hook sentences across distinct persuasion angles",
+  "built": false
+ },
+ {
+  "name": "Subject Line & Preview Text Optimizer",
+  "slug": "subject-line-preview-text-optimizer",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 1,
+  "desc": "Email body or campaign brief → subject line/preview-text pairs ranked by open-rate levers (curiosity, urgency, personalization)",
+  "built": false
+ },
+ {
+  "name": "UTM Parameter Bulk Builder",
+  "slug": "utm-parameter-bulk-builder",
+  "layer": "L14 Marketing Ops, Governance & Compliance",
+  "lnum": 14,
+  "v": 5,
+  "e": 1,
+  "desc": "Campaign name, source, medium, content variants → complete UTM-tagged URL set with consistent naming, the single tracking-link generator",
+  "built": false
+ },
+ {
+  "name": "On-Page SEO Optimizer",
+  "slug": "on-page-seo-optimizer",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 2,
+  "desc": "Draft article + target keyword → rewritten meta title, description, H1, heading structure, and LSI term placements",
+  "built": false
+ },
+ {
+  "name": "Landing & Product Page Copy Writer",
+  "slug": "landing-product-page-copy-writer",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 5,
+  "e": 2,
+  "desc": "Offer + ICP notes + feature list → full landing or product page copy (hero, value props, social proof, CTA) structured for conversion",
+  "built": false
+ },
+ {
+  "name": "Content Repurposer & Atomizer",
+  "slug": "content-repurposer-atomizer",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 5,
+  "e": 2,
+  "desc": "One long-form asset → platform-adapted LinkedIn, X, Instagram, Threads, Facebook, email, and short-video versions in one pass",
+  "built": false
+ },
+ {
+  "name": "De-Slop & Humanize Pass",
+  "slug": "de-slop-humanize-pass",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 5,
+  "e": 2,
+  "desc": "AI-drafted or generic text → version with concrete specifics, varied rhythm, and first-person voice that sounds human",
+  "built": false
+ },
+ {
+  "name": "LinkedIn Post Writer",
+  "slug": "linkedin-post-writer",
+  "layer": "L6 Social Media & Community",
+  "lnum": 6,
+  "v": 5,
+  "e": 2,
+  "desc": "Topic, URL, or rough notes → publish-ready LinkedIn prose post with hook, body, and CTA",
+  "built": false
+ },
+ {
+  "name": "Welcome & Onboarding Email Sequence Builder",
+  "slug": "welcome-onboarding-email-sequence-builder",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 2,
+  "desc": "Product overview + activation goals → complete multi-email onboarding sequence with subject lines, preview text, and body copy",
+  "built": false
+ },
+ {
+  "name": "Push Notification Copy Generator",
+  "slug": "push-notification-copy-generator",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 2,
+  "desc": "Campaign goal, segment, channel (web/app) → push variants with character-limit compliance, emoji options, and A/B pairs",
+  "built": false
+ },
+ {
+  "name": "Campaign Brief Builder",
+  "slug": "campaign-brief-builder",
+  "layer": "L8 Paid Acquisition & Performance",
+  "lnum": 8,
+  "v": 5,
+  "e": 2,
+  "desc": "Business goal, audience, budget, channels → structured campaign brief (objective, targeting, KPIs, creative spec) with completeness review",
+  "built": false
+ },
+ {
+  "name": "Ad Copy Variant Generator",
+  "slug": "ad-copy-variant-generator",
+  "layer": "L8 Paid Acquisition & Performance",
+  "lnum": 8,
+  "v": 5,
+  "e": 2,
+  "desc": "Product description, value props, character limits → headline/description and copy/image/CTA variants per ad format across distinct angles",
+  "built": false
+ },
+ {
+  "name": "A/B & Multivariate Test Designer",
+  "slug": "a-b-multivariate-test-designer",
+  "layer": "L9 CRO & Experimentation",
+  "lnum": 9,
+  "v": 5,
+  "e": 2,
+  "desc": "Hypothesis, page section, goal metric → complete test brief (variants, success metric, MVT combinations, feature-flag spec, platform setup checklist)",
+  "built": false
+ },
+ {
+  "name": "Experiment Results Analyzer",
+  "slug": "experiment-results-analyzer",
+  "layer": "L9 CRO & Experimentation",
+  "lnum": 9,
+  "v": 5,
+  "e": 2,
+  "desc": "Raw results table (visitors/conversions per variant) → significance verdict, confidence interval, uplift, and stakeholder narrative",
+  "built": false
+ },
+ {
+  "name": "Channel ROI Scorecard",
+  "slug": "channel-roi-scorecard",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 5,
+  "e": 2,
+  "desc": "Spend by channel + revenue/conversion data → cost-per-acquisition, ROAS, marketing P&L contribution, and ranked channel table",
+  "built": false
+ },
+ {
+  "name": "LTV / CAC / Payback Calculator",
+  "slug": "ltv-cac-payback-calculator",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 5,
+  "e": 2,
+  "desc": "Revenue by cohort + CAC inputs → LTV, blended CAC, payback period, MRR cohort view, and a unit-economics narrative",
+  "built": false
+ },
+ {
+  "name": "Data QA & Measurement Gotcha Checker",
+  "slug": "data-qa-measurement-gotcha-checker",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 5,
+  "e": 2,
+  "desc": "GA4 report or data export → checklist of known measurement pitfalls (self-referral, spam hostnames, broken events, model blending) with remediation",
+  "built": false
+ },
+ {
+  "name": "Meeting Prep & Follow-Up Pack",
+  "slug": "meeting-prep-follow-up-pack",
+  "layer": "L12 ABM & Sales Enablement",
+  "lnum": 12,
+  "v": 5,
+  "e": 2,
+  "desc": "Prospect LinkedIn + dossier + meeting notes → pre-call brief and personalized follow-up email with recap, next steps, and resources",
+  "built": false
+ },
+ {
+  "name": "Deck & Presentation Writer",
+  "slug": "deck-presentation-writer",
+  "layer": "L13 Creative & Design Ops",
+  "lnum": 13,
+  "v": 5,
+  "e": 2,
+  "desc": "Bullet-point outline or raw notes → structured slide titles, body copy, and speaker notes formatted for Google Slides or PowerPoint",
+  "built": false
+ },
+ {
+  "name": "Campaign QA & Launch Checklist Generator",
+  "slug": "campaign-qa-launch-checklist-generator",
+  "layer": "L14 Marketing Ops, Governance & Compliance",
+  "lnum": 14,
+  "v": 5,
+  "e": 2,
+  "desc": "Campaign brief + channel/type → channel-specific pre-launch QA checklist with pass/fail fields covering copy, creative, UTMs, targeting, tracking, and legal",
+  "built": false
+ },
+ {
+  "name": "Prioritization Framework Suite",
+  "slug": "prioritization-framework-suite",
+  "layer": "L15 Decision-Making & Mental Models",
+  "lnum": 15,
+  "v": 5,
+  "e": 2,
+  "desc": "List of initiatives or backlog items → ranked output using RICE, ICE, WSJF, or weighted decision matrix — buyer picks the framework",
+  "built": false
+ },
+ {
+  "name": "Creative Ideation Framework Suite",
+  "slug": "creative-ideation-framework-suite",
+  "layer": "L16 Brainstorming, Ideation & Creativity",
+  "lnum": 16,
+  "v": 5,
+  "e": 2,
+  "desc": "Problem statement or campaign goal → structured creative prompts using SCAMPER, Six Hats, First-Principles, Crazy-8s, Brainwriting, and lateral provocations",
+  "built": false
+ },
+ {
+  "name": "Campaign Concept Developer",
+  "slug": "campaign-concept-developer",
+  "layer": "L16 Brainstorming, Ideation & Creativity",
+  "lnum": 16,
+  "v": 5,
+  "e": 2,
+  "desc": "Keyword or theme + ICP + channel → full campaign concept with big idea, hero message, and execution angles",
+  "built": false
+ },
+ {
+  "name": "Meeting Agenda & Action-Item Builder",
+  "slug": "meeting-agenda-action-item-builder",
+  "layer": "L17 Personal Productivity & Time Management",
+  "lnum": 17,
+  "v": 5,
+  "e": 2,
+  "desc": "Meeting goal + attendees + raw notes/transcript → timed role-assigned agenda before, and a clean attributed action-item and decision log after",
+  "built": false
+ },
+ {
+  "name": "Stakeholder Update & Status Writer",
+  "slug": "stakeholder-update-status-writer",
+  "layer": "L19 Internal Communication & Collaboration",
+  "lnum": 19,
+  "v": 5,
+  "e": 2,
+  "desc": "Project status data + key decisions, or closed Jira/Linear tickets → polished stakeholder update (context, progress, risks, next steps) for Slack, email, or board deck",
+  "built": false
+ },
+ {
+  "name": "Doc & Note Summarizer",
+  "slug": "doc-note-summarizer",
+  "layer": "L17 Personal Productivity & Time Management",
+  "lnum": 17,
+  "v": 5,
+  "e": 1,
+  "desc": "Long article, deck, voice memo, video, or brain dump → 3-sentence paste-into-Slack gist or clean structured bullet notes",
+  "built": false
+ },
+ {
+  "name": "Quick Tone-Softener & Diplomacy Pass",
+  "slug": "quick-tone-softener-diplomacy-pass",
+  "layer": "L19 Internal Communication & Collaboration",
+  "lnum": 19,
+  "v": 5,
+  "e": 1,
+  "desc": "Blunt Slack/email draft → diplomatically rephrased version that lands well without losing the core message, plus optional memo formatting",
+  "built": false
+ },
+ {
+  "name": "GTM Launch Planner",
+  "slug": "gtm-launch-planner",
+  "layer": "L2 Strategy & Planning",
+  "lnum": 2,
+  "v": 5,
+  "e": 3,
+  "desc": "Product or feature brief + launch size (S/M/L) → launch plan with audience, channels, timeline, and go/no-go criteria",
+  "built": false
+ },
+ {
+  "name": "Experiment Pipeline & Backlog Prioritizer",
+  "slug": "experiment-pipeline-backlog-prioritizer",
+  "layer": "L2 Strategy & Planning",
+  "lnum": 2,
+  "v": 5,
+  "e": 3,
+  "desc": "Growth problem + funnel stage + test ideas → prioritized experiment backlog (ICE/RICE/PIE scored) with structured hypotheses",
+  "built": false
+ },
+ {
+  "name": "SERP Analysis Report",
+  "slug": "serp-analysis-report",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 3,
+  "desc": "Target keyword → snapshot of top-10 SERP features, content format patterns, and angles to beat",
+  "built": false
+ },
+ {
+  "name": "Topic Cluster & Pillar Architect",
+  "slug": "topic-cluster-pillar-architect",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 3,
+  "desc": "Broad topic → pillar page + supporting spoke map with proposed URLs, titles, and internal linking logic",
+  "built": false
+ },
+ {
+  "name": "Content Brief Builder",
+  "slug": "content-brief-builder",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 3,
+  "desc": "Target keyword + SERP data → full editorial brief (intent, angle, outline, entities, word count, internal links) — the single SEO-to-writing handoff",
+  "built": false
+ },
+ {
+  "name": "AEO / GEO / LLM-Visibility Optimizer",
+  "slug": "aeo-geo-llm-visibility-optimizer",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 3,
+  "desc": "Existing article or landing page → passages restructured for AI answer extraction and citation in ChatGPT/Perplexity/AI Overviews",
+  "built": false
+ },
+ {
+  "name": "Blog Post Drafting Engine",
+  "slug": "blog-post-drafting-engine",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 5,
+  "e": 3,
+  "desc": "Approved brief → full SEO-optimized draft (intro, H2/H3 structure, body, conclusion, meta), permanently solving the blank page",
+  "built": false
+ },
+ {
+  "name": "Lifecycle Journey Mapper",
+  "slug": "lifecycle-journey-mapper",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 3,
+  "desc": "ICP description and product milestones → annotated lifecycle stage map with trigger points, channel recs, and message themes per stage",
+  "built": false
+ },
+ {
+  "name": "Abandon Flow Writer",
+  "slug": "abandon-flow-writer",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 3,
+  "desc": "Product catalog, brand voice, trigger spec → cart-abandon AND browse-abandon series with personalization tokens and escalating urgency",
+  "built": false
+ },
+ {
+  "name": "Lead Nurture Drip Builder",
+  "slug": "lead-nurture-drip-builder",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 3,
+  "desc": "Persona, funnel stage, content assets → multi-touch nurture drip with content mapping, send timing, and conditional branch logic",
+  "built": false
+ },
+ {
+  "name": "Full Email/Push Asset Builder (Copy + Responsive HTML)",
+  "slug": "full-email-push-asset-builder-copy-responsive-html",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 3,
+  "desc": "Approved copy → paste-into-ESP responsive HTML email and platform-ready push payload in one pass",
+  "built": false
+ },
+ {
+  "name": "Weekly Paid Performance Summary",
+  "slug": "weekly-paid-performance-summary",
+  "layer": "L8 Paid Acquisition & Performance",
+  "lnum": 8,
+  "v": 5,
+  "e": 3,
+  "desc": "Raw stats from Google Ads, Meta, LinkedIn → plain-English weekly summary with spend, ROAS, CPA, and channel-level commentary",
+  "built": false
+ },
+ {
+  "name": "Landing Page Heuristic & Live CRO Auditor",
+  "slug": "landing-page-heuristic-live-cro-auditor",
+  "layer": "L9 CRO & Experimentation",
+  "lnum": 9,
+  "v": 5,
+  "e": 3,
+  "desc": "Landing page URL or screenshot → fetched, scored, evidence-backed conversion audit mapped to heuristics (clarity, trust, friction, urgency) with prioritized fixes",
+  "built": false
+ },
+ {
+  "name": "Funnel Drop-Off Analyzer",
+  "slug": "funnel-drop-off-analyzer",
+  "layer": "L9 CRO & Experimentation",
+  "lnum": 9,
+  "v": 5,
+  "e": 3,
+  "desc": "GA4 funnel report, event list, or activation cohort data → ranked highest-leverage drop-off points with hypothesized causes and recommended tests",
+  "built": false
+ },
+ {
+  "name": "GA4 Weekly Traffic Digest",
+  "slug": "ga4-weekly-traffic-digest",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 5,
+  "e": 3,
+  "desc": "GA4 property + date range → formatted weekly traffic summary (sessions, users, channels, top pages, WoW delta)",
+  "built": false
+ },
+ {
+  "name": "Growth Diagnostic Deep-Dive",
+  "slug": "growth-diagnostic-deep-dive",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 5,
+  "e": 3,
+  "desc": "GA4 + GSC data, a pasted metrics dump, or a plain question → structured diagnosis of what is driving or dragging growth with a prioritized lever list",
+  "built": false
+ },
+ {
+  "name": "Usage-Triggered Message Sequencer",
+  "slug": "usage-triggered-message-sequencer",
+  "layer": "L11 Product-Led Growth & Activation",
+  "lnum": 11,
+  "v": 5,
+  "e": 3,
+  "desc": "Product events + lifecycle stage → trigger-based message sequence with event conditions, delays, and channel routing",
+  "built": false
+ },
+ {
+  "name": "Account Dossier Builder",
+  "slug": "account-dossier-builder",
+  "layer": "L12 ABM & Sales Enablement",
+  "lnum": 12,
+  "v": 5,
+  "e": 3,
+  "desc": "Company name + URL → structured account profile (business model, tech stack, recent news, pain hypotheses) feeding every downstream personalization task",
+  "built": false
+ },
+ {
+  "name": "Cold Outreach Sequence Architect",
+  "slug": "cold-outreach-sequence-architect",
+  "layer": "L12 ABM & Sales Enablement",
+  "lnum": 12,
+  "v": 5,
+  "e": 3,
+  "desc": "ICP segment + solution + channel mix → full multi-touch sequence (email + LinkedIn) with personalized connection notes and messaging angles per persona",
+  "built": false
+ },
+ {
+  "name": "Automation Workflow Designer & Debugger",
+  "slug": "automation-workflow-designer-debugger",
+  "layer": "L14 Marketing Ops, Governance & Compliance",
+  "lnum": 14,
+  "v": 5,
+  "e": 3,
+  "desc": "Trigger + outcome + tool stack, or a broken Zap/scenario → documented multi-step automation spec or importable JSON, plus root-cause diagnosis of failures",
+  "built": false
+ },
+ {
+  "name": "Daily & Weekly Planning Sprint",
+  "slug": "daily-weekly-planning-sprint",
+  "layer": "L17 Personal Productivity & Time Management",
+  "lnum": 17,
+  "v": 5,
+  "e": 3,
+  "desc": "Incomplete tasks + calendar + priorities + energy preferences → energy-matched time-blocked daily plan and GTD-style weekly review with next-week commitments",
+  "built": false
+ },
+ {
+  "name": "SOP Builder & Reviewer",
+  "slug": "sop-builder-reviewer",
+  "layer": "L18 Organization & Knowledge Management (PKM)",
+  "lnum": 18,
+  "v": 5,
+  "e": 3,
+  "desc": "Messy Slack thread, Loom transcript, working prompt, or brain dump → polished human-readable SOP with a gap/ambiguity review flagging missing steps and owners",
+  "built": false
+ },
+ {
+  "name": "Webinar & Event Campaign Planner",
+  "slug": "webinar-event-campaign-planner",
+  "layer": "L26 Events, Webinars & Field Marketing",
+  "lnum": 26,
+  "v": 5,
+  "e": 3,
+  "desc": "Event goals, audience, budget, date → full campaign plan with promo timeline, channel mix, team roles, logistics checklist, and sequenced pre/post activity calendar",
+  "built": false
+ },
+ {
+  "name": "Case Study & Customer Spotlight Production Suite",
+  "slug": "case-study-customer-spotlight-production-suite",
+  "layer": "L27 Customer Marketing, Advocacy & Referral",
+  "lnum": 27,
+  "v": 5,
+  "e": 3,
+  "desc": "Customer interview transcript or use-case bullets → sourcing email, structured challenge/solution/outcome draft, polished spotlight post, and SEO title/meta",
+  "built": false
+ },
+ {
+  "name": "Partnership Outreach & Personalization Writer",
+  "slug": "partnership-outreach-personalization-writer",
+  "layer": "L28 Partnerships, Influencer & Affiliate",
+  "lnum": 28,
+  "v": 5,
+  "e": 3,
+  "desc": "Prospect list with LinkedIn/site/funding data + base templates → individually personalized biz-dev, guest-post, integration-partner, and warm networking emails with follow-up",
+  "built": false
+ },
+ {
+  "name": "Prompt Engineering & Library Suite",
+  "slug": "prompt-engineering-library-suite",
+  "layer": "L30 AI/Automation Meta-Skills & Professional Development",
+  "lnum": 30,
+  "v": 5,
+  "e": 3,
+  "desc": "Raw prompt + sample outputs + regression cases → rewritten prompt with annotated fixes, refined system prompt, before/after comparison, and versioned library storage",
+  "built": false
+ },
+ {
+  "name": "Multi-Source Deep Research Report Builder",
+  "slug": "multi-source-deep-research-report-builder",
+  "layer": "L30 AI/Automation Meta-Skills & Professional Development",
+  "lnum": 30,
+  "v": 5,
+  "e": 3,
+  "desc": "Any topic, market, or competitor → fact-checked, cited multi-source research report — the general-purpose research horsepower all other research compares against",
+  "built": false
+ },
+ {
+  "name": "Brand-Brain Bootstrapper",
+  "slug": "brand-brain-bootstrapper",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 3,
+  "desc": "Company URL + optional PDF → fully populated brand brain (voice, ICP, differentiators, proof points) that every other skill references",
+  "built": false
+ },
+ {
+  "name": "SEO Topic-Cluster Factory",
+  "slug": "seo-topic-cluster-factory",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 3,
+  "desc": "Pillar keyword + brand brief → full cluster (pillar page outline, 8-12 supporting briefs, internal linking plan) that establishes topical authority",
+  "built": false
+ },
+ {
+  "name": "Activation Onboarding Orchestrator",
+  "slug": "activation-onboarding-orchestrator",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 3,
+  "desc": "Product + new-user persona + activation milestone → 7-email onboarding drip with in-app tooltip copy and success-metric definition that drives activation",
+  "built": false
+ },
+ {
+  "name": "Content Refresh Briefer",
+  "slug": "content-refresh-briefer",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 2,
+  "desc": "Underperforming URL + current content + GSC data → targeted refresh brief (what to add, cut, rewrite) for a 2-hour traffic recovery",
+  "built": false
+ },
+ {
+  "name": "Webinar Email Sequence Writer",
+  "slug": "webinar-email-sequence-writer",
+  "layer": "L26 Events, Webinars & Field Marketing",
+  "lnum": 26,
+  "v": 5,
+  "e": 2,
+  "desc": "Registration details + agenda → pre-event reminder sequence, replay announcement, and post-event nurture drip across all attendance segments",
+  "built": false
+ },
+ {
+  "name": "Churn-Save Sequence Writer",
+  "slug": "churn-save-sequence-writer",
+  "layer": "L27 Customer Marketing, Advocacy & Referral",
+  "lnum": 27,
+  "v": 5,
+  "e": 2,
+  "desc": "Cancellation-intent trigger + retention offers → 2–3 step churn-save sequence with personalized offer presentation and escalation routing",
+  "built": false
+ },
+ {
+  "name": "Voice-of-Customer Mining Pipeline",
+  "slug": "voice-of-customer-mining-pipeline",
+  "layer": "L3 Audience Research & Insight",
+  "lnum": 3,
+  "v": 5,
+  "e": 4,
+  "desc": "Review URLs, support tickets, forums, or sales transcripts → theme hierarchy with sentiment, persona vocabulary, and pain-to-copy quote mapping",
+  "built": false
+ },
+ {
+  "name": "Keyword Research & Clustering Suite",
+  "slug": "keyword-research-clustering-suite",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 4,
+  "desc": "Seed topics + domain + Ahrefs/Semrush export → keyword clusters with volume, difficulty, intent labels, and quick-win opportunity list",
+  "built": false
+ },
+ {
+  "name": "SEO Content Health & Decay Audit",
+  "slug": "seo-content-health-decay-audit",
+  "layer": "L4 SEO & Organic Search",
+  "lnum": 4,
+  "v": 5,
+  "e": 4,
+  "desc": "GSC/Ahrefs/Semrush data + sitemap → ranked list of decaying URLs, cannibalization clusters, and consolidation/refresh actions",
+  "built": false
+ },
+ {
+  "name": "ESP / MAP Platform Builder",
+  "slug": "esp-map-platform-builder",
+  "layer": "L7 Email, Push & Lifecycle / Retention",
+  "lnum": 7,
+  "v": 5,
+  "e": 4,
+  "desc": "Campaign brief + platform schema → platform-specific flow spec, canvas JSON, or automation recipe for Klaviyo/ActiveCampaign/Braze/HubSpot/Marketo",
+  "built": false
+ },
+ {
+  "name": "Account List Builder & ICP Scorer",
+  "slug": "account-list-builder-icp-scorer",
+  "layer": "L12 ABM & Sales Enablement",
+  "lnum": 12,
+  "v": 5,
+  "e": 4,
+  "desc": "Seed criteria + raw CSV + ICP definition → cleaned, enriched, Tier 1/2/3 scored account or partner-target list ready for CRM import",
+  "built": false
+ },
+ {
+  "name": "AI Image Generator (On-Brand Assets)",
+  "slug": "ai-image-generator-on-brand-assets",
+  "layer": "L13 Creative & Design Ops",
+  "lnum": 13,
+  "v": 5,
+  "e": 4,
+  "desc": "Brief + brand → finished, correctly-sized on-brand image (social, blog, ad, OG/featured/thumbnail) delivered as a usable asset",
+  "built": false
+ },
+ {
+  "name": "Landing Page Builder (HTML/Tailwind)",
+  "slug": "landing-page-builder-html-tailwind",
+  "layer": "L21 Growth Engineering (technical)",
+  "lnum": 21,
+  "v": 5,
+  "e": 4,
+  "desc": "Described offer → a conversion-optimized, fully coded single-page HTML/Tailwind file with responsive layout and CRO best practices baked in",
+  "built": false
+ },
+ {
+  "name": "Product Demo GIF & Mockup Builder",
+  "slug": "product-demo-gif-mockup-builder",
+  "layer": "L22 Visual Documentation & Screen Capture",
+  "lnum": 22,
+  "v": 5,
+  "e": 4,
+  "desc": "URL + click path or design file → looping GIF under 5 MB and/or device-framed mockup showing the feature flow, ready for landing pages and social",
+  "built": false
+ },
+ {
+  "name": "Custom AI Agent Builder",
+  "slug": "custom-ai-agent-builder",
+  "layer": "L30 AI/Automation Meta-Skills & Professional Development",
+  "lnum": 30,
+  "v": 5,
+  "e": 4,
+  "desc": "Task description, tool list, brand voice → fully configured system prompt, tool definitions, and agent scaffold ready to deploy on any platform",
+  "built": false
+ },
+ {
+  "name": "Keyword-to-Published-Post Pipeline Runner",
+  "slug": "keyword-to-published-post-pipeline-runner",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 4,
+  "desc": "Target keyword + brand brief → live, indexed, SEO-optimized blog post via chained SERP research, outline, drafting, and publish steps",
+  "built": false
+ },
+ {
+  "name": "Full Campaign Launch Orchestrator",
+  "slug": "full-campaign-launch-orchestrator",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 4,
+  "desc": "Campaign goal + ICP + budget → brief, creative assets, channel copy, UTM-tagged links, and launch checklist out the door in one session",
+  "built": false
+ },
+ {
+  "name": "Product-Launch GTM Orchestrator",
+  "slug": "product-launch-gtm-orchestrator",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 4,
+  "desc": "Product spec + target segment + launch date → complete GTM kit (positioning, messaging matrix, launch emails, press assets, channel plan) in one run",
+  "built": false
+ },
+ {
+  "name": "Content-Decay Refresh Sweep",
+  "slug": "content-decay-refresh-sweep",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 4,
+  "desc": "GSC + GA4 property IDs + decay threshold → prioritized list of declining posts with rewrite briefs that recover lost organic traffic",
+  "built": false
+ },
+ {
+  "name": "Upsell & Cross-Sell Campaign Builder",
+  "slug": "upsell-cross-sell-campaign-builder",
+  "layer": "L27 Customer Marketing, Advocacy & Referral",
+  "lnum": 27,
+  "v": 5,
+  "e": 3,
+  "desc": "Customer segment + target product → multi-touch email plus in-app message campaign copy with segment logic, subscription/AOV hooks, and revenue-expansion CTA",
+  "built": false
+ },
+ {
+  "name": "Battlecard & Objection Handler",
+  "slug": "battlecard-objection-handler",
+  "layer": "L1 Foundation / Brand Brain",
+  "lnum": 1,
+  "v": 4,
+  "e": 2,
+  "desc": "Competitive dossier + messaging hierarchy + known objections → sales-ready one-page battlecard with reframe responses and proof points",
+  "built": false
+ },
+ {
+  "name": "Win-Loss Interview Synthesizer",
+  "slug": "win-loss-interview-synthesizer",
+  "layer": "L1 Foundation / Brand Brain",
+  "lnum": 1,
+  "v": 4,
+  "e": 2,
+  "desc": "Raw win-loss interview transcript or CRM close notes → structured summary of decision factors, competitive criteria, key quotes, and objections",
+  "built": false
+ },
+ {
+  "name": "OKR Suite",
+  "slug": "okr-suite",
+  "layer": "L2 Strategy & Planning",
+  "lnum": 2,
+  "v": 4,
+  "e": 2,
+  "desc": "Strategic priorities + actuals → written OKRs with baselines, a health critique on lagging-vs-leading KR mix, and a RAG progress update",
+  "built": false
+ },
+ {
+  "name": "Editorial Calendar Builder",
+  "slug": "editorial-calendar-builder",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 4,
+  "e": 2,
+  "desc": "Content goals + keyword clusters + cadence → filled-out monthly calendar (topics, formats, owners, publish dates) that actually gets used",
+  "built": false
+ },
+ {
+  "name": "Content QA Reviewer",
+  "slug": "content-qa-reviewer",
+  "layer": "L5 Content Creation & Editorial",
+  "lnum": 5,
+  "v": 4,
+  "e": 2,
+  "desc": "Submitted brief or draft → rubric-scored review (accuracy, depth, originality, SEO, readability, CTA) with inline comments",
+  "built": false
+ },
+ {
+  "name": "X Thread Writer",
+  "slug": "x-thread-writer",
+  "layer": "L6 Social Media & Community",
+  "lnum": 6,
+  "v": 4,
+  "e": 2,
+  "desc": "Topic, URL, or rough notes → 8–15 tweet thread with numbered hook, supporting tweets, and reply-thread CTA",
+  "built": false
+ },
+ {
+  "name": "Short-Form Video Script Writer",
+  "slug": "short-form-video-script-writer",
+  "layer": "L6 Social Media & Community",
+  "lnum": 6,
+  "v": 4,
+  "e": 2,
+  "desc": "Product feature, campaign message, or topic + platform/duration → platform-agnostic timestamped hook/value/CTA script with scene and on-screen text cues",
+  "built": false
+ },
+ {
+  "name": "Social Content Calendar Builder",
+  "slug": "social-content-calendar-builder",
+  "layer": "L6 Social Media & Community",
+  "lnum": 6,
+  "v": 4,
+  "e": 2,
+  "desc": "Content themes, campaigns, and posting frequency → month-long calendar grid (dates, platform, format, topic, copy status)",
+  "built": false
+ },
+ {
+  "name": "Bid & Budget Pacing Checker",
+  "slug": "bid-budget-pacing-checker",
+  "layer": "L8 Paid Acquisition & Performance",
+  "lnum": 8,
+  "v": 4,
+  "e": 2,
+  "desc": "Spend data, monthly budget, days elapsed → pacing status per campaign with anomaly flags and cross-channel reallocation suggestions",
+  "built": false
+ },
+ {
+  "name": "SQL Query Generator for GA4 BigQuery",
+  "slug": "sql-query-generator-for-ga4-bigquery",
+  "layer": "L10 Analytics, Measurement & Reporting",
+  "lnum": 10,
+  "v": 4,
+  "e": 2,
+  "desc": "Plain-English analytics question + event schema → ready-to-run BigQuery SQL for funnels, reverse-ETL syncs, and A/B significance on the GA4 export",
+  "built": false
+ },
+ {
+  "name": "Aha Moment & Activation Metric Definer",
+  "slug": "aha-moment-activation-metric-definer",
+  "layer": "L11 Product-Led Growth & Activation",
+  "lnum": 11,
+  "v": 4,
+  "e": 2,
+  "desc": "Product description + usage data → documented aha-moment definition, activation metric formula, and dashboard spec",
+  "built": false
+ },
+ {
+  "name": "In-App Microcopy Writer & Auditor",
+  "slug": "in-app-microcopy-writer-auditor",
+  "layer": "L11 Product-Led Growth & Activation",
+  "lnum": 11,
+  "v": 4,
+  "e": 2,
+  "desc": "Feature/UI context or existing tooltip copy → empty-state, tooltip, and banner copy variants plus a quality audit on clarity, length, and vagueness",
+  "built": false
+ },
+ {
+  "name": "Pre-Mortem & Post-Mortem Generator",
+  "slug": "pre-mortem-post-mortem-generator",
+  "layer": "L15 Decision-Making & Mental Models",
+  "lnum": 15,
+  "v": 4,
+  "e": 2,
+  "desc": "Planned or completed initiative/incident → structured pre-mortem with failure modes, or formatted post-mortem with timeline, root causes, and action items",
+  "built": false
+ },
+ {
+  "name": "Analytical Reasoning Toolkit",
+  "slug": "analytical-reasoning-toolkit",
+  "layer": "L15 Decision-Making & Mental Models",
+  "lnum": 15,
+  "v": 4,
+  "e": 2,
+  "desc": "A decision, goal, or action → layered consequence map, inverted failure framing, cost-benefit EV calculation, bias audit, and opportunity-cost/steelman comparison",
+  "built": false
+ },
+ {
+  "name": "Media & Podcast Pitch Crafter",
+  "slug": "media-podcast-pitch-crafter",
+  "layer": "L20 PR & Corporate Communications",
+  "lnum": 20,
+  "v": 4,
+  "e": 2,
+  "desc": "Story angle + journalist beat or podcast + press release/bio → personalized 150-word pitch email that earns opens from reporters and bookings on shows",
+  "built": false
+ },
+ {
+  "name": "Vendor Cost Comparison & Renewal Brief",
+  "slug": "vendor-cost-comparison-renewal-brief",
+  "layer": "L24 Budget, Finance & Business-Case",
+  "lnum": 24,
+  "v": 4,
+  "e": 2,
+  "desc": "Vendor quotes or contract + usage data + alternatives → annualized comparison table, feature-gap flags, and keep/renegotiate/cancel brief with negotiation talking points",
+  "built": false
+ },
+ {
+  "name": "Agency Deliverable QA & Pulse Reviewer",
+  "slug": "agency-deliverable-qa-pulse-reviewer",
+  "layer": "L25 Vendor, Agency & Team Management",
+  "lnum": 25,
+  "v": 4,
+  "e": 2,
+  "desc": "Submitted deliverable + original brief or weekly agency update → redline pass/flag/fail report against requirements plus a delivery-drift pulse summary",
+  "built": false
+ },
+ {
+  "name": "Referral Program Brief Builder",
+  "slug": "referral-program-brief-builder",
+  "layer": "L27 Customer Marketing, Advocacy & Referral",
+  "lnum": 27,
+  "v": 4,
+  "e": 2,
+  "desc": "Product details + ICP notes → full referral program spec: incentive structure, mechanics, eligibility rules, and tracking requirements",
+  "built": false
+ },
+ {
+  "name": "Shopify Product & Collection Page SEO Builder",
+  "slug": "shopify-product-collection-page-seo-builder",
+  "layer": "L31 eCommerce Platform Marketing (Shopify / WooCommerce)",
+  "lnum": 31,
+  "v": 4,
+  "e": 2,
+  "desc": "Raw product/collection spec + target keywords → optimized titles, metas, H1s, and above-fold copy that ranks and converts",
+  "built": false
+ },
+ {
+  "name": "Pricing Page Copywriter & Reviewer",
+  "slug": "pricing-page-copywriter-reviewer",
+  "layer": "L32 Pricing, Packaging & Monetization",
+  "lnum": 32,
+  "v": 4,
+  "e": 2,
+  "desc": "Tier structure + ICP pains, or a draft pricing page → full pricing page copy (names, headline, FAQs, objection-handlers) plus a structured critique",
+  "built": false
+ },
+ {
+  "name": "App Store Listing & ASO Optimizer (iOS + Android)",
+  "slug": "app-store-listing-aso-optimizer-ios-android",
+  "layer": "L33 App Store & Mobile Marketing (ASO)",
+  "lnum": 33,
+  "v": 4,
+  "e": 2,
+  "desc": "App name, category, competitors → keyword-optimized title, subtitle, keyword field, and description for both App Store and Play Store",
+  "built": false
+ },
+ {
+  "name": "Faceless Short-Form Video Producer",
+  "slug": "faceless-short-form-video-producer",
+  "layer": "L6 Social Media & Community",
+  "lnum": 6,
+  "v": 5,
+  "e": 5,
+  "desc": "Topic, script, or published blog post → captioned, voiced TikTok/Reel/Short rendered via native tooling (produces actual video, not a script)",
+  "built": false
+ },
+ {
+  "name": "Growth Reporting Auto-Compiler (Weekly & Monthly)",
+  "slug": "growth-reporting-auto-compiler-weekly-monthly",
+  "layer": "L35 End-to-End Pipelines & Flagship Orchestrators",
+  "lnum": 35,
+  "v": 5,
+  "e": 5,
+  "desc": "GA4 + GSC + paid + CRM credentials → board-ready narrative report with anomaly callouts and recommendations on a recurring cadence",
+  "built": false
+ },
+ {
+  "name": "Sales Asset Reviewer",
+  "slug": "sales-asset-reviewer",
+  "layer": "L12 ABM & Sales Enablement",
+  "lnum": 12,
+  "v": 4,
+  "e": 1,
+  "desc": "Cold email draft or sales deck → line-by-line critique scoring personalization, clarity, CTA strength, and generic claims with rewrite suggestions",
+  "built": false
+ },
+ {
+  "name": "Creative Feedback Translator",
+  "slug": "creative-feedback-translator",
+  "layer": "L13 Creative & Design Ops",
+  "lnum": 13,
+  "v": 4,
+  "e": 1,
+  "desc": "Vague stakeholder feedback ('make it pop') → specific, actionable design direction with contrast, hierarchy, and copy adjustments",
+  "built": false
+ },
+ {
+  "name": "Eisenhower Matrix & Weekly Priorities Sorter",
+  "slug": "eisenhower-matrix-weekly-priorities-sorter",
+  "layer": "L15 Decision-Making & Mental Models",
+  "lnum": 15,
+  "v": 4,
+  "e": 1,
+  "desc": "Task dump or board export → 2×2 Urgent/Important grid with Do/Schedule/Delegate/Delete assignments and a ranked top-five for the week",
+  "built": false
+ },
+ {
+  "name": "How Might We & 10x Reframer",
+  "slug": "how-might-we-10x-reframer",
+  "layer": "L16 Brainstorming, Ideation & Creativity",
+  "lnum": 16,
+  "v": 4,
+  "e": 1,
+  "desc": "Problem statement or existing idea → HMW question variants plus 10x bolder concept stretches, removing small-thinking defaults",
+  "built": false
+ },
+ {
+  "name": "Async Standup Writer",
+  "slug": "async-standup-writer",
+  "layer": "L17 Personal Productivity & Time Management",
+  "lnum": 17,
+  "v": 4,
+  "e": 1,
+  "desc": "Yesterday's tasks + today's plan + blockers → ready-to-post Slack or Notion standup or weekly status digest in team-appropriate tone",
+  "built": false
+ },
+ {
+  "name": "Newsjacking Angle Finder",
+  "slug": "newsjacking-angle-finder",
+  "layer": "L20 PR & Corporate Communications",
+  "lnum": 20,
+  "v": 4,
+  "e": 1,
+  "desc": "Trending news headline + company positioning → ranked pitch angles connecting the story to your expertise before the cycle moves on",
+  "built": false
+ },
+ {
+  "name": "Press Release Social & Blog Amplification Pack",
+  "slug": "press-release-social-blog-amplification-pack",
+  "layer": "L20 PR & Corporate Communications",
+  "lnum": 20,
+  "v": 4,
+  "e": 1,
+  "desc": "Published press release → ready-to-post LinkedIn exec post, X thread, and 500–700 word owned-media blog post with internal links",
+  "built": false
+ },
+ {
+  "name": "Quote Polisher",
+  "slug": "quote-polisher",
+  "layer": "L20 PR & Corporate Communications",
+  "lnum": 20,
+  "v": 4,
+  "e": 1,
+  "desc": "Raw exec transcript or rough quote → three polished variants (punchy/neutral/expansive) that sound like the exec, not a press release",
+  "built": false
+ },
+ {
+  "name": "Contractor & Agency Brief Builder",
+  "slug": "contractor-agency-brief-builder",
+  "layer": "L25 Vendor, Agency & Team Management",
+  "lnum": 25,
+  "v": 4,
+  "e": 1,
+  "desc": "Job description + campaign goals + brand guidelines → ready-to-send contractor or agency brief with scope, deliverables, timeline, budget, and success criteria",
+  "built": false
+ },
+ {
+  "name": "Event Registration & On-Demand Page Copywriter",
+  "slug": "event-registration-on-demand-page-copywriter",
+  "layer": "L26 Events, Webinars & Field Marketing",
+  "lnum": 26,
+  "v": 4,
+  "e": 1,
+  "desc": "Webinar topic, speakers, date, takeaways → headline, benefit bullets, speaker bios, and CTA copy for live-registration and on-demand replay pages",
+  "built": false
+ },
+ {
+  "name": "Event Social Promotion Pack",
+  "slug": "event-social-promotion-pack",
+  "layer": "L26 Events, Webinars & Field Marketing",
+  "lnum": 26,
+  "v": 4,
+  "e": 1,
+  "desc": "Event name, date, speakers, registration URL → ready-to-publish social posts across LinkedIn, X, Instagram covering pre-event, day-of, and post-event",
+  "built": false
+ },
+ {
+  "name": "Event Recap Blog Post Writer",
+  "slug": "event-recap-blog-post-writer",
+  "layer": "L26 Events, Webinars & Field Marketing",
+  "lnum": 26,
+  "v": 4,
+  "e": 1,
+  "desc": "Event agenda, key quotes, poll results, top Q&A → 600–900 word recap blog post that extends event shelf-life and fuels SEO",
+  "built": false
+ },
+ {
+  "name": "Review Response Drafter",
+  "slug": "review-response-drafter",
+  "layer": "L27 Customer Marketing, Advocacy & Referral",
+  "lnum": 27,
+  "v": 4,
+  "e": 1,
+  "desc": "G2, Capterra, Google, or App Store review text → professional, on-brand, sentiment-aware public response tuned per platform",
+  "built": false
+ }
+]
