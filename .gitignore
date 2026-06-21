@@ -14,3 +14,5 @@ Thumbs.db
 # build scaffolding
 .tier1-*
 .skill_*
+.all-skills.txt
+.tier2-*
