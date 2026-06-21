@@ -14,18 +14,13 @@ This folder is the whole project: strategy docs, the built skills, and the regis
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY.md      v1 catalog (170 skills, 16 layers)
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY_v2.md   v2 master catalog (35 layers, ~1,137 skills)
 │   └── GROWTH_SKILL_LIBRARY_PRIORITIZED.md   de-duped build list (412 canonical, scored + tiered)
-└── skills/                      (10 skills)
-    ├── brand-brain/              Layer 0 — system of record; every copy skill calls it
-    ├── brand-voice-codifier/         ┐
-    ├── icp-persona-builder/          │
-    ├── positioning-messaging-architect/  │ Layer-1 "organs" of the brand brain —
-    ├── competitive-intelligence-dossier/ │ each owns one part, called by brand-brain
-    ├── offer-pricing-brain/          │ (and runnable standalone)
-    ├── proof-vault/                  │
-    ├── objection-library-builder/    │
-    ├── editorial-style-guide/        ┘
-    └── cta-variant-generator/    quick + battery CTA generation; calls brand-brain
+└── skills/                      (120 skills — Tier-1 complete)
+    ├── brand-brain/              Layer 0 — system of record; every skill calls it
+    ├── <8 brand-brain components>    the "organs" (voice, icp, positioning, competitive, offer, proof, objections, style)
+    ├── <106 Tier-1 skills>           across 31 layers (SEO, content, lifecycle, paid, CRO, analytics, ABM, PR, ops, decision, …)
+    └── <8 flagship orchestrators>    L35 — chain the library into "growth team in a box" pipelines
 ```
+*Full catalog by layer + the orchestrator pipelines: see `GROWTH_LIBRARY_REGISTRY.md`.*
 
 ## How the skills are wired
 
@@ -45,7 +40,7 @@ Canonical source lives here; each skill is **symlinked into `~/.claude/skills/<s
 
 ## Status
 
-- **Built (10):** `brand-brain` (Layer 0) · its 8 Layer-1 components (`brand-voice-codifier`, `icp-persona-builder`, `positioning-messaging-architect`, `competitive-intelligence-dossier`, `offer-pricing-brain`, `proof-vault`, `objection-library-builder`, `editorial-style-guide`) · `cta-variant-generator`.
-- **Publishing:** GitHub public (this repo). AM Skills publishing is paused for now — `cta-variant-generator` v1 remains public there from earlier.
+- **Built: Tier-1 COMPLETE — 120 skills.** brand-brain + 8 components + 106 Tier-1 skills + 8 flagship orchestrators, across 31 layers. Built in 7 verified waves; every skill brand-brain-contract-checked, symlinked, and pushed.
+- **Publishing:** GitHub public (this repo). AM Skills publishing paused — `cta-variant-generator` v1 remains public there from earlier.
 - **Brands built:** `pushengage` (`~/.brandbrain/brands/pushengage/brand.md`, confidence high).
-- **Next:** more Tier-1 skills from the prioritized list (e.g. `headline-hook-generator`) — each calling `brand-brain` from day one.
+- **Next candidates:** a library-wide quality polish pass · Tier-2 (152 skills from the prioritized list) · package/sell.

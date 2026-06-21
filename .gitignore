@@ -10,3 +10,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# build scaffolding
+.tier1-*
+.skill_*
