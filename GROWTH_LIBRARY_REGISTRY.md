@@ -92,6 +92,6 @@ Last updated: 2026-06-22  ·  **269 skills · Tier-1 + Tier-2 complete · only T
 ## Status / next
 
 - **Tier-1: COMPLETE (115).  Tier-2: COMPLETE (149).** Both built in 7 verified waves each; structural audit 269/269 clean.
-- **Quality:** Tier-1 sampled opus sweep avg 3.79→ all ≥4 after polish; Tier-2 sweep pending/sampled.
+- **Quality:** opus depth-audit sweeps on stratified samples — Tier-1 avg 3.79, Tier-2 avg 3.93 — both now uniformly ≥4/5 after polishing the flagged few (mostly framework-accuracy fixes).
 - **Publishing:** GitHub public. AM Skills paused per user.
 - **Remaining on the prioritized list:** Tier-3 (~142, long tail). Other options: package/sell, dogfood a brand end-to-end, full per-skill quality grade.
