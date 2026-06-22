@@ -14,11 +14,12 @@ This folder is the whole project: strategy docs, the built skills, and the regis
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY.md      v1 catalog (170 skills, 16 layers)
 │   ├── GROWTH_MARKETER_SKILL_LIBRARY_v2.md   v2 master catalog (35 layers, ~1,137 skills)
 │   └── GROWTH_SKILL_LIBRARY_PRIORITIZED.md   de-duped build list (412 canonical, scored + tiered)
-└── skills/                      (120 skills — Tier-1 complete)
+└── skills/                      (269 skills — Tier-1 + Tier-2 complete)
     ├── brand-brain/              Layer 0 — system of record; every skill calls it
     ├── <8 brand-brain components>    the "organs" (voice, icp, positioning, competitive, offer, proof, objections, style)
-    ├── <106 Tier-1 skills>           across 31 layers (SEO, content, lifecycle, paid, CRO, analytics, ABM, PR, ops, decision, …)
-    └── <8 flagship orchestrators>    L35 — chain the library into "growth team in a box" pipelines
+    ├── <115 Tier-1 skills>           the MVP spine across 31 layers
+    ├── <149 Tier-2 skills>           depth & breadth across 34 layers
+    └── <15 flagship orchestrators>   L35 — chain the library into "growth team in a box" pipelines
 ```
 *Full catalog by layer + the orchestrator pipelines: see `GROWTH_LIBRARY_REGISTRY.md`.*
 
@@ -40,7 +41,7 @@ Canonical source lives here; each skill is **symlinked into `~/.claude/skills/<s
 
 ## Status
 
-- **Built: Tier-1 COMPLETE — 120 skills.** brand-brain + 8 components + 106 Tier-1 skills + 8 flagship orchestrators, across 31 layers. Built in 7 verified waves; every skill brand-brain-contract-checked, symlinked, and pushed.
+- **Built: Tier-1 + Tier-2 COMPLETE — 269 skills.** brand-brain + 8 components + 115 Tier-1 + 149 Tier-2 + 15 flagship orchestrators. Built in 14 verified waves (7 + 7); structural audit 269/269 clean; every skill brand-brain-contract-checked, symlinked, and pushed.
 - **Publishing:** GitHub public (this repo). AM Skills publishing paused — `cta-variant-generator` v1 remains public there from earlier.
 - **Brands built:** `pushengage` (`~/.brandbrain/brands/pushengage/brand.md`, confidence high).
-- **Next candidates:** a library-wide quality polish pass · Tier-2 (152 skills from the prioritized list) · package/sell.
+- **Remaining on the prioritized list:** Tier-3 (~142, long tail). Other options: package/sell · dogfood a brand end-to-end · full per-skill quality grade.
