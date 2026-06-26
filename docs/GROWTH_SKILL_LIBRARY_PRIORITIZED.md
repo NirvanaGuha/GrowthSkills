@@ -20,7 +20,7 @@ Last updated: 2026-06-19
 
 ---
 
-## Tier 1 — Build first · the sellable v1 spine (115 skills)
+## Tier 1 — Build first · the v1 spine (115 skills)
 
 *Highest value-to-effort plus the must-have backbone. Ship this and you have a product.*
 
@@ -461,7 +461,7 @@ Last updated: 2026-06-19
 
 ## Build roadmap
 
-1. **Phase 1 — MVP (Tier 1, 115 skills):** lead with the Brain layer + the Content Authority pipeline you already own. Sellable on its own.
+1. **Phase 1 — MVP (Tier 1, 115 skills):** lead with the Brain layer + the Content Authority pipeline you already own. Shippable on its own.
 2. **Phase 2 — Funnel depth (Tier 2 acquisition/retention/analytics):** the skills that make subscribers stay.
 3. **Phase 3 — Meta-layers (Tier 2 decision/productivity/comms/growth-eng):** the differentiators that make it "the whole job."
 4. **Phase 4 — Long tail + cadence (Tier 3):** ship one new skill per week to justify the subscription.

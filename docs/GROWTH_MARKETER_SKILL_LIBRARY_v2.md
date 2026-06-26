@@ -1,12 +1,12 @@
 # The Growth Marketer's AI Skill Library — Master Blueprint (v2, exhaustive)
 
-*A complete, sellable library of AI agent skills covering the ENTIRE day-to-day of a growth + content marketer — not just content production, but decision-making, productivity, organization, internal comms, PR, growth engineering, visual documentation, finance, people management, and the meta-work in between.*
+*A complete library of AI agent skills covering the ENTIRE day-to-day of a growth + content marketer — not just content production, but decision-making, productivity, organization, internal comms, PR, growth engineering, visual documentation, finance, people management, and the meta-work in between.*
 
 Last updated: 2026-06-18  ·  **35 layers · 1137+ skills**
 
 ---
 
-## The thesis — why a *library* is worth $50/mo (and a prompt pack isn't)
+## The thesis — why a *library* beats a prompt pack
 
 A pile of disconnected prompts gets used twice and churns. A **library** retains because it behaves like an operating system for the entire growth function. Four design principles separate them:
 
@@ -223,7 +223,7 @@ Legend: ⭐ = spine / must-have · 🔒 = quality-gate / reviewer (author–revi
 - **GSC Manual Action & Security-Issue Responder** — penalty or hacked-content flag → a remediation plan + reconsideration-request draft (the panic workflow nothing else covers).
 - ⭐ **Full Site SEO Crawl & Audit (URL → prioritized issue report)** — domain → a crawl-based technical + content audit with issues ranked by impact (real crawl output vs. the checklist-only Technical SEO Auditor).
 - ⭐ **AI Answer Citation Tracker (ChatGPT / Perplexity / AI Overviews)** — brand + query set → a report of where you are (and aren't) cited in AI answers (the monitor the AEO/GEO optimizer optimizes toward but never measures — the #1 demo ask).
-- **Share-of-Voice / SERP Visibility Tracker** — keyword universe + competitors → a recurring visibility-vs-competitors report (the standing report a $50/mo buyer expects, beyond one-off rank-change summaries).
+- **Share-of-Voice / SERP Visibility Tracker** — keyword universe + competitors → a recurring visibility-vs-competitors report (the standing report buyers expect, beyond one-off rank-change summaries).
 
 ## Layer 5 — Content Creation & Editorial  
 *From blank page to polished publish — every content task, systematized.*  ·  **50 skills**
@@ -1441,23 +1441,9 @@ The point: a competing "AI for marketers" product helps you write a blog post. T
 
 Every chain ends in something *shippable or defensible* — a published post, a live campaign, a logged decision, a CFO-ready number — not a draft you still have to finish.
 
-## Packaging & monetization at scale
+## Positioning
 
-**Three tiers, one gravity well.**
-
-- **Free hook (the front door)** — ~8–10 of the highest-frequency, highest-delight skills: `LinkedIn Post Writer`, `Blog Post Drafting Engine`, `Subject Line & Preview Text Optimizer`, `Headline & Hook Generator`, `Meeting-to-Action-Item Extractor`, `De-Slop / Humanize Pass`. These are the "holy cow" moments people screenshot and share. No brand memory — every run starts cold. The friction *is* the funnel.
-- **$50/mo Pro (the daily driver)** — the full 30-layer library plus the thing free can't have: the **Brand Brain**. `Brand Voice & Tone Codifier`, `ICP & Persona Builder`, `Positioning Statement Generator`, `Product & Feature Knowledge Base Curator`, `Proof & Social-Proof Vault` load *once* and silently feed every downstream skill, so output sounds like *you* on day 30, not generic AI on day 1. This is the tier that runs the whole day-in-the-life above.
-- **Team / Agency ($150–250/seat or per-workspace)** — shared Brand Brain across seats, per-client brand profiles, the reviewer/critic skills (`Tone-Check Reviewer`, `Draft Quality Reviewer`, `Analytics Report Reviewer`, `Agency Output Reviewer`) for a second-pass approval lane, plus sync skills (`HubSpot Persona Sync`, `Notion Brand Wiki Publisher`, `Slack` pings) that wire the library into the team's existing stack.
-
-**Why they stay (retention logic):**
-- **Brand-brain lock-in** — the more they teach it (voice, ICP, offers, objections, proof), the worse generic AI looks by comparison. Switching cost compounds with every input.
-- **Daily-habit skills** — `Daily Planning Sprint`, `Inbox Zero Processor`, `Async Standup Writer`, the morning anomaly pings. These touch the product *before the first coffee*, every day. Habit beats novelty.
-- **Compounding knowledge base** — `Decision Log`, `Post-Test Learning Logger`, `Swipe File Curator`, `Win-Loss Synthesizer`, the `Objection Library`. Cancel and you don't just lose a tool — you lose your institutional memory.
-- **"Library that grows"** — ship new skills on a visible monthly cadence (a fresh channel, a new tool integration, a seasonal playbook). The $50 stays flat while the value line climbs; the perceived deal gets better every month they stay subscribed.
-
-**Who buys:** the solo-to-small-team growth/content marketer drowning in surface area — expected to do SEO *and* lifecycle *and* paid *and* reporting *and* the standup — plus lean in-house teams and agencies who need consistent, on-brand output across clients without hiring for every lane.
-
-**One-line positioning:** *The AI marketing department that knows your brand — runs your whole day, not just your blog.*
+*The AI marketing department that knows your brand — runs your whole day, not just your blog.*
 
 ---
 
@@ -1488,7 +1474,7 @@ That's the spine of the Content Authority Engine already live — the library is
 
 ## Suggested build roadmap
 
-1. **Phase 1 — Spine (weeks 1–4):** Brain layer + Content Authority Engine chain. Sellable v1; you're ~80% there.
+1. **Phase 1 — Spine (weeks 1–4):** Brain layer + Content Authority Engine chain. Shippable v1; you're ~80% there.
 2. **Phase 2 — Funnel depth (weeks 5–8):** SEO (incl. AEO/GEO), Lifecycle/Push, CRO & experimentation, Analytics & reporting.
 3. **Phase 3 — The meta-layers (weeks 9–12):** Decision-making, Productivity, Organization, Internal comms, Visual documentation, Growth engineering — the differentiators that make this "the whole job," not "a content tool."
 4. **Phase 4 — Breadth + cadence (ongoing):** Paid, ABM, PR, events, partnerships, localization — plus a published cadence of one new skill per week to justify the subscription.

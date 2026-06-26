@@ -77,13 +77,9 @@ Your brand data lives in your own directory — never inside the skills — so u
 - Every skill graded by a senior-operator rubric for depth and real-world usefulness — not just "does it run."
 - Truth-disciplined throughout: real numbers and real, correctly-attributed frameworks, or it flags them. No fabricated stats. No borrowed-credibility framework names.
 
-## Pricing
+## Who it's for
 
-**$50 / month — the whole library.**
-
-Less than one freelance hour. It does the grunt work of a junior marketer, on your brand, all day. New skills ship on a regular cadence — the library keeps growing.
-
-Built for solo operators, in-house teams of one to five, agencies running multiple brands, and founders doing their own growth.
+Solo operators, in-house teams of one to five, agencies running multiple brands, and founders doing their own growth. It does the grunt work of a junior marketer, on your brand, all day — and new skills ship on a regular cadence, so the library keeps growing.
 
 [Get started →](#get-started)
 

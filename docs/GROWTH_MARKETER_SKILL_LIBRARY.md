@@ -1,12 +1,12 @@
 # The Growth Marketer's AI Skill Library — Master Blueprint
 
-*A complete, sellable library of AI agent skills covering the entire growth + content marketing discipline. Designed so the whole thing is worth a recurring subscription, not a one-time template pack.*
+*A complete library of AI agent skills covering the entire growth + content marketing discipline. Designed as an interconnected system, not a one-time template pack.*
 
 Last updated: 2026-06-18
 
 ---
 
-## 1. The thesis — why a *library* is worth $50/mo (and a prompt pack isn't)
+## 1. The thesis — why a *library* beats a prompt pack
 
 A pile of disconnected prompts gets used twice and churns. A **library** retains because it behaves like an operating system for the growth function. Four design principles separate the two:
 
@@ -347,23 +347,18 @@ That's **~13 of the spine skills already live.** The library is the act of *comp
 
 ---
 
-## 5. Packaging & monetization (how $50/mo holds)
+## 5. Why it's defensible
 
-- **Who buys:** solo growth marketers, agency operators, in-house teams of 1–5, founders doing their own growth. The value anchor: "cheaper than one freelancer hour/month, replaces a junior marketer's grunt work."
-- **Free tier (acquisition):** 3–5 single skills (headline generator, SERP analyzer, push copywriter) — the hook.
-- **$50/mo Pro (core):** full library + the brain layer + 2–3 pipelines. The brand-brain lock-in lives here.
-- **$200/mo Team / Agency:** multi-brand brains, white-label outputs, shared swipe file, all pipelines.
-- **Retention levers:** the brand brain (switching cost), the weekly operating rhythm (habit), the insight repository (compounding value), and a steady cadence of *new* skills (the "library that grows" promise — which is itself why it's a subscription, not a one-time sale).
-- **The defensibility:** the opinionated frameworks + author/review quality gates + chained pipelines. Anyone can ship "write a blog post." Few will ship "brief → write → review → de-slop → link → monitor → refresh, all reading from one brand brain."
+- The opinionated frameworks + author/review quality gates + chained pipelines. Anyone can ship "write a blog post." Few will ship "brief → write → review → de-slop → link → monitor → refresh, all reading from one brand brain."
 
 ---
 
 ## 6. Suggested build roadmap
 
-1. **Phase 1 — Spine (weeks 1–4):** Brain layer (1–11) + Content Authority Engine chain. This alone is a sellable v1, and you already have most of it.
+1. **Phase 1 — Spine (weeks 1–4):** Brain layer (1–11) + Content Authority Engine chain. This alone is a shippable v1, and you already have most of it.
 2. **Phase 2 — Funnel depth (weeks 5–8):** SEO layer (incl. AEO/GEO), Lifecycle/Push engine, CRO + experimentation.
 3. **Phase 3 — Breadth (weeks 9–12):** Paid, Social, Analytics/Reporting, Operating Rhythm.
-4. **Phase 4 — B2B + Ops + Creative (ongoing):** ABM, partnerships, marketing ops, design — and a published cadence of one new skill per week to justify the subscription.
+4. **Phase 4 — B2B + Ops + Creative (ongoing):** ABM, partnerships, marketing ops, design — and a published cadence of one new skill per week.
 
 ---
 
