@@ -3,7 +3,8 @@ name: post-test-learning-logger
 description: >
   Converts raw experiment outputs — test brief, stat-sig results, analyst commentary, and a launch
   decision — into a structured, searchable learning card that your team can actually act on.
-  Applies the ICE + CATE framework: captures the causal claim cleanly (Hypothesis), the evidence
+  Uses our house ICE + CATE rubric (an ICE prioritization score paired with CATE-style result framing —
+  two distinct tools we combine here, not one established framework): captures the causal claim cleanly (Hypothesis), the evidence
   quality honestly (Confidence flags for SRM, sample size, novelty effect, measurement window),
   the business Impact in revenue/lift terms, and the Compounded Action (winning-variant launch
   checklist OR kill/park reasoning). Calls data-qa-measurement-gotcha-checker to gate on GA4

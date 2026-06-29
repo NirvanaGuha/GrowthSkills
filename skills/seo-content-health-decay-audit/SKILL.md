@@ -53,7 +53,7 @@ Step 5  Present / persist ──► the ranked action plan; offer to save to ./r
 
 ---
 
-## The CHASM health model (the framework)
+## The CHASM health model (our working model)
 
 Score every URL 0–100 across five weighted signals. CHASM = **C**licks trend · **H**its in SERP (ranking) · **A**ttention (engagement) · **S**tanding (link equity) · **M**oney relevance. The first four are *how healthy is this page*; the fifth (from `brand-brain`) is *how much do we care* — it's the multiplier that turns "biggest drop" into "highest-priority drop."
 

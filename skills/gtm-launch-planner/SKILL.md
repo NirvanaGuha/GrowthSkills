@@ -2,7 +2,7 @@
 name: gtm-launch-planner
 description: >
   Product or feature brief + launch size (S/M/L) → launch plan with audience, channels,
-  timeline, and go/no-go criteria. Applies the LAUNCH framework (Lock audience, Anchor
+  timeline, and go/no-go criteria. Works through a LAUNCH checklist (our acronym: Lock audience, Anchor
   message, Unify channels, Nail timing, Check readiness, Hand off) around three tiers:
   S (single-channel drop, < 2 weeks), M (coordinated multi-channel, 2–6 weeks), L
   (full-market program, 6+ weeks with staged rollout). Calls brand-brain for brand
@@ -66,7 +66,7 @@ If the user doesn't name a size, ask one question: "Is this a small drop, a coor
 
 ---
 
-## The LAUNCH Framework
+## The LAUNCH Checklist (our working acronym)
 
 Each letter is a mandatory gate. For S-tier, answers can be one sentence. For L-tier, some gates require calling a specialist skill.
 
@@ -205,7 +205,7 @@ Save to `./plans/[brand-slug]-[feature-slug]-gtm-[YYYY-MM-DD].md`. Never save to
 
 - `brand-brain` called and active brand loaded before any plan output?
 - Launch tier confirmed (S/M/L) and scope consistent with the tier?
-- LAUNCH framework completed: all six gates answered (one-liners acceptable for S)?
+- LAUNCH checklist completed: all six gates answered (one-liners acceptable for S)?
 - Hero message singular, in audience language, anchored to brand positioning?
 - Each channel assigned a role (Spearhead / Amplifier / Converter / Sustainer)?
 - Specialist skills called or queued for channel copy, paid briefs, and personas?

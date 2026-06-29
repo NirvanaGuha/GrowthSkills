@@ -4,7 +4,7 @@ description: >
   Turns an offer, ICP notes, and a feature list into a full, conversion-structured landing or product
   page — hero, problem/agitation, value props with proof, objection handling, social proof, FAQ, and CTA
   — written in the brand's real voice and message-matched to where the traffic came from. Built on a
-  named section architecture (the AAA stack: Awareness-matched hero → Argument → Action) over a PAS / 4U
+  section architecture we use here (the AAA stack: Awareness-matched hero → Argument → Action) over a PAS / 4U
   spine, so a junior produces a senior page. It does NOT manage brand context — it calls `brand-brain` to
   load voice, ICP, offer/pricing + destinations, and proof (bootstrapping on first use), and composes with
   sibling skills (`cta-variant-generator`, `proof-vault`, `objection-library-builder`) instead of redoing
@@ -64,7 +64,7 @@ If two of these conflict (e.g., a cold-traffic ad pointed at a most-aware "buy n
 
 ---
 
-## The AAA stack — the section architecture
+## The AAA stack — our section architecture (a house working model)
 
 Build every page as three movements: **Awareness-matched hook → Argument → Action**, expanded into the conversion-ordered section stack below. Order is load-bearing: each section earns the scroll to the next. Cut sections for short/warm pages; never reorder.
 

@@ -90,9 +90,9 @@ Flag quality issues in a pre-annotation note. Do not suppress them; do not refus
 
 ---
 
-## Step 3 — FCF callout pattern (the annotation framework)
+## Step 3 — FCF callout pattern (our working annotation model)
 
-Every individual callout follows **Figure → Change → Framing**:
+Every individual callout follows **Figure → Change → Framing** (FCF is a house mnemonic, not an external standard):
 
 - **Figure** — the metric name and its current value, stated precisely. ("Sessions: 42,300")
 - **Change** — the period delta, directional arrow, and percent. ("↑ 18% MoM")

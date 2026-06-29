@@ -83,7 +83,7 @@ If the user gives a rough brief, extract what's there and ask only for the gaps.
 
 ---
 
-## The RSVP Framework (the named framework)
+## RSVP Framework (our working model)
 
 Every high-converting event page hits five gates in order. A reader who clears all five registers. Copy that skips a gate loses them.
 

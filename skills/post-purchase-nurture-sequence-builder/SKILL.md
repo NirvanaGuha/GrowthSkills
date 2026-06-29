@@ -3,7 +3,7 @@ name: post-purchase-nurture-sequence-builder
 description: >
   Converts order data and an upsell/cross-sell catalog into a complete, sequenced post-purchase
   email nurture program — covering the thank-you, review ask, cross-sell, and loyalty nudge
-  touchpoints. Built around the Customer Lifecycle Value (CLV) ladder framework: every email
+  touchpoints. Built around a customer-lifecycle ladder (our working model): every email
   in the sequence is engineered to advance the customer one rung — from first-buyer to
   repeat-buyer to advocate — rather than treating post-purchase as an afterthought. Calls
   brand-brain for voice and proof, subject-line-preview-text-optimizer for subject lines,
@@ -20,8 +20,8 @@ description: >
 
 The sale is not the finish line. The email program that runs after checkout determines whether a
 buyer becomes a repeater, a referrer, or a one-and-done. This skill builds a sequenced
-post-purchase nurture program grounded in the CLV Ladder — a structured framework for moving
-customers from first purchase through repeat purchase to active advocacy, one intentional
+post-purchase nurture program grounded in our Lifecycle Ladder — a working model we use here for
+moving customers from first purchase through repeat purchase to active advocacy, one intentional
 touchpoint at a time.
 
 Every sequence is in the brand's real voice, uses real proof, and is sized to the upsell catalog
@@ -55,7 +55,7 @@ rather than cobbled together.
 ```
 Step 0  Load brand (brand-brain) — no output until brand is resolved
 Step 1  Gather inputs — order schema, upsell catalog, cadence constraints
-Step 2  Map the CLV Ladder — assign one rung objective to each email
+Step 2  Map the Lifecycle Ladder — assign one rung objective to each email
 Step 3  Draft each email — delegate subject lines, CTAs, push variants to siblings
 Step 4  Review pass — call lifecycle-email-push-copy-reviewer on the full draft
 Step 5  Deliver — sequence spec + send-cadence rationale + optional push variants
@@ -96,7 +96,7 @@ Do not ask for brand voice, ICP, proof, or offer — `brand-brain` owns those.
 
 ---
 
-## The CLV Ladder framework
+## The Lifecycle Ladder (our working model)
 
 Each email maps to one rung. A rung is not a theme — it is a specific job the email does to
 advance the customer relationship. Never skip a rung; never assign two jobs to one email.
@@ -290,7 +290,7 @@ Generated: [date] | Platform: [ESP] | Push: [yes/no]
 
 - [ ] `brand-brain` called and brand loaded (or fallback applied) before any copy was written?
 - [ ] Voice and banned-words honored throughout all four emails?
-- [ ] Each email assigned exactly one CLV Ladder rung with no rung overlap?
+- [ ] Each email assigned exactly one Lifecycle Ladder rung with no rung overlap?
 - [ ] Cadence table delivered with trigger logic and platform merge-tag syntax?
 - [ ] Subject lines and preview text produced via `subject-line-preview-text-optimizer`?
 - [ ] CTAs produced via `cta-variant-generator` with correct awareness stage and placement?

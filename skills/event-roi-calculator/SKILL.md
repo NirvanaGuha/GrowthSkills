@@ -6,8 +6,8 @@ description: >
   (CPA), pipeline multiple, and benchmark comparisons against industry averages (virtual events,
   field marketing, conferences). Supports webinars, virtual summits, trade shows, field events,
   and hybrid. Two modes: Quick (one event, immediate outputs) and Batch (compare 2–6 events
-  side-by-side, rank by ROI efficiency). Uses the Grubb/ITSMA B2B Event ROI Framework as the
-  calculation spine — it's the closest thing to a standard practitioners actually reference.
+  side-by-side, rank by ROI efficiency). Uses a standard cost-in / outcome-out B2B event ROI
+  calculation spine — the ratio metrics practitioners actually reference.
   Surfaces the "so what" for finance and the CMO, not just the raw numbers. Calls `brand-brain`
   for voice and any brand-specific benchmarks; calls `roi-business-case-calculator` when the
   output needs a full champion-ready executive memo; calls `cfo-ready-budget-summary-slide-builder`
@@ -61,7 +61,7 @@ absent or incomplete, it asks only for the gaps — it does not invent them.
 Step 0  Load the brand  ──► call `brand-brain` skill
 Step 1  Pick the mode   ──► Quick (default) | Batch (2–6 events)
 Step 2  Collect inputs  ──► costs + registrants + leads + pipeline + revenue
-Step 3  Run the model   ──► Grubb/ITSMA spine + derived ratios
+Step 3  Run the model   ──► cost-in / outcome-out spine + derived ratios
 Step 4  Add benchmark context
 Step 5  Write the verdict
 Step 6  Save artifact   ──► ./events/[slug]-roi.md
@@ -117,11 +117,12 @@ sourced pipeline is the defensible number.
 
 ---
 
-## The model — Grubb/ITSMA B2B Event ROI Framework
+## The model — B2B Event ROI calculation spine
 
-The calculation spine is the practitioner-standard Grubb/ITSMA approach: costs flow in, outcomes
-flow out, and the model produces ratio-based metrics that map directly to what CMOs and CFOs ask for.
-[verify the specific ITSMA publication year and page reference before citing it in a written report.]
+The calculation spine is the standard cost-in / outcome-out approach practitioners reference: costs
+flow in, outcomes flow out, and the model produces ratio-based metrics that map directly to what
+CMOs and CFOs ask for. If you cite a specific named framework or source in a written report, verify
+the exact title, author, and publication reference first.
 
 ### Core ratios
 

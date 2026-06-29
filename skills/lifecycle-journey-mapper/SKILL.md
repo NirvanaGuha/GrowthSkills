@@ -34,10 +34,11 @@ This skill maps and recommends. It does not write sequence copy, build automatio
 Step 0  Load the brand         ──► call brand-brain (bootstraps on first use)
 Step 1  Check personas         ──► call icp-persona-builder if none exist in brand context
 Step 2  Gather product milestones ──► confirm or elicit (see inputs)
-Step 3  Build the stage map    ──► CLG framework (see below)
-Step 4  Annotate each stage    ──► triggers · channel recs · message themes · execution pointer
-Step 5  Flag gaps & priorities ──► which stages are unmapped, underserved, or high-risk
-Step 6  Present & offer to save
+Step 3  Build the stage map    ──► eight-stage lifecycle model (see below)
+Step 4  Resolve trigger priority ──► run the trigger-priority table; assign one active stage per user
+Step 5  Annotate each stage    ──► triggers · channel recs · message themes · execution pointer
+Step 6  Flag gaps & priorities ──► which stages are unmapped, underserved, or high-risk
+Step 7  Present & offer to save
 ```
 
 ### Step 0 — Load the brand (always first)
@@ -46,7 +47,7 @@ Step 6  Present & offer to save
 
 Use the ICP's awareness tendency (problem-aware, solution-aware, etc.) to calibrate stage entry points. Use the offer mechanics to name real milestone triggers. Banned words override any copy suggestions in the map.
 
-**Fallback if `brand-brain` is not installed:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user to install `brand-brain` or answer a 5-question mini-setup (product · ICP + primary pain · activation milestone · retention signal · 3 voice adjectives + banned words).
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for product, ICP + primary pain, activation milestone, retention signal, and voice adjectives + banned words before mapping.
 
 ### Step 1 — Check personas
 
@@ -65,11 +66,13 @@ If the user cannot provide these yet, build the map with `[define]` placeholders
 
 ---
 
-## The framework: Customer Lifecycle Graph (CLG)
+## Our model: the trigger-driven lifecycle graph (a working model we use here)
 
-The CLG treats the customer lifecycle as a directed graph of **named stages** connected by **behavioral triggers**. Each node (stage) has a goal, a primary channel mix, a message theme family, and a risk flag. Each edge (trigger) is an observable event or condition — never time-alone.
+This is our house model — not an externally established framework. It treats the customer lifecycle as a directed graph of **named stages** connected by **behavioral triggers**. Each node (stage) has a goal, a primary channel mix, a message theme family, and a risk flag. Each edge (trigger) is an observable event or condition — never time-alone.
 
-**Why not time-based drips?** Time-based sequences send the same message whether the user is stuck or thriving. Trigger-based stages send the right message based on what the user actually did (or stopped doing). The CLG is the strategic layer that makes trigger selection intentional rather than arbitrary.
+It is graph-shaped on purpose: it inherits the customer-as-driver stance from **Customer-Led Growth** (Georgiana Laudi & Claire Suellentrop, *Forget the Funnel*, 2023) — map the journey from the customer's own struggle → evaluation → growth, not the brand's pipeline stages — but keeps eight operational stages instead of CLG's three, because lifecycle marketers need to message at a finer grain than a strategy framework prescribes. Where CLG asks *what job is the customer hiring us for*, this model asks *which observable event moves them between stages, and what do we send when it fires*.
+
+**Why not time-based drips?** Time-based sequences send the same message whether the user is stuck or thriving. Trigger-based stages send the right message based on what the user actually did (or stopped doing). This model is the strategic layer that makes trigger selection intentional rather than arbitrary.
 
 ### The eight canonical lifecycle stages
 
@@ -88,6 +91,31 @@ Map only the stages that exist for this product. A pure SaaS trial product may c
 
 ---
 
+## Trigger-priority resolution (the decision mechanic)
+
+A real user fires more than one trigger at a time. Someone who just hit the activation milestone can *also* be approaching a plan limit *and* have a 6-day login gap. If two edges could fire on the same user in the same window, the graph is ambiguous and the wrong sequence sends. This table resolves it: when triggers collide, the highest-priority one wins and decides which stage the user is in **right now**. Lower-priority triggers queue; they do not send concurrently.
+
+Priority is ordered by **reversibility cost** — fire first on the trigger whose window closes soonest and whose miss is hardest to undo (a churn you didn't catch beats a referral you sent late).
+
+| Priority | Trigger class | Example observable event | Resolves to stage | Why it wins |
+|---|---|---|---|---|
+| **P1 — Save** | Churn / cancellation signal | Cancellation-flow entry, downgrade click, hard usage cliff | 7. At-Risk / Win-Back | A live churn is irreversible if missed; it preempts everything, including expansion |
+| **P2 — Convert** | Hard business deadline | Trial expiry < 48h, contract renewal window open, payment failure | Acquisition/Expansion gate (per deadline) | Time-boxed and revenue-bearing; the window will not reopen |
+| **P3 — Activate** | Activation milestone reached/missed | First push sent, or stalled N days short of it | 3. Activation | The single highest-leverage moment for long-term retention; short-lived |
+| **P4 — Expand** | Expansion / limit signal | Plan-limit approach, seat-add behavior, power-usage threshold | 5. Expansion | Revenue upside, but the limit and the intent both persist — it can wait behind a save |
+| **P5 — Deepen** | Habit / engagement signal | Second-feature adoption, streak, return visit | 4. Habit Formation / 6. Retention | Ongoing state, not an event; lowest urgency, always yields to the above |
+| **P6 — Advocate** | Satisfaction signal | High NPS, milestone celebrated, review left | 8. Advocacy | Valuable but fully deferrable; never preempts a save, convert, or activate |
+
+**Tie-break rules within the table:**
+- **Negative beats positive.** A churn or payment-failure signal (P1/P2) always overrides any positive signal firing in the same window — mirror of the lead-scoring sibling's disqualifier cap.
+- **Sooner-closing window wins ties within a priority band.** Two P2 deadlines? The nearer expiry fires first.
+- **One active stage per user at a time.** A user occupies exactly one stage; queued lower-priority triggers re-evaluate only after the active stage's exit trigger fires or its send completes.
+- **A time-only trigger never outranks an event.** If the only thing that "fired" is a clock (e.g., "day 7 of onboarding"), it loses to any real behavioral event and is flagged `[time-only — validate]`.
+
+Use this table to set each stage's **entry trigger** in the block below: when you name an entry trigger, confirm it isn't silently outranked by a higher-priority trigger the same user could fire. If it is, note the precedence in the Segment note so the executing sibling skill suppresses the lower-priority send.
+
+---
+
 ## Building the annotated map
 
 For each applicable stage, produce a block using this structure:
@@ -96,8 +124,9 @@ For each applicable stage, produce a block using this structure:
 ### Stage N — [Stage Name]
 Goal: [one sentence — what success looks like for the brand at this stage]
 Entry trigger: [the observable event that moves a user INTO this stage]
+Priority band: [P1–P6 from the trigger-priority table — what this entry trigger yields to]
 Exit trigger: [the event or condition that moves them OUT (to next stage OR to At-Risk)]
-Segment note: [any persona-specific splits that change the approach]
+Segment note: [any persona-specific splits + any higher-priority trigger that suppresses this send]
 
 Channel mix:
   Primary: [channel(s) — email / push / in-app / SMS / sales touch / community]
@@ -140,6 +169,7 @@ Flag any stage where a `[define]` placeholder sits in the trigger field — thos
 
 - **Brand-brain first.** No stage label, no channel rec, no message theme before `brand-brain` returns. Voice and banned-words are hard overrides throughout.
 - **Triggers over time.** Every stage transition must be driven by an observable event or condition, not a clock. Call out time-only triggers as a risk.
+- **One active stage, resolved by priority.** When triggers collide, run the trigger-priority table: a Save (P1) preempts everything, negative beats positive, and no user sits in two stages at once. An unresolved collision is the lifecycle equivalent of a non-deterministic route — don't ship it.
 - **Personas are the lens.** A lifecycle map without personas produces generic column headers. Segment where the journey genuinely differs; don't over-split for the sake of appearing thorough.
 - **Honest about unknowns.** Mark unknown triggers `[define]`, unconfirmed proof `[verify]`, and hypothetical stages `[hypothesis]`. A map with honest gaps is more useful than a confident-looking fabrication.
 - **Point to execution, don't duplicate it.** The map names the right sibling skill for each stage. It does not write full sequence copy inline — that produces a cluttered, uncheckable output.
@@ -149,6 +179,7 @@ Flag any stage where a `[define]` placeholder sits in the trigger field — thos
 
 - Don't write full sequence copy in the map — that's `welcome-onboarding-email-sequence-builder`, `lead-nurture-drip-builder`, etc.
 - Don't use time-based triggers as the primary stage entry condition without flagging the risk.
+- Don't leave colliding triggers unresolved. If a user can fire two entry triggers in the same window, run the priority table and record which one wins — an ambiguous graph sends the wrong sequence.
 - Don't build the map before `brand-brain` returns the active brand context.
 - Don't call `icp-persona-builder` if rich personas already exist in brand context — re-calling wastes a run.
 - Don't invent product milestones or activation signals — ask, or mark `[define]`.
@@ -159,7 +190,8 @@ Flag any stage where a `[define]` placeholder sits in the trigger field — thos
 
 - `brand-brain` called and active brand loaded (or bootstrapped) before any stage was written?
 - Voice and banned-words honored in all theme copy suggestions; unconfirmed proof marked `[verify]`?
-- Each stage has: goal, entry trigger (event-based), exit trigger, channel mix, message theme family, proof pointer, and execution skill pointer?
+- Each stage has: goal, entry trigger (event-based), priority band, exit trigger, channel mix, message theme family, proof pointer, and execution skill pointer?
+- Trigger-priority table run: any two triggers a single user could fire in the same window resolved to one active stage (P1 Save preempts; negative beats positive)?
 - Personas present (called `icp-persona-builder` if absent); stage blocks reference ICP language, not generic buyer language?
 - Product milestones confirmed or marked `[define]`; time-only triggers flagged as risk?
 - Gap & Priority Table included; unmapped or hypothesis stages clearly labeled?

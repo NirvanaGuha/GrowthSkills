@@ -61,9 +61,9 @@ When mode is ambiguous, produce both and let the user drop what they don't need.
 
 ---
 
-## The DACS framework
+## DACS — our working pass model
 
-**Describe → Annotate → Classify → Specify** — four passes that turn a raw screenshot and a brief into a complete, actionable annotation spec.
+**Describe → Annotate → Classify → Specify** — a four-pass checklist we use here (not an external standard) that turns a raw screenshot and a brief into a complete, actionable annotation spec.
 
 ### D — Describe (understand the frame before marking it)
 

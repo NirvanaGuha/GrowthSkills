@@ -133,7 +133,7 @@ Length target: 150–250 words excluding the table. If the transcript is thin, s
 
 Given one or more inbound emails from the prospect, classify each and draft a response.
 
-### Classification taxonomy (Konrath / Challenger-aligned)
+### Classification taxonomy (our working model)
 
 | Class | Signal | Recommended move |
 |---|---|---|

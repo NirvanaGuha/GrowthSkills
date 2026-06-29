@@ -3,7 +3,7 @@ name: referral-email-sequence-writer
 description: >
   Writes a complete referral email drip sequence — invite, reminder, and reward
   confirmation — for any referral program, in the brand's real voice, anchored to
-  a named incentive-legibility framework. Covers structural arc (invite → nudge →
+  our house incentive-legibility checklist. Covers structural arc (invite → nudge →
   reward confirm), per-email anatomy (subject + preview text + body + CTA), copy
   critique on whether the incentive is legible (does the reader instantly know what
   they get for referring AND what their friend gets?), and CTA clarity audit per
@@ -20,7 +20,7 @@ description: >
 
 A referral program lives or dies on email. The mechanic can be perfect — and still fail because the invite email buried the incentive, the reminder landed as spam, or the reward confirmation felt like a form letter instead of a win. This skill writes the three-email spine that makes programs convert: **invite → reminder → reward confirmation**.
 
-Every email is written in the brand's real voice (loaded from `brand-brain`), anchored to the **Dual Incentive Legibility Test** so readers know — within two seconds — what they get *and* what their friend gets, with subject lines and CTAs optimized through the library's dedicated skills.
+Every email is written in the brand's real voice (loaded from `brand-brain`), anchored to our **Dual Incentive Legibility Test** (a working checklist we use here, not an industry standard) so readers know — within two seconds — what they get *and* what their friend gets, with subject lines and CTAs optimized through the library's dedicated skills.
 
 ---
 

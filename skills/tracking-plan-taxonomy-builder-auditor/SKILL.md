@@ -73,7 +73,7 @@ Ask one clarifying question only: which analytics tool is the target (GA4, Ampli
 
 ## Step 2 — Ingest and normalise
 
-**From a spec / PRD:** extract every user action, state transition, and conversion moment. Identify the entity involved (user, session, product, order), the triggering condition, and the business question it answers. Group into logical domains (acquisition, activation, engagement, monetisation, retention — AARRR is the explicit framework).
+**From a spec / PRD:** extract every user action, state transition, and conversion moment. Identify the entity involved (user, session, product, order), the triggering condition, and the business question it answers. Group into logical domains (acquisition, activation, retention, referral, revenue — AARRR is the explicit framework).
 
 **From an event export:** deduplicate event names, count property coverage gaps (events with no properties or with only `page_location`/`page_title`), identify camelCase/snake_case/mixed-case pollution, flag events that look like duplicates (same semantic, different casing or `_v2` suffix), and note events that fire in production but appear nowhere in any spec.
 

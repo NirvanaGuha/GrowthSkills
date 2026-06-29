@@ -7,10 +7,10 @@ description: >
   title, body, icon/badge notes, action labels, and deep-link URL, fully within character
   limits. Loads the active brand's voice, colors, proof, and offer from brand-brain before
   writing a single line of copy or code. Calls cta-variant-generator for buttons and
-  subject-line-preview-text-optimizer (when installed) for subject/preview pairs. Built on the
-  Email Code Architecture (ECA) framework — a five-layer production checklist that separates
-  structure, style, content, dark-mode, and QA so a junior operator produces deliverable-quality
-  output without knowing CSS email quirks. Use when the user says "build the email HTML,"
+  subject-line-preview-text-optimizer (when installed) for subject/preview pairs. Built on our
+  Email Code Architecture (ECA) checklist (our working model) — a five-layer production checklist
+  that separates structure, style, content, dark-mode, and QA so a junior operator produces
+  deliverable-quality output without knowing CSS email quirks. Use when the user says "build the email HTML,"
   "make this email sendable," "code up the email," "push payload," "give me the ESP file,"
   "finalize the email and push," "turn this copy into the real asset," or hands over a
   finished/approved brief and asks for the production-ready deliverable.
@@ -38,7 +38,7 @@ Step 0  Load brand          ──► call brand-brain (colors, voice, proof, of
 Step 1  Clarify scope       ──► email only / push only / both? channel variants?
 Step 2  Build subject line  ──► call subject-line-preview-text-optimizer (or inline fallback)
 Step 3  Build CTAs          ──► call cta-variant-generator for every button
-Step 4  Produce the email   ──► ECA framework, five layers in order
+Step 4  Produce the email   ──► ECA checklist, five layers in order
 Step 5  Produce push payload ──► Platform Payload Matrix
 Step 6  Self-QA             ──► run the QA checklist before presenting
 Step 7  Present + persist   ──► offer to save to ./emails/ and ./push/
@@ -94,9 +94,9 @@ Call `cta-variant-generator` for every clickable button. Pass: the copy, the off
 
 ---
 
-## Step 4 — Email HTML: ECA Framework
+## Step 4 — Email HTML: ECA Checklist
 
-The **Email Code Architecture (ECA)** is a five-layer pass performed in strict order. Each layer has a hard constraint. Skipping a layer produces a broken or off-brand file.
+**Email Code Architecture (ECA)** is our working model — a five-layer pass performed in strict order. Each layer has a hard constraint. Skipping a layer produces a broken or off-brand file.
 
 ### Layer 1 — Structure (table skeleton)
 

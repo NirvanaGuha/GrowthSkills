@@ -99,10 +99,11 @@ If the goal is ambiguous between Exploration and Ads activation, default to Audi
 
 ---
 
-### Step 2 — The GA4 Audience Condition Framework (Lombardi Rules)
+### Step 2 — The condition framework: Scope → Window → Exclusion-Guard
 
-Apply this framework to every condition set. Named for its insistence on precision
-over approximation — every condition must be scoped, windowed, and exclusion-guarded.
+This is a house working model, not an official GA4 construct — it just forces the three
+decisions GA4's UI lets you skip. Apply it to every condition set: every condition must be
+scoped, every audience windowed, every retargeting audience exclusion-guarded.
 
 **Scope first.** Every condition has a scope — choose the tightest scope that answers the goal.
 
@@ -123,7 +124,7 @@ Predicted:             purchase_probability / churn_probability / revenue_predic
 ```
 
 **Time-window rules (encode these, never skip them):**
-- Membership duration default is 30 days; for eCommerce conversion audiences extend to 540 days.
+- Membership duration default is 30 days; for eCommerce conversion audiences extend to 540 days (GA4's hard max for non-Analytics-360 properties — UI caps the field there).
 - For sequence segments: set the step-completion window to ≤7 days unless there is explicit evidence of a longer consideration cycle.
 - For predictive audiences: GA4 evaluates propensity daily; export freshness to Google Ads is ~24 hrs. Note this lag in the spec.
 

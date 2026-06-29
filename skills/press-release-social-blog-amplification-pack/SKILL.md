@@ -102,7 +102,7 @@ to prioritize the angles, then pick one per run.
 
 ## Step 3a — LinkedIn exec post (150–200 words, no markdown)
 
-**Framework: Problem → Turn → Proof → Invitation**
+**House structure (our working template): Problem → Turn → Proof → Invitation**
 
 The executive voice is first-person, direct, and slightly vulnerable — not a re-read of the press
 release. The post earns the share; it does not announce at the reader.
@@ -123,7 +123,7 @@ Do not start with "I'm excited/proud/thrilled/honored."
 
 ## Step 3b — X thread (hook tweet + 4–6 reply tweets + CTA tweet)
 
-**Framework: Hook → Stakes → Reveal → Evidence → Implication → CTA**
+**House structure (our working template): Hook → Stakes → Reveal → Evidence → Implication → CTA**
 
 Each tweet is self-contained (can be screenshot-shared alone) but builds the narrative.
 
@@ -144,7 +144,7 @@ department.
 
 ## Step 3c — Owned-media blog post (500–700 words)
 
-**Framework: ABCD — Angle, Bridge, Case, Direction**
+**House structure (our working template) — Angle, Bridge, Case, Direction** (a section checklist we use here; not Google/YouTube's "ABCD" creative framework)
 
 This is not a press-release reprint. It is a thought-leadership or product-education article
 triggered by the announcement. The announcement is the news hook; the value is the insight.

@@ -5,7 +5,7 @@ description: >
   (Slack / Discord / Circle / Khoros / Bettermode / Mighty Networks / self-hosted options),
   a recommended channel/space structure, a role-and-permission hierarchy, and a practical
   automation + moderation setup guide. Anchors every decision in the Jobs-to-Be-Done each
-  platform serves, not vendor marketing. Prevents the most common L34 mistake: choosing a
+  platform serves, not vendor marketing. Prevents the most common mistake: choosing a
   platform for its brand fit rather than its member behavior model. Use whenever someone asks
   "which community platform should we use," "set up our community," "Slack vs Discord vs
   Circle," "design our community structure," "community architecture," "owned community

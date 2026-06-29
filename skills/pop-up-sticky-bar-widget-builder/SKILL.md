@@ -67,10 +67,13 @@ Step 6  Delivery          ──► inline snippet + GTM paste-in guide + suppre
 
 ---
 
-## The Pirate Metrics Targeting Framework (the opinionated layer)
+## Funnel-moment targeting (our working model — the opinionated layer)
 
-Every widget decision maps to one of three Pirate Metrics moments — that determines which surface
-type, which trigger, and which offer wins:
+This is a house checklist, not an established framework. It borrows three stages from Dave
+McClure's Pirate Metrics / AARRR funnel (which has five: Acquisition, Activation, Retention,
+Referral, Revenue) and applies only the three that on-page widgets actually serve. Every widget
+decision maps to one of those three moments — that determines which surface type, which trigger,
+and which offer wins:
 
 | Moment | Surface | Primary trigger | Offer that converts |
 |---|---|---|---|

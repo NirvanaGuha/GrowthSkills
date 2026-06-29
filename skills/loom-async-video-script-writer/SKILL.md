@@ -4,8 +4,8 @@ description: >
   Turns a topic, audience, and key points into a tight, natural-sounding async-video script — Loom,
   Slack video, Notion recording, Zoom async clip, or any camera-to-camera message. Outputs a ready-to-record
   script with an attention-grabbing open (hook in the first 8 seconds), punchy body sections with
-  natural verbal cues, and a clear single call to action. Uses the SCOREcard framework (Setup,
-  Conflict, Offer, Resolution, End-action) to give every recording a narrative spine so the viewer
+  natural verbal cues, and a clear single call to action. Uses SCOREcard — our working acronym (Setup,
+  Conflict, Offer, Resolution, End-action) — to give every recording a narrative spine so the viewer
   stays engaged rather than dropping off at 30 seconds. Brand-voice and proof come from `brand-brain`
   so the script never sounds generic or off-brand. Optionally writes a companion thumbnail title and
   preview-text teaser. Use whenever the user says "write a Loom script," "async video script," "record
@@ -16,7 +16,7 @@ description: >
 
 # Loom & Async-Video Script Writer
 
-Most async videos ramble because the sender didn't write before recording. This skill fixes that: topic and key points in, camera-ready script out. Every script follows the SCOREcard framework — a narrative spine designed for the 2–5 minute async format where the viewer can mute, scrub, or close at any second.
+Most async videos ramble because the sender didn't write before recording. This skill fixes that: topic and key points in, camera-ready script out. Every script follows SCOREcard, our working acronym — a narrative spine designed for the 2–5 minute async format where the viewer can mute, scrub, or close at any second.
 
 Brand voice and proof come from `brand-brain`. A customer-facing Loom for a SaaS brand sounds nothing like an internal ops update, and neither should be written without knowing who's watching and why.
 
@@ -63,9 +63,9 @@ Target runtime governs density: Short = hook + one point + CTA; Standard = hook 
 
 ---
 
-## The SCOREcard framework
+## SCOREcard (our working model)
 
-Every script gets a narrative spine. Junior operators produce senior recordings by following it.
+SCOREcard is a house acronym we use here, not an established external framework. Every script gets a narrative spine; following the beats helps a script stay tight and engaging regardless of who writes it.
 
 | Beat | What it does | Target length |
 |---|---|---|

@@ -7,8 +7,8 @@ description: >
   (1) a referral incentive structure calibrated to the community's motivation profile,
   (2) shareable on-brand assets members will actually use, and (3) a UGC repurposing plan
   that converts member success stories, testimonials, and milestone posts into social proof
-  the brand can publish. Built on the SPACES framework (Success/Product/Acquisition/Community/
-  Expansion/Service) to distinguish which community activities drive acquisition versus retention.
+  the brand can publish. Built on the SPACES model (Support / Product / Acquisition / Contribution / Engagement / Success;
+  David Spinks & CMX) to distinguish which community activities drive acquisition versus retention.
   Calls brand-brain for voice and proof, icp-persona-builder if persona is thin, proof-vault
   for validated social proof, and ugc-creator-brief-writer for creator-brief output. Use when
   the user says "turn my community into a growth channel," "get members to refer," "leverage
@@ -42,7 +42,7 @@ It does not build the community or platform from scratch. For platform selection
 
 ```
 Step 0  Load the brand          ──► call brand-brain (mandatory)
-Step 1  Profile the community   ──► inputs → SPACES classification + motivation scan
+Step 1  Profile the community   ──► inputs → SPACES score + readiness gate + motivation scan
 Step 2  Build the incentive     ──► referral structure calibrated to motivation profile
 Step 3  Create the assets       ──► share-ready copy + asset briefs
 Step 4  UGC repurposing plan    ──► identify, source, adapt, publish pipeline
@@ -60,18 +60,33 @@ Invoke `brand-brain` (Skill tool, `skill: brand-brain`). It returns voice adject
 
 ## Step 1 — Profile the community
 
-Before designing incentives, classify what the community actually does and why members stay. Use the **SPACES framework** (Jonathon Colman / CMX Hub):
+Before designing incentives, classify what the community actually does and why members stay. Use the **SPACES model** (David Spinks, with Carrie Melissa Jones and Evan Hamilton; published by CMX). The six letters name the six business values a community can deliver — read this table top to bottom and mark where the community's energy actually sits:
 
 | SPACES bucket | What it means | Acquisition relevance |
 |---|---|---|
 | **S**upport | Members help each other troubleshoot | Low direct; high trust-building |
 | **P**roduct | Feedback, feature requests, beta testing | Low direct; strong proof pipeline |
 | **A**cquisition | Members recruit prospects | Primary target for this skill |
-| **C**ontent | Members create/amplify brand content | Direct amplification lever |
+| **C**ontribution | Members create/amplify brand content | Direct amplification lever |
 | **E**ngagement | Ongoing relationship, NPS, retention | Multiplier — keeps advocates active |
-| **S** ervice / Success | Customer success, onboarding | Converts to case studies |
+| **S**uccess | Customer success, onboarding | Converts to case studies |
 
-Identify which 1–2 buckets dominate the community today, then identify which are under-leveraged. The gap between current state and **Acquisition** + **Content** is the program's scope.
+Identify which 1–2 buckets dominate the community today, then identify which are under-leveraged. The gap between current state and **Acquisition** + **Contribution** is the program's scope.
+
+**SPACES activity scan (house scoring on top of the model).** Score each bucket 0–3 from the supplied posts and engagement data — this is a working triage, not a metric the model itself defines:
+
+| Score | What you saw in the evidence |
+|---|---|
+| 0 | No observed activity in this bucket |
+| 1 | Occasional / passive (members consume, rarely act) |
+| 2 | Regular, member-initiated activity |
+| 3 | Self-sustaining — members do it unprompted and recruit others into it |
+
+Then read the two buckets that matter to this skill against an **advocacy-readiness gate**:
+
+- **A (Acquisition) + C (Contribution) both ≥ 2** → community is advocacy-ready; run all six steps as written.
+- **A or C scores 0–1 while S/P/E score ≥ 2** → latent advocacy: trust and engagement exist but have never been pointed at acquisition. Run Step 1–4, but make Week 1 seeding (Step 5) the load-bearing move — you are activating dormant advocates, not harvesting active ones.
+- **Every bucket ≤ 1 (pure lurk/Support)** → not a referral engine yet. Say so plainly, deliver only the seeding play, and route platform/engagement work to `owned-community-platform-selector-architecture-planner`. Do not stand up a referral program against a community that has shown no member-initiated activity.
 
 **Inputs to collect** (ask if not provided):
 
@@ -169,7 +184,10 @@ Week 2 — Launch: announce program in community (use referral invite template A
 Week 3 — Amplify: first milestone celebration posts live, first Tier 2 repurposed content
          published, leaderboard (if status incentive) visible to community
 Week 4 — Measure + iterate: referral link click-through, new sign-ups attributed,
-         UGC pieces collected; diagnose incentive fit; adjust copy if conversion < 2%
+         UGC pieces collected; diagnose incentive fit; if click-to-signup conversion
+         trails the brand's own baseline (use the brand's existing referral/landing-page
+         rate from brand-brain, not an invented benchmark), re-test the incentive TYPE
+         against the motivation scan before touching copy
 ```
 
 Save to `./community/[brand-slug]-activation-roadmap.md` on request.
@@ -198,7 +216,7 @@ All four tracked in a simple sheet — template in `./community/[brand-slug]-com
 - **Permission before publish.** Every piece of member content requires explicit opt-in before brand use. No exceptions.
 - **Compose, don't duplicate.** `ugc-creator-brief-writer`, `social-proof-screenshot-styler`, `proof-vault`, `referral-program-brief-builder` each own their domain — delegate, don't rebuild.
 - **Real proof or `[verify]`.** Never invent outcome stats, member counts, or conversion benchmarks.
-- **SPACES gates scope.** Acquisition and Content buckets are the target; if the community is pure Support, say so — don't pretend it's a referral engine yet.
+- **The SPACES gate decides the play, not just the scope.** Acquisition and Contribution are the target buckets. If both score ≥ 2 you run the full program; if they're dormant but trust exists, you seed before you harvest; if every bucket is ≤ 1, you say plainly it is not a referral engine yet. Don't skip the score to get to the fun part.
 
 ---
 
@@ -217,7 +235,7 @@ All four tracked in a simple sheet — template in `./community/[brand-slug]-com
 
 - `brand-brain` called and active brand loaded (or fallback path followed) before any copy?
 - Voice + banned words honored; all proof confirmed or marked `[verify]`?
-- SPACES classification completed; dominant bucket identified; acquisition/content gap named?
+- SPACES buckets scored 0–3; advocacy-readiness gate applied (full / seed-first / not-a-referral-engine); acquisition+contribution gap named?
 - Incentive type matched to motivation profile with one-line rationale?
 - Referral structure output includes trigger, both-sides reward, qualification, cap, expiry?
 - Three share-ready asset variants per channel, grounded in real member posts (not generic)?

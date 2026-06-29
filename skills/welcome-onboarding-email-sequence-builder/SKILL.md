@@ -3,7 +3,7 @@ name: welcome-onboarding-email-sequence-builder
 description: >
   Builds complete welcome and onboarding email sequences from scratch — subject lines, preview text,
   and full body copy for every email in the series. Takes a product overview and activation goals,
-  applies the SaaS Onboarding Ladder framework (Welcome → Activation → Feature Depth → Social Proof
+  applies our SaaS Onboarding Ladder — a house working model (Welcome → Activation → Feature Depth → Social Proof
   → Conversion Gate), and outputs a publish-ready sequence that moves a new subscriber or trial user
   from signup to first meaningful outcome. Calls brand-brain for voice and ICP, subject-line-preview-text-optimizer
   for every subject line, cta-variant-generator for primary CTAs, and proof-vault for social proof
@@ -67,7 +67,7 @@ If activation milestone is unclear, ask one question: "What is the single action
 
 ---
 
-## The SaaS Onboarding Ladder (the framework)
+## The SaaS Onboarding Ladder (our working model)
 
 Every sequence follows this arc, trimmed to the chosen mode. Each rung has a single job; combining jobs into one email dilutes both.
 

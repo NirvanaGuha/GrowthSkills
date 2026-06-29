@@ -7,8 +7,10 @@ description: >
   signals to point values with a PQL threshold; (2) a routing decision tree that routes
   MQL → SDR queue, PQL → AE direct, unqualified → nurture, and handles territory/round-robin
   logic; (3) lifecycle-stage definitions with entry/exit criteria and SLA clock start times.
-  The whole system is grounded in the POCUS (Product-Led + Outbound Scoring) framework so
-  sales touches high-intent accounts first, not highest-form-fills. Use when the user says
+  The whole system is built on a product-first scoring order — a house weighting philosophy where
+  product events outrank behavior, firmographics, and demographics — so sales touches high-intent
+  accounts first, not highest-form-fills.
+  Use when the user says
   "lead scoring," "PQL model," "lead routing," "MQL definition," "lifecycle stages," "build
   our scoring rubric," "score leads in HubSpot/Salesforce," "which leads go to sales," or
   "territory routing logic."
@@ -16,9 +18,10 @@ description: >
 
 # Lead Scoring & Routing Model Designer
 
-Most scoring models break because they reward form fills, not buying intent. This skill builds
-a **POCUS model** (Product-Led + Outbound-Cued Scoring): product events carry more weight than
-demographics, and routing logic is deterministic — no "assign to whoever's free" ambiguity.
+Most scoring models break because they reward form fills, not buying intent. This skill builds a
+model on a **product-first scoring order** (this skill's weighting philosophy, not an external
+standard): product events carry more weight than behavior, firmographics, or demographics, and
+routing logic is deterministic — no "assign to whoever's free" ambiguity.
 
 Three outputs, always produced together: **rubric → routing tree → lifecycle stage definitions**.
 They're useless in isolation; a rubric without routing leaves leads in a queue; routing without
@@ -52,7 +55,7 @@ stage definitions makes SLA enforcement impossible.
 ```
 Step 0  Brand + ICP context   ──► call brand-brain (or fallback)
 Step 1  Signal inventory       ──► enumerate available CRM fields + product events
-Step 2  Build rubric           ──► POCUS weight table + MQL/PQL thresholds
+Step 2  Build rubric           ──► product-first weight table + MQL/PQL thresholds
 Step 3  Routing decision tree  ──► deterministic path per score band + territory rules
 Step 4  Lifecycle stage defs   ──► entry/exit criteria + SLA clocks
 Step 5  Validation gate        ──► score one known closed-won + one known churned; calibrate
@@ -94,11 +97,24 @@ only and flag the model as "pre-PQL — revisit when instrumentation ships."
 
 ---
 
-## Step 2 — POCUS Scoring Rubric
+## Step 2 — Scoring Rubric (product-first order)
 
-### Weighting philosophy (POCUS)
+### Weighting philosophy (this skill's opinionated stance)
 
-Product signals > behavioral signals > firmographic signals > demographic signals.
+This skill scores in a fixed signal-tier order and ranks signals by *how close they sit to revenue*,
+not how easy they are to capture:
+
+**Product signals > behavioral signals > firmographic signals > demographic signals.**
+
+The reasoning: a fired product event ("invited a teammate") is a *revealed* action inside the
+product and is the closest leading indicator of expansion and closed-won; a form fill or page view
+is *stated* interest; firmographics and demographics describe *who the lead is*, which only gates
+fit — it never proves intent. Most legacy models invert this because demographics are the easiest
+data to buy. (This ordering is the philosophy behind product-led sales tooling generally — e.g.,
+vendors like Pocus and Endgame that surface product-qualified accounts to sales [verify vendor
+positioning] — but the weighting bands below are this skill's own, not any vendor's published
+framework.)
+
 Negative signals (disqualifiers) always override positives — a −50 cap pulls any lead below MQL
 regardless of their positive score.
 
@@ -235,7 +251,9 @@ routing path so an SDR manager can brief the team in 5 minutes without reading t
 
 ## Principles (Non-Negotiable)
 
-- **POCUS order:** product events > behavior > firmographics > demographics. Never invert.
+- **Weighting order (opinionated):** product events > behavior > firmographics > demographics.
+  Invert this only with closed-won evidence that a lower tier predicts conversion better in your
+  funnel — never by default, and never because the lower-tier data was simply easier to collect.
 - **Brand-brain first.** No rubric before ICP is confirmed; a scoring model calibrated to the
   wrong customer profile is worse than no model.
 - **Deterministic routing.** Every scored lead has exactly one next step. "It depends" is not
@@ -270,7 +288,7 @@ routing path so an SDR manager can brief the team in 5 minutes without reading t
 
 - `brand-brain` called and ICP + product-event context loaded (or fallback executed)?
 - Every CRM field and product event marked `[verify field exists]` if not confirmed by user?
-- POCUS weight order respected: product signals carry more weight than demographics?
+- Product-first weight order respected: product signals carry more weight than demographics?
 - Disqualifier cap (−50) present and non-overridable?
 - Routing tree has no "TBD" terminal nodes — every path ends in an explicit owner type?
 - Lifecycle stage table includes entry criteria, exit criteria, and SLA clock owner for every stage?

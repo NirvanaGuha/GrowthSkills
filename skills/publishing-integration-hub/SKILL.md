@@ -15,9 +15,9 @@ description: >
 
 # Publishing Integration Hub
 
-Approved draft in → correctly published, fully SEO-tagged, platform-formatted post out. Every field explicit. Every platform's real constraints respected. A QA pass confirms the live output before the job is done.
+Approved draft in → correctly published, fully SEO-tagged, platform-formatted post out. The mechanism is the **Publish Readiness Gate**: a five-state machine — INTAKE → GAP-FILL → FORMAT → QA → SHIP — where a draft cannot reach the next state until the current gate's hard-fail conditions clear. Each gate either routes the fix to a sibling skill or blocks the run. Every field explicit, every platform's real constraints respected, the live output confirmed before the job is done.
 
-This skill does not draft, brief, or rewrite content. It receives a finished, approved artifact and handles the mechanical precision of getting it published correctly. If the draft needs work, it routes to the right sibling before touching a CMS.
+This skill does not draft, brief, or rewrite content. It receives a finished, approved artifact and runs it through the gate. If a gate condition can't be met from the artifact, it routes to the right sibling before touching a CMS — it never papers over a failure to ship faster.
 
 ---
 
@@ -32,18 +32,52 @@ This skill does not draft, brief, or rewrite content. It receives a finished, ap
 
 ---
 
-## How a run works
+## How a run works — the Publish Readiness Gate
+
+This skill runs the **Publish Readiness Gate** (house model): a five-state machine where a draft cannot reach the next state until the current gate's hard-fail conditions are clear. Each gate either **routes** the draft to a sibling skill to fix the failure or **blocks** the run until a human resolves it. Nothing ships until it has passed every gate left-to-right.
 
 ```
-Step 0  Load the brand          ──► call brand-brain; surface CMS-specific house rules
-Step 1  Receive + triage         ──► intake draft, platform target, metadata, SEO fields
-Step 2  Fill gaps               ──► call on-page-seo-optimizer / internal-linking-planner
-                                     if any required fields are absent
-Step 3  Format for platform      ──► apply platform's real field map and formatting rules
-Step 4  QA pass                 ──► call content-qa-reviewer; block on hard failures
-Step 5  Publish                 ──► write to CMS or produce the publish-ready artifact
-Step 6  Confirm + log           ──► verify live output; write publish log
+INTAKE ──► GAP-FILL ──► FORMAT ──► QA ──► SHIP
+  │           │            │        │       │
+  └ triage    └ fill SEO/  └ apply  └ block └ publish
+    + brand     links via    field    on      + log
+    load        siblings     map      fail
 ```
+
+### The gate table (read this top to bottom)
+
+| Gate | What it checks | Hard-fail condition | Routes to / Outcome |
+|---|---|---|---|
+| **INTAKE** | Draft is approved; platform target + metadata present | Draft not marked approved, or no platform named | **BLOCK** — ask the user; never publish an unapproved draft |
+| **INTAKE** | Brand context loaded | `brand-brain` not yet called | Call `brand-brain` (Step 0); on absence use the fallback line below |
+| **GAP-FILL** | Five explicit SEO fields present | Any of SEO title / meta / keyphrase / OG title / OG desc missing or weak | Route to `on-page-seo-optimizer` (single) or `meta-title-description-bulk-writer` (5+); **ALLOW** once filled |
+| **GAP-FILL** | Internal links present (WordPress only) | Links absent from the draft | Route to `internal-linking-planner`; **ALLOW** once inserted |
+| **GAP-FILL** | Focus keyphrase derivable | No keyphrase in brief and none derivable | Route to `on-page-seo-optimizer` to derive from body; **BLOCK** if still none |
+| **FORMAT** | Platform field map applied | Any field unmapped or carrying a template token | Apply the field map below; **BLOCK** on any `#post_title`-style token |
+| **FORMAT** | Heading hierarchy valid | H1 absent or used >1× in body | Fix in place (mechanical), re-check; **BLOCK** if structure is broken |
+| **QA** | Pre-publish review clean | Any hard failure from `content-qa-reviewer` (see blocklist) | Route back to the relevant gate; **BLOCK** until zero hard failures |
+| **SHIP** | Live output matches brief | Rendered title/meta/slug ≠ intended values | **BLOCK** — fix and re-publish; never log a mismatched publish |
+| **SHIP** | Audit trail written | Publish log entry missing | Write the log; the run is not done until it exists |
+
+A gate that **routes** hands off, waits for the sibling, then re-evaluates its own condition. A gate that **blocks** stops the run and surfaces the failure — it does not silently skip ahead. The five-field rule, the field maps, and the QA blocklist below are the gate criteria this skill owns; the fixes they trigger live in the siblings.
+
+---
+
+## Cross-platform SEO field equivalence (the FORMAT gate's spine)
+
+One canonical field per row. The columns are where it lives on each platform, the limit to respect, and the gotcha that breaks it if you forget. Read across a row before you touch a field — the same canonical value lands in a differently-named box on each platform, and each box has its own failure mode.
+
+| Canonical field | WordPress (AIOSEO/Yoast) | Webflow | Notion | Google Docs | Limit | Gotcha |
+|---|---|---|---|---|---|---|
+| **SEO Title** | AIOSEO "SEO Title" field | SEO Settings → Title Tag | Integration meta panel (Super/Potion) | SEO-fields table, top of doc | ≤60 chars | WP defaults to a `#post_title #separator #site_title` token — **must be overwritten with a literal string** |
+| **Meta Description** | AIOSEO "Meta Description" | SEO Settings → Meta Description | Integration meta panel | SEO-fields table | 140–155 chars | Webflow truncates silently in preview; Notion-to-web only passes it if the integration's meta toggle is on |
+| **Focus Keyphrase** | AIOSEO/Yoast "Focus Keyphrase" | No native field — track in brief | No native field — track in brief | SEO-fields table | 1 phrase | Only WP/Yoast *scores* against it; on Webflow/Notion it's a discipline, not a setting — never assume the CMS enforces it |
+| **Slug** | Permalink slug | Auto-generated from Name → override | Page URL (integration) | n/a (handoff) | ≤60 chars, keyword-first | Webflow auto-slugs from the title and keeps the first version on rename — **validate after every title edit** |
+| **OG Title** | AIOSEO Social tab | Designer → Open Graph → Title | Integration social panel | SEO-fields table | ≤60 chars | All three CMSs fall back to SEO Title if blank — set it explicitly even when it matches |
+| **OG Description** | AIOSEO Social tab | Designer → Open Graph → Description | Integration social panel | SEO-fields table | 140–155 chars | Same silent fallback to meta description — set it on purpose, don't inherit by accident |
+| **OG / Featured Image** | Featured Image + alt text | Open Graph image (1200×630) | Cover image | n/a | 1200×630 px | Alt text ≠ "featured image"; Webflow OG image is separate from the body hero — both must be set |
+
+**Why WordPress carries the explicit-fields rule hardest:** AIOSEO and Yoast ship live template tokens (`#post_title`, `%%sep%%`) in the SEO Title and Meta Description boxes by default. A post can look "filled in" while every field is a placeholder that renders dynamically. This is the user's standing house rule — on PushEngage WP posts, **every AIOSEO field is set explicitly, never via a template token** — and it is the single most common silent publish failure across all four platforms.
 
 ---
 
@@ -108,9 +142,9 @@ Use these exact mappings. Never use template tokens (`#post_title`, `%%title%%`,
 
 ---
 
-## The EXPLICIT SEO FIELDS rule (applies to all platforms)
+## The EXPLICIT SEO FIELDS rule (the GAP-FILL gate's pass condition)
 
-Every publish must have five fields written in full before the post goes live:
+The GAP-FILL gate does not open until all five fields are written in full. A token in any one of them is a FORMAT-gate hard fail later, so resolve it here.
 
 1. **SEO Title** — the string that appears in the `<title>` tag; includes keyphrase + brand name; max 60 chars.
 2. **Meta Description** — 140–155 chars; benefit-led; contains the focus keyphrase.
@@ -118,34 +152,36 @@ Every publish must have five fields written in full before the post goes live:
 4. **OG Title** — the social share headline; may differ from the SEO title for click optimization.
 5. **OG Description** — the social share description; pulled from meta or written fresh.
 
-If any of these are absent on intake, **do not publish** — call `on-page-seo-optimizer` first, then proceed.
+If any of these are absent on intake, the gate **routes** to `on-page-seo-optimizer` (single post) or `meta-title-description-bulk-writer` (5+) and re-checks before opening. It does not publish past a blank field.
 
 ---
 
-## Pre-publish QA pass (Step 4, via content-qa-reviewer)
+## The QA gate's blocklist (executed by content-qa-reviewer)
 
-Call `content-qa-reviewer` before writing to any CMS. Block publish if any of these hard failures come back:
+The QA gate is the last checkpoint before SHIP. This skill owns the blocklist — the exact conditions that hold a post back — and routes the *review* to `content-qa-reviewer`. Any hard failure sends the draft back to the gate that owns the fix; none of these reach SHIP:
 
-- Missing or template-token SEO fields
-- H1 absent or used more than once in the body
-- Brand-banned words present
-- CTA URLs pointing to a dead or wrong destination
-- Featured image absent (WordPress/Webflow)
-- Slug contains stop words only or duplicates an existing post
-- Post contains `[verify]`-tagged claims not yet confirmed
+| Hard failure | Sends back to |
+|---|---|
+| Missing or template-token SEO fields | GAP-FILL → `on-page-seo-optimizer` |
+| H1 absent or used more than once in the body | FORMAT (fix in place) |
+| Brand-banned words present | INTAKE → flag to writer; do not fix here |
+| CTA URLs pointing to a dead or wrong destination | FORMAT (correct destination) |
+| Featured image absent (WordPress/Webflow) | GAP-FILL (upload + alt text) |
+| Slug is stop-words-only or duplicates an existing post | FORMAT (rewrite slug) |
+| Post contains `[verify]`-tagged claims not yet confirmed | INTAKE → BLOCK; confirm before publish |
 
-Surface soft warnings (thin meta, tag count outside 3–6, alt text generic) as fixes to apply before shipping, not blockers — unless the brand brain flags them as hard rules.
+Surface soft warnings (thin meta, tag count outside 3–6, generic alt text) as fixes to apply before shipping, not blockers — unless the brand brain flags them as hard rules.
 
 ---
 
 ## Batch publish mode
 
-Triggered when the user provides a list of drafts (5+), a content calendar export, or a CSV of posts to stage.
+Triggered when the user provides a list of drafts (5+), a content calendar export, or a CSV of posts to stage. The same five gates run, batched per stage — every post clears one gate before the batch advances to the next.
 
-1. Run `meta-title-description-bulk-writer` to generate SEO fields for all URLs in one pass.
-2. Run `internal-linking-planner` across the batch to surface cross-link opportunities before any post goes live.
-3. Apply the platform field map to each post; flag any that fail the QA gate separately.
-4. Produce a publish log CSV: `post-slug, platform, seo-title, meta-desc, keyphrase, publish-status, qa-flags`.
+1. **GAP-FILL (batched):** run `meta-title-description-bulk-writer` to generate SEO fields for all URLs in one pass; run `internal-linking-planner` across the batch to surface cross-link opportunities before any post goes live.
+2. **FORMAT:** apply the platform field map to each post.
+3. **QA:** run the blocklist per post; pull any post that hard-fails into a separate flagged list — the clean batch ships, the flagged posts hold.
+4. **SHIP:** produce a publish log CSV: `post-slug, platform, seo-title, meta-desc, keyphrase, publish-status, qa-flags`.
 5. Save the log to `./publish-logs/[YYYY-MM-DD]-batch.csv`.
 
 ---
@@ -164,12 +200,13 @@ This gives the content ops audit trail that `content-decay-refresh-sweep` and `s
 
 ## Principles
 
-- **Explicit fields, always.** No template tokens. No auto-generate. No empty SEO fields. If it's unknown, get it — do not skip it.
-- **Platform rules are real.** WordPress ≠ Webflow ≠ Notion ≠ Docs. Apply the correct field map; never assume fields transfer.
-- **QA before publish, not after.** Call `content-qa-reviewer` at Step 4; blocked posts do not go live until failures are resolved.
+- **The gate runs left to right.** INTAKE → GAP-FILL → FORMAT → QA → SHIP. A draft never skips a gate, and a gate either routes the fix to a sibling or blocks the run. No back-door publishes.
+- **Explicit fields, always.** No template tokens. No auto-generate. No empty SEO fields. If it's unknown, the gate gets it — it does not skip it.
+- **Platform rules are real.** WordPress ≠ Webflow ≠ Notion ≠ Docs. Read across the equivalence table; never assume a field name or limit transfers.
+- **QA before publish, not after.** The QA gate runs `content-qa-reviewer` before any CMS write; a hard failure routes back, it does not get waved through.
 - **Brand-brain first.** CMS house rules, keyphrase patterns, CTA destinations, and banned words come from the brand — not guessed.
-- **Compose, don't duplicate.** SEO field generation lives in `on-page-seo-optimizer`; internal links live in `internal-linking-planner`; voice/brand lives in `brand-brain`. This skill orchestrates the final mile; it does not rebuild those capabilities.
-- **Log every publish.** The ops log is not optional — it feeds downstream audits and decay sweeps.
+- **Own the criteria, route the fix.** This skill owns the gate conditions, the field maps, and the blocklist; the repairs they trigger live in `on-page-seo-optimizer`, `internal-linking-planner`, `content-qa-reviewer`, and `brand-brain`. It orchestrates the final mile; it does not rebuild those capabilities.
+- **Log every publish.** The SHIP gate is not closed until the ops log entry exists — it feeds downstream decay sweeps.
 
 ---
 
@@ -185,15 +222,11 @@ This gives the content ops audit trail that `content-decay-refresh-sweep` and `s
 
 ---
 
-## Quality checklist
+## Quality checklist (walk the gates)
 
-- `brand-brain` called; active brand's CMS house rules, keyphrase patterns, and banned words loaded?
-- All five explicit SEO fields present and written out in full (no tokens, no blanks)?
-- Correct platform field map applied (WordPress / Webflow / Notion / Google Docs)?
-- Featured image uploaded with an explicit, keyword-descriptive alt text?
-- H1 present exactly once in the body; heading hierarchy correct?
-- `content-qa-reviewer` called; zero hard failures remaining?
-- `internal-linking-planner` called if WordPress and links were absent from the draft?
-- Post published / staged / scheduled per the brief's instruction (not left as draft by default)?
-- Publish log entry written to `./publish-logs/`?
-- Batch mode: log CSV saved; any QA-blocked posts flagged separately?
+- **INTAKE:** draft confirmed approved and platform named; `brand-brain` called and the brand's CMS house rules, keyphrase patterns, and banned words loaded?
+- **GAP-FILL:** all five explicit SEO fields present and written out in full (no tokens, no blanks); `internal-linking-planner` called if WordPress and links were absent; featured image uploaded with explicit, keyword-descriptive alt text?
+- **FORMAT:** correct platform field map applied; every field read across the equivalence table for the right name/limit/gotcha; H1 present exactly once with correct hierarchy; zero template tokens?
+- **QA:** `content-qa-reviewer` called; every blocklist item clear; routed-back failures re-checked, not waved through?
+- **SHIP:** rendered title/meta/slug match intended values; post published / staged / scheduled per the brief (not left as draft by default); publish log entry written to `./publish-logs/`?
+- **Batch:** the five gates ran batched; log CSV saved; any QA-blocked posts pulled into the flagged list, not shipped with the clean batch?

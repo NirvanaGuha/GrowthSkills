@@ -5,8 +5,8 @@ description: >
   complete flow canvas, node-by-node logic, conditional branch conditions, timing rules, and
   paste-ready JSON or import recipe — for Klaviyo, ActiveCampaign, Braze, HubSpot, or Marketo.
   Absorbs platform syntax differences so the operator works at the strategy layer, not the
-  click-by-click UI layer. Calls brand-brain for voice/ICP/offer context, then applies the
-  Signal-Trigger-Branch-Message (STBM) framework to map every entry condition, wait step,
+  click-by-click UI layer. Calls brand-brain for voice/ICP/offer context, then applies our
+  Signal-Trigger-Branch-Message (STBM) method — a working model used in this skill — to map every entry condition, wait step,
   branch condition, message slot, and exit rule before writing a single line of copy or JSON.
   Outputs a human-readable canvas spec (markdown table), optional platform-native JSON/recipe
   import block, and a QA checklist scoped to the target ESP/MAP. Calls subject-line-preview-text-
@@ -52,6 +52,8 @@ Step 7  Persist artifact     ──► offer to save to ./sequences/<platform>/<
 
 Invoke `brand-brain` (Skill tool, `skill: brand-brain`). Use the returned digest: ICP + awareness tendency drives branch conditions and message tone; offer mechanics drive CTAs and incentive logic; voice adjectives and banned words override every message slot. Do not write copy or define a flow before `brand-brain` returns.
 
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for: (1) the target ESP/MAP platform (Klaviyo, ActiveCampaign, Braze, HubSpot, or Marketo), (2) the lifecycle stage or campaign brief (e.g. welcome series, cart abandon, re-engagement), (3) the entry signal — the specific event, property change, or trigger that enrolls a contact, (4) the goal metric that defines success, and (5) three brand voice adjectives plus any banned words or phrases.
+
 ### Step 1 — Scope the build
 
 Collect (or confirm) four inputs before proceeding:
@@ -67,9 +69,9 @@ If any are missing, ask once — batched, not one at a time.
 
 ---
 
-## The STBM Framework (Signal → Trigger → Branch → Message)
+## The STBM Method (Signal → Trigger → Branch → Message)
 
-This is the core method. Apply it to every flow before writing nodes.
+STBM is our own working model (a house mnemonic, not an established industry framework). Apply it to every flow before writing nodes.
 
 **Signal** — the real-world event that matters (a user completes onboarding step 1, a cart is abandoned, a lead hits a score threshold). Distinguish signal from platform trigger; they are not the same.
 

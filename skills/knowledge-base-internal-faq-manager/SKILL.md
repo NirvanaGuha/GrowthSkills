@@ -124,7 +124,7 @@ Write the updated article files. Bump `Last verified` on every touched article. 
 
 ## Mode C — Audit (no new additions)
 
-Uses the **Dead Reckoning Audit** framework: assume everything drifted, prove what's still accurate, flag the rest.
+Uses a Dead Reckoning Audit (our working name for the heuristic): assume everything drifted, prove what's still accurate, flag the rest.
 
 **Audit dimensions:**
 

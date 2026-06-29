@@ -3,7 +3,7 @@ name: brand-voice-codifier
 description: >
   Turns sample copy plus a few brand inputs into a structured, enforceable voice and tone guide —
   the part of the brain that makes every other copy skill sound like the brand instead of like AI.
-  It places the brand on the 12 Jungian archetypes and the four Nielsen Norman tone dimensions,
+  It places the brand on the 12 Pearson/Mark archetypes and the four Nielsen Norman tone dimensions,
   builds a do/don't lexicon, and EXTRACTS a real banned-word list from the brand's own sample copy
   (not a generic hype list). It is a brand-brain COMPONENT: callable standalone (it invokes
   `brand-brain` to load the active brand) or called by `brand-brain` during bootstrap/refresh

@@ -90,10 +90,11 @@ When unclear, default to **Daily** and confirm at the end.
 
 ---
 
-## The SCBF Framework (Status · Commitment · Blockers · Flags)
+## SCBF structure (Status · Commitment · Blockers · Flags) — our working model
 
-Every standup mode maps onto this structure. The labels change; the logic
-doesn't.
+SCBF is a homegrown checklist we use here, not an established industry
+framework. Every standup mode maps onto this structure. The labels change;
+the logic doesn't.
 
 | Slot | Daily | Weekly | Sprint close |
 |---|---|---|---|

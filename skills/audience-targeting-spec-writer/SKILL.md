@@ -96,7 +96,7 @@ search intent). State the default; let the user override.
 
 ---
 
-## The 3-Layer Audience Architecture (Fabian Maume / Performance Practitioner Framework)
+## The TOFU/MOFU/BOFU Layer Model (standard paid-media convention)
 
 Every spec is organized into three layers regardless of platform. The layer defines the relationship
 the prospect has with the brand or category — it drives window logic, messaging angle, and

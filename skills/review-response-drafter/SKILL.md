@@ -45,7 +45,7 @@ exits cleanly.
 Step 0  Load the brand       ──► call brand-brain skill
 Step 1  Classify the input   ──► Single review or Batch?
 Step 2  Score each review    ──► Sentiment + platform + public-response risk
-Step 3  Apply the framework  ──► ACRA (Acknowledge / Close-the-gap / Redirect / Anchor)
+Step 3  Apply the skeleton   ──► ACRA (Acknowledge / Close-the-gap / Redirect / Anchor)
 Step 4  Calibrate per mode   ──► Positive / Neutral-Mixed / Negative
 Step 5  Self-review          ──► checklist pass, then present
 ```
@@ -64,9 +64,10 @@ mini-setup (product description, ICP, 3 voice adjectives, banned words) before p
 
 ---
 
-## The ACRA Framework
+## ACRA — our working reply structure
 
-Every response — positive, neutral, or negative — follows the same four beats. Execution varies by
+ACRA (a house mnemonic, not an established model) is the four-beat skeleton we use here. Every
+response — positive, neutral, or negative — follows the same four beats. Execution varies by
 sentiment; the skeleton does not.
 
 | Beat | What it does | Length |

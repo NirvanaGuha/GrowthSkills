@@ -7,8 +7,8 @@ description: >
   behavioral signal that predicts long-term retention — then translates it into a measurable
   activation milestone, a tracking formula, and a dashboard spec the engineering or analytics
   team can implement without further interpretation. Opinionated about method: uses the
-  correlation-over-opinion framework (Reforge/Farquhar) for aha-moment discovery and the
-  HEART/North Star framework for metric design. Does NOT guess from product descriptions alone
+  correlation-over-opinion framework (Reforge / Sean Ellis-era growth method) for aha-moment discovery and the
+  North Star Metric structure for metric design. Does NOT guess from product descriptions alone
   when data is available; calls `funnel-drop-off-analyzer` and `growth-diagnostic-deep-dive`
   when more investigation is needed. Use when the user says "define our aha moment,"
   "what is our activation metric," "why aren't users converting to active," "onboarding isn't
@@ -80,7 +80,7 @@ Never conflate the two paths. Label structured-inference outputs as hypotheses r
 
 ## Step 2 — Discover the aha moment
 
-### Path A — Correlation analysis (Reforge / Farquhar method)
+### Path A — Correlation analysis (Reforge / Sean Ellis-era growth method)
 
 The aha moment is the behavioral signal with the highest correlation to long-term retention — not the moment users *feel* delighted, but the moment they *do* the thing that predicts they will stay.
 

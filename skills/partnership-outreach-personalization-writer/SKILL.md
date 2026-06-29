@@ -4,8 +4,8 @@ description: >
   Turns a prospect list (LinkedIn profiles, company sites, funding data, press mentions, mutual
   connections) plus a base template into individually personalized outreach — biz-dev pitches,
   guest-post proposals, integration-partner overtures, and warm networking notes — plus a
-  follow-up sequence for each thread. Powered by the ROPE framework (Research → Offer → Proof →
-  Exchange): every message opens on a researched, specific observation the recipient will
+  follow-up sequence for each thread. Powered by ROPE (Research → Offer → Proof →
+  Exchange), our working checklist for these messages: every message opens on a researched, specific observation the recipient will
   immediately recognize as real, pivots to a clear, bounded offer that costs them nothing yet,
   pairs it with a proof point that reduces risk, and closes with one low-friction ask. Does NOT
   write cold-broadcast spam — every output is personalized to a specific company and person.
@@ -19,7 +19,7 @@ description: >
 
 Every partnership email lives or dies on one thing: does the recipient believe you read their stuff, or did you mail-merge them? This skill writes outreach that passes the "did they actually look?" test — because it starts with real research, builds a genuinely bounded offer, backs it with real proof, and asks for one small thing.
 
-Framework: **ROPE** — Research → Offer → Proof → Exchange.
+Our working checklist: **ROPE** — Research → Offer → Proof → Exchange (a house mnemonic, not an established outreach model).
 
 ---
 

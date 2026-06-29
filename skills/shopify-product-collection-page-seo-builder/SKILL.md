@@ -4,8 +4,10 @@ description: >
   Turns a raw Shopify product or collection spec plus target keywords into a complete
   on-page SEO package — title tag, meta description, H1, URL slug, above-fold copy
   (hero sentence + benefit bullets), structured-data JSON-LD stub, and internal-linking
-  anchors — that ranks AND converts. Applies the TRAF framework (Title · Relevance ·
-  Authority signals · Friction removal) to every output. Handles both product detail
+  anchors — that ranks AND converts. Organizes every element under its own four-part
+  house checklist, TRAF (Title · Relevance · Authority signals · Friction removal),
+  which wraps the established on-page triad (title/meta/H1) and E-E-A-T trust signals
+  into one pass. Handles both product detail
   pages (PDPs) and collection/category pages (PLPs) with mode-specific logic. Calls
   on-page-seo-optimizer for technical-signal scoring, keyword-research-clustering-suite
   for keyword fit confirmation, and cta-variant-generator for the primary CTA. Use when
@@ -21,10 +23,14 @@ the complete on-page SEO package a Shopify merchant needs to rank and convert �
 meta description, H1, slug, above-fold copy, structured-data stub, and internal-linking
 anchors — without ever inventing a claim the brand can't back up.
 
-The framework is **TRAF**: every element is evaluated against Title (keyword + brand fit),
-Relevance (intent match for the page type), Authority signals (proof + trust triggers in
-the copy), and Friction removal (clear value exchange, low commitment, zero jargon that
-repels buyers). Senior operators use TRAF as the checklist; this skill enforces it automatically.
+This skill organizes every element under a four-part checklist we call **TRAF** — a house
+mnemonic, not an industry-standard framework. It exists so nothing on the page ships unscored:
+Title (keyword + brand fit), Relevance (intent match for the page type), Authority signals
+(proof + trust triggers in the copy), and Friction removal (clear value exchange, low
+commitment, zero jargon that repels buyers). TRAF is just a wrapper around levers that *are*
+established practice: the on-page title/meta/H1 triad every SEO already optimizes, and Google's
+E-E-A-T trust signals, which the Authority dimension operationalizes as copy. The value here is
+not the acronym — it's that one pass forces all four to be present before delivery.
 
 ---
 
@@ -48,7 +54,7 @@ Step 0  Load the brand          ──► call brand-brain
 Step 1  Confirm intent mode     ──► Product (PDP) or Collection (PLP)?
 Step 2  Gather inputs           ──► spec + primary keyword + optional secondary keywords
 Step 3  Keyword fit check       ──► call keyword-research-clustering-suite (if available)
-Step 4  Write the SEO package   ──► TRAF framework pass
+Step 4  Write the SEO package   ──► TRAF checklist pass (Title · Relevance · Authority · Friction)
 Step 5  Score + QA              ──► call on-page-seo-optimizer, self-review checklist
 Step 6  CTA                     ──► call cta-variant-generator for the above-fold CTA block
 Step 7  Deliver + persist       ──► present output; save to ./seo/ if the user asks
@@ -88,19 +94,36 @@ If the user pastes a raw spec dump, extract structured inputs before proceeding.
 
 ---
 
-## The TRAF framework (applied to every element)
+## The TRAF checklist (applied to every element)
+
+TRAF is the skill's internal four-part gate. Each dimension owns specific elements, maps to an
+established model so you know it isn't invented, and has a hard pass condition. A package does
+not ship until all four pass.
+
+| TRAF dimension | Elements it owns | Maps to (established) | Passes when… |
+|---|---|---|---|
+| **T** — Title | Title tag, slug | On-page title-tag optimization | Primary keyword in first ~3 words; renders inside the pixel ceiling; brand appended; one intent modifier max |
+| **R** — Relevance | Meta description, H1 | Meta/H1 on-page triad; query-intent match | Copy matches the page's intent mode (PDP transactional / PLP navigational); no title-tag duplication; one concrete benefit present |
+| **A** — Authority | Above-fold hero + bullets | Google E-E-A-T (experience, expertise, authoritativeness, trust) | ≥1 proof-anchored bullet from real brand proof (or `[verify]`); zero unsupported superlatives |
+| **F** — Friction removal | JSON-LD stub, internal links | Schema.org structured data; internal-link equity | PDP schema valid with `{{ }}` annotations; 3–5 descriptive, varied internal anchors; ≥1 on-page friction-reducer (returns/warranty/shipping) when the brand has it |
+
+If any row fails, fix it before delivery — that is the entire job of the self-review checklist
+at the bottom of this file.
 
 ### T — Title tag
 - Lead with the **primary keyword**, ideally in the first 3 words.
 - Append brand name at the end, separated by `|` or `—` (Shopify default; keep it).
-- Character window: **50–60 chars** (Google truncates at ~580px; 60 chars is the safe ceiling).
+- Length is governed by pixel width, not character count: Google truncates titles at ~580px on
+  desktop, so aim for **~50–60 chars** as a practical proxy. It's a rule of thumb, not a hard law
+  — a title of all-narrow characters can run longer; one full of wide caps truncates sooner.
 - Include the single strongest modifier that signals intent and differentiates: "free shipping,"
   a material, a use-case, a proof-stat — only if it fits; never stuff.
 - PDP: `[Product Name] — [Key Feature/Modifier] | [Brand]`
 - PLP: `[Category Keyword] — [Differentiator Modifier] | [Brand]`
 
 ### R — Relevance (meta description + H1)
-**Meta description** (150–160 chars):
+**Meta description** (aim ~150–160 chars — again a rule of thumb; Google truncates the snippet on
+pixel width, ~920px on desktop, and rewrites it freely, so treat 160 as a practical ceiling, not a law):
 - Opens with the keyword or a restatement of the title's promise.
 - One concrete benefit (the *why buy* answer).
 - One friction-reducer (free shipping, returns, a guarantee) using brand's real proof only.
@@ -184,8 +207,10 @@ and varied — never "click here" or exact-match keyword repetition that trigger
   collection pages get curated-range framing. Never mix.
 - **Proof or [verify].** Every stat, rating, certification, or superlative is either from the
   brand's confirmed proof or flagged `[verify]`. Invent nothing.
-- **Char limits are hard stops.** Title at 60, meta at 160. Over-limit = the SERP truncates your
-  CTA; self-review catches this before delivery.
+- **Length is a pixel budget, not a character law.** The real constraint is SERP pixel width
+  (~580px title, ~920px snippet on desktop); ~50–60 chars title and ~150–160 chars meta are
+  practical proxies, not hard stops. Run long only when you've checked the rendered width — and
+  know Google may rewrite the meta regardless. Self-review flags anything likely to truncate.
 - **No cannibalization.** If two pages target the same keyword, flag the conflict and recommend
   which page should own it and which should pivot.
 - **Write for the human, rank for the crawler.** The title, H1, and meta must make a scanner
@@ -207,8 +232,10 @@ and varied — never "click here" or exact-match keyword repetition that trigger
 
 - `brand-brain` called and active brand loaded before any output?
 - Voice + banned-words honored; every unconfirmed claim marked `[verify]`?
-- Title tag: primary keyword in first 3 words, 50–60 chars, brand appended, no stuffing?
-- Meta: 150–160 chars, different from title, benefit + friction-reducer + soft CTA?
+- Title tag: primary keyword in first 3 words, ~50–60 chars (within the ~580px pixel ceiling),
+  brand appended, no stuffing?
+- Meta: ~150–160 chars (within the snippet pixel budget), different from title, benefit +
+  friction-reducer + soft CTA?
 - H1: keyword present, human-readable, not a duplicate of title tag?
 - Slug: shortest accurate hyphenated phrase, no stop words, no variant suffixes?
 - Above-fold hero sentence ≤20 words; 3–5 bullets benefit-led, at least one proof anchor?

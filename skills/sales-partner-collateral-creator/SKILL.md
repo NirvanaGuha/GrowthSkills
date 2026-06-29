@@ -42,7 +42,7 @@ This skill produces sales assets. It does not generate leads, manage CRM records
 Step 0  Load brand context  ──► brand-brain (always first; fallback above)
 Step 1  Build the intelligence layer  ──► account-dossier-builder + proof-vault + battlecard-objection-handler
 Step 2  Choose the collateral scope  ──► Full Kit (default) | Single Asset (on request)
-Step 3  Produce assets (framework: Challenger Sale message structure)
+Step 3  Produce assets (framework: our 5-step arc adapted from Challenger Sale)
 Step 4  Gate regulated claims  ──► advertising-claims-ftc-disclosure-reviewer
 Step 5  Self-review, then save + present
 ```
@@ -82,9 +82,9 @@ Full Kit produces all four assets in a single pass. Single-asset mode runs only 
 
 ---
 
-## The Challenger Sale message structure (governs all four assets)
+## The message structure (governs all four assets)
 
-Every asset follows this arc — the proven B2B sales messaging spine. Don't flatten it into a feature list.
+Every asset follows this arc — our working adaptation of the Challenger Sale's Commercial Teaching choreography (Dixon & Adamson), condensed into five steps for collateral. Don't flatten it into a feature list.
 
 1. **Reframe (Teach)** — Open with an insight or tension the buyer hasn't articulated yet. Not a product pitch; a perspective shift. Draws from the account dossier's pain signals + the brand's positioning.
 2. **Tailor** — Connect the reframe explicitly to this persona's role, metric, and business context. Uses dossier-derived specifics.

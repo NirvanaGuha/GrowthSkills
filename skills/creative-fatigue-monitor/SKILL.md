@@ -3,7 +3,7 @@ name: creative-fatigue-monitor
 description: >
   Diagnoses creative fatigue across paid ad accounts — Meta, Google, TikTok, LinkedIn, or any
   platform that exposes frequency + CTR/CPM trend data. Takes raw ad performance data (CSV export,
-  pasted table, or manual numbers) and applies the Hook-Resonance Decay model to flag each active
+  pasted table, or manual numbers) and applies our Hook-Resonance Decay (HRD) working model — a house framework, not an industry standard — to flag each active
   creative as Fresh, Watch, Fatiguing, or Burned. Outputs a ranked fatigue report with per-creative
   rotation recommendations, a refresh brief for the worst offenders, and an audience saturation
   note. Composes data-qa-measurement-gotcha-checker for data integrity before drawing conclusions,
@@ -18,7 +18,7 @@ description: >
 
 Ad performance doesn't die suddenly — it decays. Frequency climbs while CTR falls; CPM rises as the algorithm de-prioritizes a signal it has learned to distrust. This skill reads that decay curve, names the creatives in each danger zone, and tells you exactly what to do with each one — rotate, refresh, or kill — before you burn more budget showing the same exhausted creative to an audience that has already stopped seeing it.
 
-Framework: **Hook-Resonance Decay (HRD)** — a structured read of frequency × engagement-rate trajectory × CPM delta × estimated audience saturation. Every creative is assigned a fatigue tier. Decisions follow the tier, not gut feel.
+Our working model: **Hook-Resonance Decay (HRD)** (a house framework we use here, not an established industry standard) — a structured read of frequency × engagement-rate trajectory × CPM delta × estimated audience saturation. Every creative is assigned a fatigue tier. Decisions follow the tier, not gut feel.
 
 ---
 
@@ -68,9 +68,9 @@ If the user's data has unresolvable quality issues, surface them and ask for a c
 
 ---
 
-## Hook-Resonance Decay (HRD) Framework
+## Hook-Resonance Decay (HRD) — our working framework
 
-HRD models creative performance as a three-phase curve: **Hook phase** (rising engagement, algorithm learning), **Resonance plateau** (peak CTR/CPM efficiency), **Decay phase** (falling CTR, rising frequency, CPM inflation as the algorithm re-prices a declining signal). The goal is to catch creatives at the inflection — before they burn spend in full Decay.
+HRD (our house framework, not an established industry model) models creative performance as a three-phase curve: **Hook phase** (rising engagement, algorithm learning), **Resonance plateau** (peak CTR/CPM efficiency), **Decay phase** (falling CTR, rising frequency, CPM inflation as the algorithm re-prices a declining signal). The goal is to catch creatives at the inflection — before they burn spend in full Decay.
 
 ### Primary fatigue signals (collect for each creative)
 

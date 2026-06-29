@@ -4,7 +4,7 @@ description: >
   Given a baseline conversion rate, minimum detectable effect (MDE), confidence level, and
   statistical power, computes the required sample size per variant and an estimated runtime
   in days based on your daily traffic. Works for two-variant A/B tests and multi-variant (MVT)
-  setups. Applies the two-proportion z-test (Evan Miller / Evans–Matheson formulation), flags
+  setups. Applies the standard two-proportion z-test (as popularized by Evan Miller's calculator), flags
   every validity threat that could invalidate the result before you start — SRM risk, novelty
   effect window, attribution lag, GA4 sampling thresholds, minimum traffic floor — and outputs
   a launch-ready test spec you can hand to engineering or drop into your CRO backlog.
@@ -78,7 +78,7 @@ Ask for the five inputs if not provided. Never proceed with assumed values witho
 
 ### The formula
 
-This skill uses the standard two-proportion z-test formulation (Evan Miller / Evans–Matheson, as implemented at [https://www.evanmiller.org/ab-testing/sample-size.html](https://www.evanmiller.org/ab-testing/sample-size.html) [verify]):
+This skill uses the standard two-proportion z-test formulation (as implemented in Evan Miller's calculator at [https://www.evanmiller.org/ab-testing/sample-size.html](https://www.evanmiller.org/ab-testing/sample-size.html) [verify]):
 
 ```
 p₂ = p₁ × (1 + MDE_relative)   [or p₁ + MDE_absolute]

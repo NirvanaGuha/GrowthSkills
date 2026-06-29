@@ -37,7 +37,7 @@ This skill architects. It does not research individual SERPs in depth, write bri
 ```
 Step 0  Load the brand   ──► call the `brand-brain` skill (it bootstraps on first use)
 Step 1  Frame the topic  ──► is this a pillar-worthy hub? scope it
-Step 2  Build the map    ──► pillar + spokes via the HUB framework
+Step 2  Build the map    ──► pillar + spokes via the head/spokes/links checklist
 Step 3  Wire the links   ──► bidirectional internal-link contract
 Step 4  Sequence + present (offer to persist the blueprint)
 ```
@@ -67,11 +67,13 @@ Not every input is a pillar. Before mapping, classify the topic so the architect
 
 ---
 
-## The HUB framework (the named method)
+## The pillar-cluster method (head · spokes · links)
 
-Build every cluster with **HUB — Head, Universe, Bridges**. It is the discipline that turns a keyword dump into a defensible topical-authority structure.
+This is the **topic-cluster / pillar-cluster (hub-and-spoke) model** — the established SEO content-architecture pattern popularized by HubSpot (~2017) and now standard practice. It's not a proprietary framework; what this skill adds is the discipline that turns a keyword dump into a defensible topical-authority structure, in three moves: define the **head** (pillar), map the **spokes** (cluster), and wire the **links** (the contract that makes Google read the set as one entity).
 
-### H — Head: define the pillar
+> **HUB** — Head, Universe, Bridges — is our internal mnemonic for these three moves, nothing more. It is *not* a separate industry framework; it's shorthand for the standard pillar-cluster model named above.
+
+### Head: define the pillar
 
 The pillar page targets the **head term** and exists to comprehensively cover the topic at breadth, not depth — it links *out* to spokes for depth. Specify:
 
@@ -81,7 +83,7 @@ The pillar page targets the **head term** and exists to comprehensively cover th
 - **Working title + H2 skeleton** — each H2 previews a spoke and links to it.
 - **Pillar CTA** — the single conversion action, pointed at a real offer destination from `brand.md`.
 
-### U — Universe: map the spokes
+### Spokes: map the universe
 
 Enumerate the sub-topics that *together* cover the head term's universe. Drive coverage from intent, not from a keyword tool's autocomplete — group candidate sub-topics across the **search-intent spread** so the cluster isn't all one type:
 
@@ -92,9 +94,9 @@ Enumerate the sub-topics that *together* cover the head term's universe. Drive c
 | **Commercial — comparison** | "vs / alternatives / best" spokes near the decision | solution-aware |
 | **Transactional — use-case/product** | spokes that map to the offer; carry the strongest CTA | product-aware |
 
-For each spoke, specify: **target keyword + intent**, **working title** (on-voice, no banned words), **proposed URL**, **why it earns a place** (one line — distinct intent, not a near-duplicate of another spoke), and **priority** (see sequencing). Aim for **6–12 spokes** for a first build; flag obvious duplicates and merge them rather than padding the count. Mark any volume/demand claim `[verify]` unless it came from real data the user supplied.
+For each spoke, specify: **target keyword + intent**, **working title** (on-voice, no banned words), **proposed URL**, **why it earns a place** (one line — distinct intent, not a near-duplicate of another spoke), and **priority** (P1/P2/P3, scored on the Value × Attainability matrix under *Sequencing*). Aim for **6–12 spokes** for a first build; flag obvious duplicates and merge them rather than padding the count. Mark any volume/demand claim `[verify]` unless it came from real data the user supplied.
 
-### B — Bridges: the internal-linking contract
+### Links: the internal-linking contract
 
 The architecture *is* the links. State the contract explicitly so executors can't get it wrong:
 
@@ -117,7 +119,19 @@ Don't ship 12 articles in random order. Recommend a build order that compounds:
 3. **Conversion spokes** — comparison + use-case pages that monetize the audience the early spokes attract.
 4. **Long-tail fill** — remaining definitional/edge spokes that round out coverage.
 
-Tie each spoke to a priority (P1/P2/P3) on a simple value × attainability read; if the user supplied real difficulty/volume data, use it, otherwise reason from SERP intent and mark estimates `[verify]`.
+### Scoring each spoke (Value × Attainability → P1/P2/P3)
+
+Don't assign priority by gut. Score every spoke on two axes, then read the priority off the matrix.
+
+- **Value (High / Low)** — does this spoke move a real metric? *High* = high search demand for the brand's ICP, or it carries conversion intent toward the offer (comparison / use-case). *Low* = thin demand, or it only rounds out coverage (edge definitional, near-redundant long-tail).
+- **Attainability (High / Low)** — can the brand realistically rank? *High* = low SERP difficulty, the brand has existing authority/links on the sub-topic, or the angle is genuinely differentiated. *Low* = entrenched incumbents own the SERP, or the brand has no topical equity yet.
+
+| | **Attainability: High** | **Attainability: Low** |
+|---|---|---|
+| **Value: High** | **P1** — build first (after the pillar); these compound fastest | **P2** — high payoff but a slog; queue once the cluster has authority |
+| **Value: Low** | **P2** — cheap coverage that fills the universe; batch them | **P3** — defer or cut; don't pad the cluster with these |
+
+Read the priority straight off the cell. Ties between two P2s break toward the one nearer the offer (conversion intent wins). If the user supplied real difficulty/volume data, score from it; otherwise reason from SERP intent and mark each estimate `[verify]`. The build waves above (pillar → quick wins → conversion → fill) are just these priorities sequenced.
 
 ---
 
@@ -189,5 +203,5 @@ Offer to **save the blueprint** to `./content-clusters/[slug]-[topic]-cluster.md
 - 6–12 spokes, each with a distinct intent across the informational→transactional spread, on-voice titles, no banned words?
 - Internal-linking contract is explicit (pillar ⇄ spokes bidirectional, selective spoke↔spoke, funnel routing, no orphans)?
 - Proposed URLs match the brand's existing structure (or migration is flagged)?
-- Build sequence given (pillar → quick wins → conversion → fill) with priorities?
+- Every spoke scored on the Value × Attainability matrix, priority (P1/P2/P3) read off the cell, and the build sequence given (pillar → quick wins → conversion → fill)?
 - Every volume/difficulty estimate marked `[verify]`; each spoke names its downstream handoff?

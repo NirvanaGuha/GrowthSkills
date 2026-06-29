@@ -78,9 +78,9 @@ Before diagnosing, flag any measurement integrity issues:
 
 ---
 
-## Step 3 — Root-cause triage (the Google RAIL / CWV framework)
+## Step 3 — Root-cause triage (Lighthouse audits + CWV thresholds)
 
-Use **Google's official CWV diagnostics framework** (RAIL model + Lighthouse audit taxonomy). Read each signal's top offenders from the report's `audits` object:
+Triage each signal against Google's published Core Web Vitals thresholds, using the Lighthouse audit-ID taxonomy to locate the offenders. Read each signal's top offenders from the report's `audits` object:
 
 ### LCP (Largest Contentful Paint) — target: ≤ 2.5 s
 Work down the LCP waterfall in order. Fix the earliest bottleneck first; later ones may self-resolve.

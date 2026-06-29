@@ -9,8 +9,10 @@ description: >
   categories (overages, implementation, migration, training, lock-in penalties), flags feature
   gaps and contractual risks, scores each option on a keep / renegotiate / switch rubric, and
   assembles a concise executive brief with negotiation talking points tailored to the renewal
-  conversation. Built around the Gartner Strategic Sourcing Framework (TCO → Fit → Risk →
-  Leverage) adapted for marketing and growth team software. Output saves to ./vendors/. Use
+  conversation. Structured as a TCO-first renewal workflow — total cost of ownership first, then
+  fit and risk, then negotiation leverage — and driven by an explicit TCO-delta decision rule
+  (keep under 15%, renegotiate 15–40%, switch over 40%) for marketing and growth team software.
+  Output saves to ./vendors/. Use
   when the user says "vendor renewal," "compare SaaS tools," "should we keep or cancel,"
   "renewal is coming up," "get a better deal," "contract review," "vendor negotiation prep,"
   "tool consolidation," or hands over quotes, invoices, or a stack of contracts and asks
@@ -20,6 +22,8 @@ description: >
 # Vendor Cost Comparison & Renewal Brief
 
 A renewal conversation is a negotiation. Win it by showing up with numbers, not intuition. This skill structures everything from raw quotes and invoices to a signed-off brief — annualized TCO table, feature-gap flags, risk scoring, and a keep/renegotiate/switch recommendation — in one pass. Output is ready to share with finance or take into the vendor call.
+
+The decision turns on one number: the **annualized TCO delta** between the current vendor and the best credible alternative, expressed as a percentage of current spend. That delta drives the verdict — **keep under 15%, renegotiate at 15–40%, switch above 40%** — gated by feature blockers and switching cost. Everything before the verdict (the TCO model, the fit-and-risk pass, the leverage read) exists to make that one number trustworthy and to decide whether the gate overrides it. This is a house decision rule, not a vendor-supplied or analyst-branded framework; the thresholds are starting defaults, calibrated to the brand's stage and budget lens.
 
 ---
 
@@ -67,7 +71,9 @@ Parse everything. Then identify gaps. Ask **at most 3 targeted questions** in a 
 
 ---
 
-## Step 2 — TCO Model (Gartner Framework: Total Cost of Ownership)
+## Step 2 — Total Cost of Ownership (TCO)
+
+The TCO concept — counting the full lifetime cost of a system, not just its sticker price — was popularized by Gartner in the late 1980s. We use the idea, not a branded multi-stage model.
 
 Build a table covering **all cost categories**, not just license fees. For each vendor option:
 
@@ -89,9 +95,17 @@ Rules:
 - Show the delta column: Alternative vs. Current ($ and %).
 - If migration cost is unknown, flag it as the single biggest risk to the switch thesis.
 
+The headline output of this step is the **TCO delta** — the number the verdict in Step 5 runs on:
+
+```
+TCO delta % = (Current annual TCO − Best alternative annual TCO) / Current annual TCO × 100
+```
+
+A positive delta means an alternative is cheaper all-in; negative means the current vendor is already the cheap option. Compute it against the *best credible* alternative (quoted or trialed — not a theoretical option). Carry this single figure forward; it is the spine of the recommendation.
+
 ---
 
-## Step 3 — Fit & Risk Scoring (Framework: Fit + Risk axes)
+## Step 3 — Fit & Risk Scoring (Fit + Risk axes)
 
 ### Feature-gap matrix
 
@@ -130,10 +144,19 @@ Summarize in 2–3 sentences. This is the context for the talking points.
 
 Choose one: **Keep (renew as-is) · Renegotiate · Switch**. State it in one sentence. Give the top reason.
 
-Criteria:
-- **Keep**: TCO difference < 15%, no critical feature gaps, high switching cost, short notice window.
-- **Renegotiate**: Current vendor has gaps or a 15–40% TCO premium, but alternatives have real migration friction or the relationship has leverage hooks.
-- **Switch**: Alternatives show > 40% TCO savings OR a hard-blocker feature gap, AND switching cost is quantifiable and manageable.
+Run the verdict off the **TCO delta** from Step 2, then apply two gates that can override it:
+
+| TCO delta (best alt vs. current) | Base verdict | Override gates |
+|---|---|---|
+| **< 15%** | Keep | A hard-blocker feature gap on the current vendor → Renegotiate or Switch regardless of cost. |
+| **15–40%** | Renegotiate | If the alternative has *no* migration friction and *no* relationship hook to pull → Switch. |
+| **> 40%** | Switch | Switch only if migration cost is quantified and manageable; if migration is unknown or larger than ~1 yr of the savings → Renegotiate and re-cost. |
+
+Gate logic, in order:
+1. **Feature gate** — a hard-blocker gap (Missing on a must-have) on any option removes it from contention before cost is weighed. A blocker on the *current* vendor forces at least a Renegotiate.
+2. **Switching-cost gate** — a >40% delta does not earn a Switch verdict unless migration cost is quantified. An unquantified migration cost caps the verdict at Renegotiate.
+
+The thresholds are house defaults. Tighten them for a cash-constrained early-stage brand (a 15% delta may be worth chasing) or loosen them for a stable team where switching churn is expensive — state the adjustment if you make one.
 
 ### Executive brief (shareable with finance)
 
@@ -178,6 +201,8 @@ Write the full brief to `./vendors/<vendor-slug>-renewal-brief.md`. If a `./vend
 ## Principles
 
 - **TCO before price.** Headline license cost is the least useful number. Migration, integration, and admin overhead routinely flip the decision.
+- **One number drives the verdict.** The TCO delta against the best credible alternative is the spine. Compute it, then let the 15% / 40% thresholds and the two gates decide — don't reverse-engineer the math to fit a verdict you already wanted.
+- **Gates beat dollars.** A hard feature blocker or an unquantified migration cost overrides the cost delta. A cheaper tool you can't actually switch to, or that can't do the job, is not the cheaper option.
 - **Mark what you don't know.** Every estimated number is `[verify]`. An overconfident brief that later breaks in a finance review destroys credibility.
 - **Honest leverage.** Never write a walk-away threat that the user won't actually use. Vendors remember bluffs; they erode future leverage.
 - **One recommendation.** Present options clearly, then commit to a verdict. A brief that says "it depends" is not a brief.
@@ -204,6 +229,9 @@ Write the full brief to `./vendors/<vendor-slug>-renewal-brief.md`. If a `./vend
 - Feature-gap matrix lists must-haves and flags hard blockers?
 - Contractual risk flags checked (auto-renewal window, escalation clauses, data portability)?
 - Leverage assessment completed before talking points written?
+- TCO delta % computed against the best *credible* alternative and carried into the verdict?
+- Verdict matches the decision table (< 15% Keep · 15–40% Renegotiate · > 40% Switch), with any feature-gate or switching-cost-gate override stated explicitly?
+- Any threshold adjustment for brand stage / budget lens called out rather than applied silently?
 - Verdict is single and committed (Keep / Renegotiate / Switch) with a one-sentence rationale?
 - Executive brief is self-contained and shareable with a non-technical finance stakeholder?
 - Negotiation talking points are calibrated to actual leverage — no invented walk-aways?

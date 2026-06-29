@@ -75,9 +75,9 @@ If the session title is vague, call `headline-hook-generator` to sharpen it befo
 
 ---
 
-## The AIDA-Arc Framework
+## The AIDA-Arc mapping (our working model)
 
-Every segment maps to the Attention → Interest → Desire → Action arc, adapted for live webinar pacing. Ratios below are for a 45-minute session — scale proportionally.
+"AIDA-Arc" is this skill's own mapping of the established AIDA model (Attention → Interest → Desire → Action) onto live-webinar minutes — not a separately established framework. Every segment maps to the AIDA arc, adapted for live webinar pacing. Ratios below are for a 45-minute session — scale proportionally.
 
 | Segment | AIDA stage | Default time | What happens |
 |---|---|---|---|

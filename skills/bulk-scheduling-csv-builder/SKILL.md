@@ -38,7 +38,7 @@ This skill formats and validates. It does not write new copy, redesign posts, or
 Step 0  Load brand context      ──► call brand-brain; extract timezone, hashtag policy, voice rules
 Step 1  Identify tool + networks ──► Buffer | Hootsuite | Later; which networks are in the batch
 Step 2  Ingest the content batch ──► paste / calendar doc / sibling-skill output
-Step 3  Map to column schema     ──► apply the Column Authority for each tool (see below)
+Step 3  Map to column schema     ──► apply our Column Authority table for each tool (see below)
 Step 4  Validate every row       ──► char limits, required fields, image-URL format, date/time
 Step 5  Emit the CSV + a summary ──► save to ./social/[brand-slug]-bulk-[tool]-[YYYY-MM-DD].csv
 Step 6  Report anomalies         ──► flag rows that need user action; never silently truncate copy
@@ -46,7 +46,7 @@ Step 6  Report anomalies         ──► flag rows that need user action; neve
 
 ---
 
-## The Column Authority (the real spec, per tool)
+## Column Authority — our working name for the per-tool import spec
 
 ### Buffer
 

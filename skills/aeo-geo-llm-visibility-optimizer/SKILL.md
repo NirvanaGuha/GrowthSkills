@@ -56,7 +56,7 @@ Before touching the page, name the **answer-engine question(s)** this page shoul
 
 ---
 
-## The AEO-FRESH framework (the audit + the fix)
+## AEO-FRESH (our working audit framework — the audit + the fix)
 
 Answer engines don't rank pages — they **retrieve passages, then synthesize and cite**. To get cited you must be (1) *retrievable* as a clean chunk, (2) *liftable* as a self-contained answer, (3) *trustable* as a source. AEO-FRESH scores the page on the six factors that drive all three, then each factor maps to a concrete rewrite.
 

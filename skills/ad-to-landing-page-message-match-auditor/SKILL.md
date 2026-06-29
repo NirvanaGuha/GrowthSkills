@@ -7,9 +7,10 @@ description: >
   Surfaces every gap where the ad makes a promise the page breaks — and every friction point where
   a mismatched frame causes a visitor to question whether they landed in the right place. Produces
   an overall match score (0–100), a ranked fix list with effort/impact ratings, and a rewritten
-  headline pair showing the corrected ad↔page hook if the score is below threshold. Uses the
-  Message Match Framework (unbounce / Peep Laja lineage): scanned promise → page confirmation →
-  action alignment. Composes `cta-variant-generator` for CTA fixes, `landing-page-heuristic-live-cro-auditor`
+  headline pair showing the corrected ad↔page hook if the score is below threshold. Built on the
+  established CRO concept of message match (popularized primarily by Unbounce): scanned promise →
+  page confirmation → action alignment, scored through our own four-pillar working rubric. Composes
+  `cta-variant-generator` for CTA fixes, `landing-page-heuristic-live-cro-auditor`
   for full-page heuristic issues, `analytics-report-reviewer` when performance data is attached,
   and `data-qa-measurement-gotcha-checker` as a data-quality gate when the user pastes metrics.
   Invoke when the user says "ad doesn't match landing page," "message match audit," "ad to LP
@@ -21,7 +22,7 @@ description: >
 
 High click-through, low conversion is almost always a broken promise. The visitor clicked because the ad made a claim — specific headline, specific offer, specific tone — and the landing page either buried it, changed it, or forgot it entirely. This audit finds every break in that scent trail and tells you exactly what to fix, in what order.
 
-The framework is the **Message Match Matrix** (Peep Laja / CXL lineage): every ad fires four implicit promises — the headline hook, the offer/value-prop, the CTA commitment level, and the visual/tonal frame. Each must be confirmed on the page within the first viewport. Miss one and you're paying for curiosity you're not converting.
+Message match is an established CRO concept (popularized primarily by Unbounce): the promise a visitor clicked must be confirmed on the page they land on. Our scoring engine, the **Message Match Matrix**, is a house working rubric that operationalizes that concept — every ad fires four implicit promises (the headline hook, the offer/value-prop, the CTA commitment level, and the visual/tonal frame), and each must be confirmed on the page within the first viewport. Miss one and you're paying for curiosity you're not converting.
 
 ---
 
@@ -188,7 +189,7 @@ Save audit output to `./audits/message-match-[brand-slug]-[YYYY-MM-DD].md` when 
 ## Principles (Non-Negotiable)
 
 - **Brand-brain first.** No audit begins until `brand-brain` returns the active brand digest. Voice, offer mechanics, and ICP awareness stage all calibrate the scoring.
-- **Scent trail, not semantic match.** The goal is the visitor's felt continuity — not keyword repetition. Same promise at same specificity; verbatim copying is not required.
+- **Scent trail, not semantic match.** The goal is the visitor's felt continuity — not keyword repetition. (The "scent trail" idea comes from information-foraging research — Pirolli & Card — and was carried into conversion work by Bryan Eisenberg.) Same promise at same specificity; verbatim copying is not required.
 - **Score granularly, fix precisely.** A vague "headline mismatch" is useless. Name the specific claim that broke and the specific fix that restores it.
 - **Compose, don't duplicate.** CTA fixes go through `cta-variant-generator`. Full-page CRO issues surface `landing-page-heuristic-live-cro-auditor`. Data quality gates go through `data-qa-measurement-gotcha-checker`. Don't rebuild those here.
 - **Truth discipline.** Never invent proof or performance claims. Rewritten copy uses only brand's confirmed proof; anything else is `[verify]`.

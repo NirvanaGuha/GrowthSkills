@@ -77,12 +77,12 @@ If the user hands only a competitor name with no URL, note the URL you'll target
 
 ### Step 2 — Build the matrix (Van Westendorp + value-metric framework)
 
-Apply the **Van Westendorp Price Sensitivity Meter** framing as the diagnostic backbone — not for primary research (no survey here), but as the analytical lens:
+Borrow the spirit of the **Van Westendorp Price Sensitivity Meter** as the diagnostic backbone — not the actual method (no survey here, and these are not VW's derived intersection points). These are loosely VW-inspired sensitivity bands we use here to reason about where a price sits for the ICP:
 
 - **Too cheap (quality signal risk):** below the floor where the ICP would question product quality or support quality.
 - **Acceptable range:** where most ICP buyers expect pricing to land.
 - **Too expensive:** above the ceiling where the ICP stops and evaluates alternatives.
-- **Point of marginal expensiveness:** where the ICP hesitates but might still convert with a strong ROI story.
+- **Upper resistance point:** where the ICP hesitates but might still convert with a strong ROI story.
 
 Layer the **value metric analysis** on top:
 

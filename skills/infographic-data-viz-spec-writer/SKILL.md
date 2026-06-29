@@ -4,7 +4,7 @@ description: >
   Turns raw data, stats, or a research dump into a production-ready infographic spec that a designer
   or Canva/Figma operator can execute without a briefing call. Applies the LATCH information
   architecture framework (Location, Alphabet, Time, Category, Hierarchy) to decide structure, then
-  follows Cairo's Grammar of Graphics to select the right chart type for each data relationship — so
+  follows a chart-selection grammar to pick the right chart type for each data relationship — so
   every visual element earns its place and tells one honest story. Outputs a section-by-section spec
   with: narrative arc, section headers and one-line data points, chart-type recommendation per
   section with encoding rationale, layout direction (vertical scroll, horizontal panels, grid),
@@ -47,7 +47,7 @@ doesn't support a clean story, this skill says so instead of decorating noise.
 ```
 Step 0  Load the brand      ──► call brand-brain; get palette, voice, ICP, banned words
 Step 1  Interrogate the data ──► apply LATCH to determine the right organizing structure
-Step 2  Select chart types   ──► apply Cairo's grammar per data relationship
+Step 2  Select chart types   ──► apply the chart-selection grammar per data relationship
 Step 3  Write the spec       ──► section-by-section: header, stat, chart type, encoding rationale,
                                   copy skeleton, layout + color direction
 Step 4  Self-review          ──► truth discipline, brand voice, one-message-per-panel rule
@@ -86,7 +86,7 @@ axis per section.
 
 ---
 
-## Framework 2 — Cairo's Grammar of Graphics (chart selection)
+## Framework 2 — Chart-selection grammar (chart selection)
 
 For each data relationship in the spec, choose the encoding that matches the relationship type.
 Always name the chart type AND write a one-line encoding rationale. Never choose a chart because
@@ -103,8 +103,8 @@ it looks interesting; choose it because it encodes the relationship honestly.
 | Flow / process | Sankey or linear flow diagram | Pie chart |
 | Single big number | Stat callout (large numeral + context line) | Gauge chart |
 
-Apply Cairo's principle: **every ink element encodes data or aids navigation; everything else is
-chartjunk and gets cut.**
+Apply Edward Tufte's data-ink principle: **every ink element encodes data or aids navigation;
+everything else is chartjunk and gets cut.**
 
 ---
 
@@ -200,7 +200,7 @@ spec exceeds a single screen of output.
 
 - `brand-brain` called and palette + voice loaded before any color or copy decision?
 - LATCH axis named and justified in the spec header?
-- Every chart type named with a one-line Cairo encoding rationale?
+- Every chart type named with a one-line encoding rationale?
 - All stats real and sourced, or marked `[verify]`?
 - Each section has exactly one takeaway line (not two, not zero)?
 - Color encoding uses brand palette tokens, not arbitrary hex values?

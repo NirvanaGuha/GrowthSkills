@@ -3,9 +3,9 @@ name: ecommerce-seasonal-promotional-campaign-planner
 description: >
   Takes a sale window, discount structure, and product selection and turns them into a complete,
   week-by-week multi-channel campaign calendar with ready-to-use copy blocks, channel-specific
-  timing logic, and a rollout checklist — built on the RACE (Reach, Act, Convert, Engage) + Promotional
-  Intensity Curve framework so every campaign has a proper pre-launch warm-up, peak, and post-sale
-  retention tail. Outputs email sequence structure, web push notification copy, banner copy, SMS
+  timing logic, and a rollout checklist — built on the RACE (Reach, Act, Convert, Engage) framework
+  plus a promotional intensity curve (our working cadence model) so every campaign has a proper
+  pre-launch warm-up, peak, and post-sale retention tail. Outputs email sequence structure, web push notification copy, banner copy, SMS
   if applicable, and a go/no-go launch checklist — composing existing copy skills rather than
   re-implementing them. On-brand throughout via brand-brain. Use when the user says "plan my BFCM
   campaign," "build a Black Friday calendar," "map out our summer sale," "set up a flash sale
@@ -73,9 +73,9 @@ Ask ≤4 clarifying questions if critical fields are missing. Never block the ru
 
 ---
 
-## The RACE + Promotional Intensity Curve framework
+## The RACE framework + our promotional intensity curve
 
-Every campaign is built on two interlocked structures:
+Every campaign is built on two interlocked structures: the RACE framework and a promotional intensity curve (our working cadence model, not an established named framework).
 
 **RACE phases** (Dave Chaffey / Smart Insights):
 | Phase | Job | Timing relative to peak |

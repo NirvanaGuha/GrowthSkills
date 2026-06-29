@@ -21,7 +21,7 @@ description: >
 A tier structure is a segmentation hypothesis made permanent in a pricing page. Get it wrong and
 you either compress ARPU by giving power-user features away free, or you stall conversion by
 over-gating features that prove value. This skill designs the tier architecture from first
-principles — or audits an existing one — using the Van Westendorp / Good-Better-Best framework
+principles — or audits an existing one — using the Good-Better-Best framework
 as a spine and value-metric anchoring as the discipline.
 
 It does not invent feature names or set exact dollar prices. It produces the structure — what

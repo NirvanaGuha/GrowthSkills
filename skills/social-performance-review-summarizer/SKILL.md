@@ -5,8 +5,8 @@ description: >
   data dump from LinkedIn, Instagram, Facebook, X/Twitter, TikTok, or Pinterest — and
   returns an executive-ready performance summary with a top-posts ranking, platform-accurate
   engagement-rate benchmarks, trend narrative, and a prioritized action list the social
-  manager can act on in the next publishing cycle. Applies the 3-Horizon Social Review
-  framework: (1) What happened (data synthesis), (2) What it means (benchmark-calibrated
+  manager can act on in the next publishing cycle. Applies a 3-horizon social review
+  structure we use here: (1) What happened (data synthesis), (2) What it means (benchmark-calibrated
   interpretation), (3) What to do next (copy-ready recommendations). Designed to replace
   the Sunday-afternoon manual Excel grind. Calls `brand-brain` for voice/ICP context and
   `post-quality-reviewer-voice-auditor` for the creative diagnosis pass on underperforming
@@ -43,7 +43,7 @@ Step 1  Parse the export        ──► normalize to canonical schema (see bel
 Step 2  Compute rates           ──► engagement rate per post, platform-accurate formula
 Step 3  Rank + diagnose         ──► top-3 / bottom-3 posts; pattern across the middle
 Step 4  Benchmark               ──► compare to platform norms + brand's own historical baseline
-Step 5  Write the summary       ──► 3-Horizon structure; brand voice; no invented numbers
+Step 5  Write the summary       ──► 3-horizon structure (our working model); brand voice; no invented numbers
 Step 6  Action list             ──► ≤5 prioritized, each tied to a specific finding
 Step 7  (optional) escalate     ──► call post-quality-reviewer-voice-auditor on bottom posts
                                      call board-exec-summary-writer if deck format requested
@@ -75,7 +75,7 @@ Flag missing fields explicitly; never impute reach from impressions or vice vers
 
 ---
 
-## The 3-Horizon Social Review Framework
+## The 3-Horizon Social Review Structure (our working model)
 
 ### Horizon 1 — What happened (data layer)
 

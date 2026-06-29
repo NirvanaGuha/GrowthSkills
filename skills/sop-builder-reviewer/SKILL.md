@@ -8,9 +8,9 @@ description: >
   readable SOP in a consistent house format, plus a structured Gap & Ambiguity Review that flags
   every missing step, orphaned decision, uncleaned edge case, and un-owned task. Works for any
   repeatable growth or content-marketing process: content production, campaign launch, weekly
-  reporting, onboarding, partnership outreach, or ad-hoc ops workflows. Applies the SIPOC +
-  Failure Mode framework: Suppliers → Inputs → Process → Outputs → Customers, overlaid with
-  FMEA-lite to surface what breaks and who is accountable. Saves reusable SOPs to ./ops/ by
+  reporting, onboarding, partnership outreach, or ad-hoc ops workflows. Applies the SIPOC
+  frame: Suppliers → Inputs → Process → Outputs → Customers, overlaid with a severity-sorted
+  gap & failure-mode audit to surface what breaks and who is accountable. Saves reusable SOPs to ./ops/ by
   default so the team can version and link them. Use when the user says "write an SOP," "turn
   this into a process doc," "document how we do X," "review this runbook," "what's missing from
   this process," "standardize this workflow," "who owns what step," or pastes a messy thread
@@ -37,7 +37,7 @@ On most inputs both run in sequence — build first, then immediately self-audit
 - **`meeting-prep-follow-up-pack`** — when input is a meeting transcript or post-meeting notes,
   call this first to extract decisions and action items before structuring the SOP.
 - **`pre-mortem-post-mortem-generator`** — for mature SOPs, call after building to layer in a
-  structured failure-mode analysis (FMEA-lite step uses its output).
+  structured failure-mode analysis (the gap audit in Step 4 uses its output).
 - **`prioritization-framework-suite`** — when multiple SOP candidates come in at once and the
   user needs to decide which to document first.
 - **`campaign-brief-builder`** — when the SOP being built is for a campaign launch workflow;
@@ -51,7 +51,7 @@ On most inputs both run in sequence — build first, then immediately self-audit
 Step 0  Load brand context   ──► call brand-brain (voice + banned words for any shareable output)
 Step 1  Classify the input   ──► raw source (Build) | existing SOP (Review) | both
 Step 2  Extract & structure  ──► SIPOC scaffold → step-by-step SOP draft
-Step 3  FMEA-lite review     ──► gap/ambiguity/owner audit on the draft
+Step 3  Gap & ambiguity audit ──► severity-sorted gap/ambiguity/owner audit on the draft
 Step 4  Resolve or flag      ──► ask for gaps it cannot infer; mark unresolvable ones [clarify]
 Step 5  Write & save         ──► final SOP + Gap Review to ./ops/<slug>-sop.md
 ```
@@ -153,10 +153,12 @@ Every step is:
 
 ---
 
-## Step 4 — FMEA-lite gap & ambiguity review
+## Step 4 — Gap & ambiguity review
 
 After building (or when reviewing an existing SOP), run a structured audit before presenting.
-This is the review half of the skill — apply it to your own output, not just to inputs.
+This is the review half of the skill — apply it to your own output, not just to inputs. The
+audit borrows the failure-mode mindset of FMEA but ranks gaps on a single severity axis (not
+FMEA's full Severity × Occurrence × Detection score).
 
 **The seven gap categories:**
 
@@ -197,7 +199,7 @@ For long or multi-team SOPs, offer to split the Gap Review into a separate
 - **Owners, not "the team."** Every step must have a named role. "The team" is not an owner.
 - **Clarify, don't invent.** Missing information gets `[clarify]`, not a plausible guess.
   A SOP with a wrong step is more dangerous than one with a flagged gap.
-- **FMEA-lite is non-negotiable.** Every SOP the skill produces gets a gap audit — even the
+- **The gap audit is non-negotiable.** Every SOP the skill produces gets a gap audit — even the
   ones that look simple. Edge cases live in the "simple" ones.
 - **Brand-brain first for anything external.** Light-touch is fine for internal docs; hard
   override for anything that leaves the team.
@@ -224,6 +226,6 @@ For long or multi-team SOPs, offer to split the Gap Review into a separate
 - Every step is verb-first, single-action, owner-assigned, and tool-named (or `[clarify]`)?
 - Done-state defined for the overall process and for any branching steps?
 - Edge cases and escalation paths present?
-- FMEA-lite Gap Review run; High-severity gaps surfaced to user before finalizing?
+- Gap Review run; High-severity gaps surfaced to user before finalizing?
 - Output saved to `./ops/<process-slug>-sop.md` with version and date?
 - No invented owners, invented tools, or invented SLAs — real or `[clarify]`?

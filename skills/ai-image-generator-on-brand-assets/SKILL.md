@@ -37,7 +37,7 @@ Visual identity is non-negotiable: wrong colors and wrong fonts ship brand debt 
 ```
 Step 0  Load the brand visual identity  ──► call brand-brain
 Step 1  Classify the asset + resolve the spec
-Step 2  Write the precision image prompt  (the CRISP framework)
+Step 2  Write the precision image prompt  (the CRISP checklist)
 Step 3  Produce the render recipe (format, size, post-processing)
 Step 4  Optional: variant set + QA checklist
 ```
@@ -78,9 +78,9 @@ Map the brief to a canonical spec. If the user names a platform, apply the curre
 
 ---
 
-## Step 2 — The CRISP Prompt Framework
+## Step 2 — The CRISP Prompt Checklist (our working model)
 
-Every prompt this skill writes follows CRISP — the five elements that eliminate ambiguity from AI image generators:
+Every prompt this skill writes follows CRISP — a house checklist we use here, five elements that eliminate ambiguity from AI image generators:
 
 - **C — Composition.** Framing, perspective, subject placement (rule of thirds, center-weight, bleed edge), negative space for text overlay, foreground/background relationship.
 - **R — Rendering style.** Photorealistic / editorial / flat-vector / isometric / hand-drawn illustration / cinematic — match the brand's visual style sheet. Name the aesthetic precisely ("editorial product photography," not "nice photo").

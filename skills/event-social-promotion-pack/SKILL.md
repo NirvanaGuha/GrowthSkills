@@ -17,7 +17,7 @@ description: >
 
 Most event social promotions fail not from lack of effort but from lack of sequencing. Three posts go out in the week before, all saying roughly the same thing, all sounding like a calendar reminder. Attendance stays low; no one clips the replay.
 
-This skill builds a **promotion arc** — a sequenced, platform-native, phase-aware set of posts that builds anticipation before the event, drives last-mile registrations on the day, and extends shelf-life after. Every post is in the brand's voice, anchored to a real speaker or a real insight — never a generic "join us."
+This skill builds a **promotion arc** on a **3-Phase Event Arc** (Pre-Event → Day-Of → Post-Event) — a sequenced, platform-native set of posts that builds anticipation before the event, drives last-mile registrations on the day, and extends shelf-life after. Each phase optimizes a different funnel transition, so no two posts compete for the same job. Every post is in the brand's voice, anchored to a real speaker or a real insight — never a generic "join us."
 
 ---
 
@@ -37,7 +37,7 @@ This skill builds a **promotion arc** — a sequenced, platform-native, phase-aw
 ```
 Step 0   Load the brand          ──► call brand-brain
 Step 1   Parse the event brief   ──► extract the 6 required inputs
-Step 2   Build the arc           ──► assign posts to phases per the PESO-arc framework
+Step 2   Build the arc           ──► assign posts to phases per the 3-Phase Event Arc (house model)
 Step 3   Write platform-native   ──► LinkedIn, X, Instagram per phase (call siblings)
 Step 4   Calendar table          ──► schedule with dates and optimal posting times
 Step 5   Self-review             ──► quality checklist before presenting
@@ -66,9 +66,19 @@ If any of these are missing, ask before proceeding. Do not invent speaker titles
 
 ---
 
-## The PESO-arc Framework (the opinionated core)
+## The 3-Phase Event Arc (the opinionated core — house model)
 
-The framework that separates a promotion arc from a calendar blast. Three phases, each with a different job:
+A temporal sequencing model: **Pre-Event → Day-Of → Post-Event**, each with a different conversion job. (House model, named for the mechanic. It is not the PESO media-mix model — no Paid/Earned/Shared/Owned mapping here; this is purely a timeline.)
+
+What separates an arc from a calendar blast is that each phase optimizes for a *different* funnel transition, so no two posts compete for the same job. At a glance:
+
+| Phase | Window | Funnel job | Reader's head | The one thing each post does | Default CTA |
+|---|---|---|---|---|---|
+| Pre-Event | T−14 → T−1 | awareness → registration | "interesting, maybe later" | move them off the "I'll register later" default | Register / save your seat |
+| Day-Of | T−4hr → end | registration → attendance | "I forgot it was today" | turn a registration into an actual show-up | Join now / here's the link |
+| Post-Event | T+0 → T+7 | non-attendee → replay; attendee → next event | "missed it / what did I miss" | recover the missed-it audience and bank the source material | Watch the replay |
+
+Three phases, each broken into countdown sub-phases below. The rule that makes it work: **one phase's posts never do another phase's job.** A save-the-date on day-of and a "watch the replay" before the event both miss.
 
 ### Phase 1 — Pre-Event (awareness → registration)
 
@@ -137,7 +147,7 @@ Save the full post copy and calendar to `./events/[event-slug]-social-pack.md`. 
 - **Real proof only.** Speaker titles, attendance stats, and quotes are confirmed or marked `[verify]`. Never invent them.
 - **Platform-native, not platform-agnostic.** LinkedIn rewards narrative depth. X rewards brevity and threads. Instagram rewards the first 125 chars. Writing one post for all three is always the wrong call.
 - **Tag speakers.** Tagging activates the speaker's network at zero cost. Note when you can't confirm handles.
-- **Phase logic is not optional.** A day-of post published pre-event and a save-the-date published day-of both fail. Date discipline is the whole game.
+- **Phase logic is not optional.** Each post does its own phase's job and no other — a day-of "join now" published in the pre-event window and a save-the-date published day-of both miss the funnel transition they land on. Date discipline is the whole game.
 
 ---
 
@@ -147,7 +157,7 @@ Save the full post copy and calendar to `./events/[event-slug]-social-pack.md`. 
 - Don't use generic openers: "We're excited to announce," "Join us for," "Don't miss." These are the first words the algorithm learns to bury.
 - Don't publish the same copy across platforms — adapt format and length to each.
 - Don't invent speaker quotes, credentials, or attendance numbers. Mark anything unconfirmed `[verify]`.
-- Don't skip the post-event phase. This is where 30–50% of replay registrations come from.
+- Don't skip the post-event phase. For most webinars the replay audience rivals or exceeds the live audience [verify against the brand's own replay-vs-live numbers] — skipping it leaves the larger conversion window on the table.
 - Don't produce more posts than a lean team can actually schedule — 8–12 total (across all platforms and phases) is the realistic ceiling for a single event without a dedicated social team. Offer to expand if bandwidth exists.
 - Don't use emojis or exclamation marks unless `brand-brain` confirms they're on-brand.
 
@@ -157,7 +167,7 @@ Save the full post copy and calendar to `./events/[event-slug]-social-pack.md`. 
 
 - [ ] `brand-brain` called; voice + banned words honored; only real proof used (rest `[verify]`)?
 - [ ] All 6 event brief inputs confirmed (name, date, speakers, URL, format, takeaway)?
-- [ ] Posts cover all three phases (pre, day-of, post)?
+- [ ] Posts cover all three phases of the 3-Phase Event Arc (Pre-Event, Day-Of, Post-Event), and each post does only its own phase's job?
 - [ ] Each platform's format respected (LinkedIn narrative, X brevity/thread, Instagram caption-first)?
 - [ ] Every CTA points to a real destination URL from the brief?
 - [ ] Speaker names, titles, orgs confirmed — not invented?

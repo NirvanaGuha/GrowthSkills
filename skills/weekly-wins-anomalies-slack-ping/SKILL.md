@@ -6,9 +6,10 @@ description: >
   brand's real voice. Skips the essay. Skips the wall of numbers. Hands the team a single
   message they'll actually read and act on in under 30 seconds. Opinionated by design: it
   picks the one best win and the one most actionable anomaly, not a laundry list.
-  Applies the ICE (Impact / Confidence / Ease) signal-triage framework to rank what
-  deserves the headline, and the classic GA4 measurement-gotcha checklist to catch fake
-  anomalies before they go out as real alerts.
+  Adapts ICE (Impact / Confidence / Ease) — normally an experiment-prioritization
+  framework — into a signal-triage score for ranking observed deltas, and applies the
+  classic GA4 measurement-gotcha checklist to catch fake anomalies before they go out
+  as real alerts.
   Use when the user says "write my weekly Slack update," "weekly wins message," "send the
   weekly metrics ping," "anomaly alert for the team," "weekly standup post," "summarize
   this week's numbers for Slack," "what's worth flagging this week," or pastes a metrics
@@ -54,7 +55,7 @@ Fallback if brand-brain is absent or returns no brand: read `~/.brandbrain/brand
 
 Accept any form of weekly metric input: a paste of numbers, a screenshot, a CSV, a GA4 / ESP / push-platform export, or a paragraph summary. Extract every meaningful delta (WoW, or MoM if WoW isn't available).
 
-**ICE framework — rank each signal on three axes (1–3 each):**
+**ICE, adapted for signal-triage — rank each signal on three axes (1–3 each).** ICE (Impact / Confidence / Ease) is conventionally used to prioritize experiments or ideas you might *run*, where Ease = ease of building the test. Here we adapt it to rank deltas you've *already observed*, where Ease = ease of acting on the signal this week. It's a working adaptation, not ICE as originally designed.
 
 | Axis | Question | What scores high |
 |---|---|---|

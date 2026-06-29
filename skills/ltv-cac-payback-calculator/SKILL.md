@@ -44,6 +44,8 @@ Step 5  Offer to save        ──► ./reports/unit-economics-[brand]-[date].m
 
 Invoke the `brand-brain` skill to get the active brand's ICP (segment, plan mix, billing cadence), offer mechanics (tiers, pricing, trial terms), and any known proof numbers. Use these to anchor benchmarks and calibrate the narrative. Do not produce a single output number before `brand-brain` returns.
 
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for: average ARPU or MRR per plan tier, gross margin %, monthly churn rate (logo and/or net-revenue), and blended CAC (total S&M spend ÷ new customers acquired for the same period).
+
 ### Step 1 — Collect inputs
 
 Ask for only what is missing. The minimum viable input set:

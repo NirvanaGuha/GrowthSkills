@@ -4,8 +4,8 @@ description: >
   Writes personalized, editor-ready pitch emails for media placement and podcast bookings. Takes a
   story angle, the journalist's beat or show's audience, and supporting materials (press release,
   bio, past coverage, episode archive) → produces a single tight pitch under 150 words with a
-  subject line built to earn an open, not a delete. Operates on the PESO pitch framework
-  (Paid/Earned/Shared/Owned lens for angle fit) with a three-beat structure: relevance hook,
+  subject line built to earn an open, not a delete. Adapts the PESO model
+  (Paid/Earned/Shared/Owned, coined by Gini Dietrich) as an angle-fit lens, with a three-beat structure: relevance hook,
   credibility proof, clear ask. Two modes: Media Pitch (reporters, editors, newsletters) and
   Podcast Booking Pitch (hosts, producers, booking managers). Does not write press releases,
   amplification packs, or executive quote polish — calls the sibling skills that own those jobs.
@@ -73,9 +73,9 @@ If the user supplies minimal target data, invoke `account-dossier-builder` with 
 
 ---
 
-## PESO Angle Fit Framework
+## PESO Angle Fit Lens
 
-Every placement opportunity has an optimal *why this, why now, why them* angle. Use the PESO lens to pressure-test fit before drafting:
+Every placement opportunity has an optimal *why this, why now, why them* angle. PESO (Gini Dietrich's media model) is a media-integration framework, not a pitching one — here we borrow it as a lens to pressure-test angle fit before drafting:
 
 | PESO tier | What it means for pitching | Angle test |
 |---|---|---|

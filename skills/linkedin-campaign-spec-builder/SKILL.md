@@ -78,7 +78,7 @@ Batch missing items into a single question block — never drip one question at 
 
 ### Step 2 — Set the LinkedIn Objective
 
-LinkedIn's Campaign Manager offers six objectives mapped to three funnel stages. Pick **one** per campaign group. For mixed-funnel briefs, specify separate campaign groups.
+LinkedIn's Campaign Manager offers six objectives mapped to three funnel stages [verify — LinkedIn periodically renames/reorganizes objectives; confirm the current set in Campaign Manager]. Pick **one** per campaign group. For mixed-funnel briefs, specify separate campaign groups.
 
 | Stage | LinkedIn Objective | When to use |
 |---|---|---|

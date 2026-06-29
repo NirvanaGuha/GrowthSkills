@@ -26,8 +26,9 @@ that earns the tap AND survives legal review.
 SMS and WhatsApp are the highest-intimacy channels in the stack. Open rates sit above 90%
 [verify exact figure against your ESP/CPaaS data], but the trust budget is thin: a single
 off-brand, spammy, or legally non-compliant message trains subscribers to opt out permanently.
-This skill applies the **BRIEF framework** (Brevity · Relevance · Intent · Evidence · Fallback)
-to every message so the copy is tight, compliant, and brand-true.
+This skill applies **BRIEF** (Brevity · Relevance · Intent · Evidence · Fallback) — our
+working checklist for this skill — to every message so the copy is tight, compliant, and
+brand-true.
 
 ---
 
@@ -103,7 +104,7 @@ a **[COMPLIANCE BLOCK]** — do not write the message until resolved.
 
 ---
 
-## The BRIEF framework (craft model for every message)
+## BRIEF — our working checklist for every message
 
 **B — Brevity.** Under 160 GSM characters for single-segment SMS (see limits below). Every
 word must earn its place; cut adjectives before cutting substance.
@@ -144,7 +145,7 @@ For each message, report: `[Channel] [N chars / M segments] [Encoding: GSM / Uni
 ## Quick mode (single message)
 
 1. Read the brief for: trigger event, goal, audience segment, offer, destination.
-2. Apply the BRIEF framework — draft the body first without the opt-out line.
+2. Apply the BRIEF checklist — draft the body first without the opt-out line.
 3. Prepend the brand identifier if not baked into the sender ID (e.g., "PushEngage:").
 4. Append the required opt-out line for the stated jurisdiction.
 5. Count: total chars, segment count, encoding type.

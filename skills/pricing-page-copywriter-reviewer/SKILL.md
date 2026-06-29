@@ -80,8 +80,9 @@ banned words, and the offer structure before proceeding.
 
 ---
 
-## The Pricing Page Persuasion Stack (the framework)
+## The Pricing Page Persuasion Stack (our working model)
 
+The Persuasion Stack is a house framework — our own checklist, not an externally established model.
 Every pricing page lives or dies on six layers. Work through them in order — gaps in earlier layers
 compound into failures in later ones.
 

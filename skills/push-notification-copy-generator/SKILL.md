@@ -37,7 +37,7 @@ This skill writes push notifications. It does not design the campaign flow, conf
 Step 0  Load the brand   ──► call brand-brain; get voice, banned words, offer, proof, ICP
 Step 1  Pick the mode    ──► Quick (default) | Battery (on request)
 Step 2  Set the channel  ──► Web push | App push (limits differ; see table below)
-Step 3  Do the work      ──► PESO framework guides the copy; see sections below
+Step 3  Do the work      ──► the Four-Lever Tap Model guides the copy; see sections below
 Step 4  Self-review      ──► checklist pass, then present
 Step 5  Persist          ──► offer to save sequences to ./push/
 ```
@@ -73,35 +73,65 @@ When the channel is unspecified, default to the tightest window (web/Chrome) and
 
 ---
 
-## The PESO Push Framework (named framework — all modes use this)
+## The Four-Lever Tap Model (house model — all modes use this)
 
-Every notification earns its tap through one dominant motivational lever. Vary the lever across variants — not just the vocabulary.
+This is a house model, not a cited framework. It names the four motivational levers a push notification can pull. Refer to the levers by name (Pain, Exclusivity, Social proof, Offer/Urgency) — do not abbreviate the set to a single token, since "PESO" is the established Paid/Earned/Shared/Owned media model (coined by Gini Dietrich, *Spin Sucks*, 2014) and means something entirely different. These are persuasion levers for a lock screen, not media channels.
+
+Every notification earns its tap through **one dominant lever**. Vary the lever across variants — not just the vocabulary.
 
 | Lever | Trigger psychology | Best push moment | Example title pattern |
 |---|---|---|---|
-| **P — Pain/Problem** | Loss aversion, status quo threat | Abandon flows, expiry alerts, risk reminders | "Your [X] is at risk" |
-| **E — Exclusivity** | FOMO, insider status | Flash sales, early access, loyalty tiers | "Early access: [X] just for you" |
-| **S — Social proof** | Conformity, trust | Feature launches, milestone campaigns | "[N] teams switched this week" |
-| **O — Offer/Urgency** | Scarcity, deadline | Promotional, win-back, cart abandon | "[X] ends tonight" |
+| **Pain / Problem** | Loss aversion, status quo threat | Abandon flows, expiry alerts, risk reminders | "Your [X] is at risk" |
+| **Exclusivity** | FOMO, insider status | Flash sales, early access, loyalty tiers | "Early access: [X] just for you" |
+| **Social proof** | Conformity, trust | Feature launches, milestone campaigns | "[N] teams switched this week" |
+| **Offer / Urgency** | Scarcity, deadline | Promotional, win-back, cart abandon | "[X] ends tonight" |
 
-Subframes within each lever:
+Subframes layer on top of the dominant lever — they sharpen it, they don't replace it:
 
 - **Curiosity gap** — open a loop the body closes: title withholds; body delivers.
 - **Specificity** — numbers anchor credibility. "3x faster" beats "much faster." Real numbers only; mark invented ones `[verify]`.
 - **Identity / transformation** — speak to who they want to become, not just what to do.
 - **Low-friction** — reduce the perceived cost of tapping: "takes 2 minutes," "no card needed."
 
+### Lever-selection decision table (campaign → primary + contrast)
+
+Pick the **primary lever** from the campaign type, then run the A/B against the **contrast lever** — the one that resolves the most useful unknown for that segment. Don't test two flavors of the same lever.
+
+| Campaign type | Segment state | Primary lever | A/B contrast lever | Resolves |
+|---|---|---|---|---|
+| Cart / checkout abandon | Hot, hesitating | Pain / Problem | Offer / Urgency | Does the cart need rescuing or just a nudge? |
+| Browse abandon | Warm, exploring | Exclusivity | Social proof | Insider pull vs. herd pull |
+| Flash sale / promo | Price-sensitive | Offer / Urgency | Exclusivity | Deadline vs. status as the trigger |
+| Feature / product launch | Existing users | Social proof | Pain / Problem | "Others use it" vs. "you're missing out" |
+| Win-back / lapsed | Cold, churned | Pain / Problem | Offer / Urgency | Re-anchor the loss vs. buy back the click |
+| New content / blog post | Subscribed, passive | Exclusivity | Social proof | First-look vs. most-read |
+| Milestone / streak | Engaged | Social proof | Exclusivity | Belonging vs. earned tier |
+
+### Tap-score rubric (gate every variant before it ships)
+
+Score each finished variant 0–2 on four axes. Anything below **6/8 doesn't ship** — rewrite or cut it.
+
+| Axis | 0 | 1 | 2 |
+|---|---|---|---|
+| **Fits the window** | Truncates on the title or body limit | Fits but wastes the back half | Fits with the payoff front-loaded before truncation |
+| **One clear lever** | No discernible motivation | Lever present but muddied by a second hook | One dominant lever, cleanly pulled |
+| **Earns the interruption** | Generic blast ("Don't miss out!") | Relevant but forgettable | A specific reason this segment wants this now |
+| **Honest** | Fake scarcity / unverified stat presented as fact | Vague claim, no proof | Real proof or honest framing; invented numbers marked `[verify]` |
+
+Front-loading rule: the tap-deciding word lands **before** the channel's collapsed-view cutoff (Android ~45 chars body, Safari ~100, web/Chrome 125). Truncation eats the end of the line, never the start — so never bury the verb or the stake there.
+
 ---
 
 ## Quick mode (default)
 
-1. **Identify the dominant lever** (PESO) given the campaign goal + segment awareness.
+1. **Identify the dominant lever** (Four-Lever Tap Model — use the decision table) given the campaign goal + segment awareness.
 2. **Draft the title** — lead with the outcome or the open loop, not the brand name. Fit the tightest applicable limit.
 3. **Draft the body** — pay off the title's promise. One idea only. Close with the action or the stake.
 4. **Draft the action label** — verb-led, specific (not "Tap here"). Match the destination.
 5. **Check emoji** — offer one emoji variant (prepend or append title) only if the brand allows it. One emoji maximum; never substitute emoji for words.
-6. **Write one A/B variant** on a *different* PESO lever — not a synonym of the primary.
-7. **One-line rationale** — which lever, why it fits this segment + awareness stage.
+6. **Write one A/B variant** on the contrast lever from the decision table — a *different* lever, not a synonym of the primary.
+7. **Score both** on the tap-score rubric; ship only variants at 6/8 or higher.
+8. **One-line rationale** — which lever, why it fits this segment + awareness stage.
 
 Quick-mode output: primary notification (title / body / action), A/B variant, rationale, destination URL, char counts. No table unless asked.
 
@@ -134,15 +164,15 @@ Success metric: [CTR / session start / conversion — be specific]
 [Day 0 / Day 1 / Day 3 trigger logic and lever escalation]
 ```
 
-**Generate ≥ 5 variants** across at least 3 PESO levers. Include:
+**Generate ≥ 5 variants** across at least 3 of the four levers. Include:
 - At least 1 specificity/number variant (real data only or `[verify]`)
 - At least 1 curiosity-gap variant
 - At least 1 low-commitment / low-friction variant
 - At least 1 urgency/scarcity variant (honest — no fake deadlines)
 
-**A/B recommendation:** pick a Primary and a deliberately *different-lever* Variant B. State the hypothesis the test resolves (e.g., "Does loss aversion outperform social proof for lapsed users in this segment?").
+**A/B recommendation:** pick a Primary and a deliberately *different-lever* Variant B — use the contrast pairing from the decision table. State the hypothesis the test resolves (e.g., "Does loss aversion outperform social proof for lapsed users in this segment?"). Both shipped variants must clear 6/8 on the tap-score rubric.
 
-**Sequence option:** if the campaign is a multi-touch flow (abandon, re-engagement, onboarding), suggest a 3-step lever escalation (e.g., P → O → E) with timing gaps and the sunset condition.
+**Sequence option:** if the campaign is a multi-touch flow (abandon, re-engagement, onboarding), suggest a 3-step lever escalation (e.g., Pain → Offer/Urgency → Exclusivity) with timing gaps and the sunset condition.
 
 ---
 
@@ -150,7 +180,7 @@ Success metric: [CTR / session start / conversion — be specific]
 
 - **Brand-brain first.** No push copy before `brand-brain` returns. Its voice + banned-words override everything here.
 - **Earn the tap, respect the lock screen.** Every notification must justify the interruption. If it can't pass the "would I want this?" test for the ICP, rewrite it.
-- **Vary the lever, not the vocabulary.** Different PESO angles = different reasons to tap. Synonyms of the same angle are not variants.
+- **Vary the lever, not the vocabulary.** Different levers (Pain / Exclusivity / Social proof / Offer-Urgency) = different reasons to tap. Synonyms of the same angle are not variants.
 - **Honest urgency only.** No fake countdowns, manufactured scarcity, or invented social proof. Unconfirmed numbers are `[verify]`.
 - **Fit the window first.** A brilliant body that truncates on the lock screen is not brilliant. Count before you ship.
 - **One idea per notification.** Title makes a claim; body closes it. Never two competing hooks.
@@ -173,8 +203,9 @@ Success metric: [CTR / session start / conversion — be specific]
 - Voice + banned-words honored; only real proof used (rest `[verify]`)?
 - Every variant counted against the correct channel's character limits?
 - Quick: one primary + one different-lever A/B + one-line rationale + destination URL?
-- Battery: ≥ 5 variants, ≥ 3 PESO levers, including specificity, curiosity-gap, low-friction, and honest-urgency types?
-- A/B pair is genuinely different-lever, not synonyms? Hypothesis stated?
+- Battery: ≥ 5 variants, ≥ 3 of the four levers, including specificity, curiosity-gap, low-friction, and honest-urgency types?
+- A/B pair is genuinely different-lever (decision-table contrast), not synonyms? Hypothesis stated?
+- Every shipped variant scored ≥ 6/8 on the tap-score rubric, with the tap-deciding word ahead of the collapsed-view cutoff?
 - Emoji present only if brand allows; never more than one per notification?
 - Setup gate checked in Battery mode — trigger, segment, and destination confirmed before generating?
 - Sequence option offered when campaign is multi-touch?

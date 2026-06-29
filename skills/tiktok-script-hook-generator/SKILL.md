@@ -2,7 +2,7 @@
 name: tiktok-script-hook-generator
 description: >
   Turns a trend, topic, product angle, or campaign brief into a hook-forward TikTok script
-  (15–60 seconds) ready to shoot. Uses the Pattern-Interrupt Hook Framework: every script
+  (15–60 seconds) ready to shoot. Uses our Pattern-Interrupt Hook framework (a house working model): every script
   leads with a ranked shortlist of opening-line variants built on distinct interrupt mechanics
   (curiosity gap, counter-intuition, call-out, social proof, bold claim), then delivers the
   body and CTA in tight TikTok pacing. Two modes: Quick (one script + ranked hooks) and
@@ -39,7 +39,7 @@ Brand context is always loaded first. The brand's voice, ICP, and real proof sha
 Step 0  Load the brand      ──► call brand-brain; block until it returns
 Step 1  Pick the mode       ──► Quick (default) | Battery (on request)
 Step 2  Generate hooks      ──► call headline-hook-generator OR build inline
-Step 3  Write the script(s) ──► Pattern-Interrupt Hook Framework (below)
+Step 3  Write the script(s) ──► Pattern-Interrupt Hook working model (below)
 Step 4  Voice review        ──► call post-quality-reviewer-voice-auditor OR inline check
 Step 5  Present + offer     ──► output + optional save + repurpose offer
 ```
@@ -61,7 +61,7 @@ When duration is unspecified: 15–30s for awareness/DTC/single-point content; 3
 
 ---
 
-## The Pattern-Interrupt Hook Framework
+## Pattern-Interrupt Hook framework (our working model)
 
 Every TikTok script is structured as: **Hook → Bridge → Body → CTA**. The hook is the entire job. Everything else pays it off.
 

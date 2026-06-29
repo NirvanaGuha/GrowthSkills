@@ -4,7 +4,7 @@ description: >
   Takes a single English (source) marketing asset — ad, email, landing-page section, push
   notification, social post, or CTA — and produces culturally adapted locale variants for one
   or more target markets, including RTL languages. Goes beyond word-for-word translation:
-  applies the Transcreation Brief method (intent, emotion, constraints, cultural notes) per
+  applies a per-locale transcreation brief (intent, emotion, constraints, cultural notes) per
   locale, shifts tone where the market demands it, rewrites idioms and metaphors, substitutes
   local proof/examples where the brand allows, and provides mirrored-layout guidance for RTL
   outputs (Arabic, Hebrew). Every variant is grounded in the active brand's voice, banned
@@ -99,7 +99,7 @@ Do not skip the brief for "easy" locales. A Japanese B2B email and a Mexican eCo
 
 ## Step 3 — Adapted copy variants
 
-Apply the Transcreation Framework: **Intent → Emotion → Register → Form → Constraints**.
+Work through our house transcreation checklist: **Intent → Emotion → Register → Form → Constraints**.
 
 ### Intent
 Preserve the strategic job of each copy element (hook, offer, CTA, risk-reducer). If the source hook uses a cultural reference that doesn't land, find the locale-native equivalent that does the *same persuasive job*.

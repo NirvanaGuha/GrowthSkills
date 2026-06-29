@@ -99,11 +99,15 @@ If `de-slop-humanize-pass` is unavailable or the slop count is low, apply the re
 
 ### Step 3 — Write three variants
 
-The Kelleher–Simmons Voice-Fidelity Framework: the goal is to produce the quote the exec *would have said* if they had twenty minutes to craft it, not the quote a PR intern wrote for them. Every variant must clear three gates:
+**Voice-fidelity principle (house rule):** produce the quote the exec *would have said* if they had twenty minutes to craft it — not the quote a PR intern wrote for them. Polish toward the speaker's own best version, never toward a generic corporate one.
 
-1. **Authenticity gate.** Would this exec plausibly say this, based on their fingerprint? A CTO who uses technical shorthand should not suddenly sound like a CMO.
-2. **Claim gate.** Every claim must be as specific or more specific than the original, never vaguer. Replace a vague claim with the real number from `proof-vault` or `[verify]` it.
-3. **Brand gate.** No banned words; voice adjectives honored; positioning coherent.
+**The three gates.** Every variant must clear all three, in order. Fail any gate and rewrite before moving on; do not trade one gate against another.
+
+| Gate | Question | Pass test | Fail → action |
+|------|----------|-----------|---------------|
+| 1. Authenticity | Would *this* exec plausibly say this, given their fingerprint (Step 1)? | Read it aloud in their cadence and register; a CTO on technical shorthand must not drift into CMO gloss. | Re-anchor to the transcript's actual vocabulary and rhythm. |
+| 2. Claim | Is every claim as specific as the original, or more — never vaguer? | Each assertion carries a number, a name, or a concrete mechanism. | Pull the real figure from `proof-vault`/brand digest, or tag `[verify]`. Never soften to atmosphere. |
+| 3. Brand | Does it honor voice adjectives, dodge banned words, and stay positioning-coherent? | Zero `[BANNED]` hits; voice adjectives satisfied; claim consistent with the positioning line. | Apply the Step 2 replacement table; reconcile exec voice with brand voice without overriding either. |
 
 Deliver exactly three variants, each under a labeled H3:
 

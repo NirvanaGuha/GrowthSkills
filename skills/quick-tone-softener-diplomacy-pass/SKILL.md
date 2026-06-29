@@ -4,8 +4,8 @@ description: >
   Takes a blunt, terse, or potentially inflammatory Slack message, email, or internal memo draft and
   returns a diplomatically rephrased version that lands well without burying the core message — plus
   optional memo formatting when the output needs to travel as a formal document. Built around the
-  SBI (Situation–Behavior–Impact) diplomatic communication framework combined with the Assertiveness
-  Ladder (direct → firm → diplomatic → collaborative), so the output is never mealy-mouthed — it
+  SBI (Situation–Behavior–Impact) diplomatic communication framework combined with an assertiveness
+  ladder (direct → firm → diplomatic → collaborative; our working model), so the output is never mealy-mouthed — it
   stays assertive and honest while removing the friction that causes defensive reactions. Works for
   difficult feedback, escalations, pushback to leadership, cross-functional coordination friction,
   and any draft that made the user pause before hitting Send. Use when the user says "soften this,"
@@ -81,7 +81,7 @@ If the user provides context, use it. If not, state your inference and flag it: 
 
 ---
 
-## Step 3 — Rewrite via the SBI Assertiveness Ladder
+## Step 3 — Rewrite via SBI + the assertiveness ladder
 
 ### The SBI structure (core technique)
 
@@ -93,7 +93,7 @@ Every diplomatic message that carries a real point works on three rails:
 
 SBI removes the accusation without removing the fact. It replaces "you dropped the ball" with a sequence of agreed facts that leads the reader to the same conclusion without triggering defensiveness.
 
-### The Assertiveness Ladder (calibrate to register)
+### The assertiveness ladder (our working model — calibrate to register)
 
 Choose the rung that matches relationship level and desired outcome — never go below the minimum needed to be heard:
 
@@ -168,7 +168,7 @@ Save memo output to `./ops/[slug]-memo-[YYYY-MM-DD].md` if the user says "save" 
 ## Principles
 
 - **Keep the substance.** Softening the tone is not the same as walking back the point. If the original criticism is fair, it stays — reframed, not removed.
-- **Assertive, not obsequious.** Diplomatic does not mean deferential. The Assertiveness Ladder keeps a floor on directness.
+- **Assertive, not obsequious.** Diplomatic does not mean deferential. The assertiveness ladder keeps a floor on directness.
 - **SBI over attribution.** Specific observable behavior + impact beats character judgment every time. It's harder to argue with facts.
 - **One ask per message.** Multiple requests in one message split attention and make it easy to action one and ignore the rest.
 - **Match the channel.** Slack is not email. Email is not a memo. Length and warmth signals are calibrated per channel.
@@ -195,7 +195,7 @@ Save memo output to `./ops/[slug]-memo-[YYYY-MM-DD].md` if the user says "save" 
 - Draft diagnosed with a specific signal from the taxonomy, not a generic "this sounds harsh"?
 - Register (relationship level, channel, outcome, urgency) confirmed or stated as an inference?
 - Rewrite uses SBI structure: neutral Situation → observable Behavior → concrete Impact?
-- Assertiveness Ladder rung chosen and calibrated to register — not softer than needed?
+- Assertiveness ladder rung chosen and calibrated to register — not softer than needed?
 - Before/after shown with named changes?
 - No legitimate criticism removed; single explicit ask preserved?
 - Memo format applied and saved if requested?

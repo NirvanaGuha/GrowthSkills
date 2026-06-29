@@ -104,7 +104,7 @@ Best for teams that need to move fast or triage a large list without precise dat
 
 **Formula:** `WSJF = Cost of Delay / Job Size`
 
-Cost of Delay = sum of three relative scales (1–21 Fibonacci):
+Cost of Delay = sum of three relative scales (SAFe modified Fibonacci: 1, 2, 3, 5, 8, 13, 20):
 
 | Component | What to estimate |
 |---|---|
@@ -112,7 +112,7 @@ Cost of Delay = sum of three relative scales (1–21 Fibonacci):
 | **Time Criticality** | Does value decay if we wait? (seasonal, competitor window, expiry) |
 | **Risk Reduction / Opportunity Enablement** | Does doing this unlock or de-risk future work? |
 
-**Job Size** is the relative size of the job (also 1–21 Fibonacci).
+**Job Size** is the relative size of the job (same SAFe modified Fibonacci: 1, 2, 3, 5, 8, 13, 20).
 
 WSJF favors small, high-delay-cost items — which is often the right call in a fast-moving growth backlog. Useful when you need to justify sequence to an engineering or product partner. Remind operators that absolute numbers are meaningless; only the ratio and rank matter.
 

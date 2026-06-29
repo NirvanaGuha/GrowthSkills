@@ -66,9 +66,9 @@ Ask only what is missing:
 
 ---
 
-## The HBPC Production Framework
+## HBPC: our working production scaffold
 
-Every faceless video follows **Hook → Bridge → Points → CTA** — the same structure as high-performing organic short-form, adapted for voiceover delivery. Most faceless video fails not in production but in scripting: the hook doesn't earn the scroll, or the body lists features while the viewer is still problem-aware. HBPC fixes the awareness mismatch first, then builds the production bundle around it.
+Every faceless video follows **Hook → Bridge → Points → CTA** (HBPC) — our house shorthand for the same structure as high-performing organic short-form, adapted for voiceover delivery. Most faceless video fails not in production but in scripting: the hook doesn't earn the scroll, or the body lists features while the viewer is still problem-aware. HBPC fixes the awareness mismatch first, then builds the production bundle around it.
 
 ### Step 2 — Script (Hook → Bridge → Points → CTA)
 

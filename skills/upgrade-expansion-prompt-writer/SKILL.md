@@ -7,9 +7,9 @@ description: >
   modal copy variants (headline + body + CTA + microcopy), (b) a paywall-moment copy spec
   that replaces a hard block with a contextual sell, and (c) a prioritized trigger spec
   (which event fires which prompt, delay/timing logic, suppression rules, and success
-  metric per trigger). Rooted in the Moment-Fit Expansion Framework — the principle that
-  expansion prompts succeed or fail based on timing precision and benefit specificity, not
-  persuasion intensity. Every asset is written in the brand's live voice via brand-brain and
+  metric per trigger). Organized around our Moment-Fit Expansion model (a working framework
+  used in this skill) — the working principle that expansion prompts succeed or fail based on
+  timing precision and benefit specificity, not persuasion intensity. Every asset is written in the brand's live voice via brand-brain and
   composed with cta-variant-generator and in-app-microcopy-writer-auditor rather than
   rebuilding them. Use when the user says "write upgrade modal," "paywall copy," "upsell
   prompt," "expansion trigger," "limit-hit message," "trial conversion prompt," "upgrade
@@ -59,7 +59,7 @@ Fallback if brand-brain is absent or returns no brand: read `~/.brandbrain/brand
 
 ---
 
-## The Moment-Fit Expansion Framework
+## The Moment-Fit Expansion model (our working framework)
 
 Every upgrade or expansion prompt sits in one of four trigger categories. The category determines copy temperature, urgency type, and CTA commitment level. Misidentifying the category is the most common root cause of dismissed prompts.
 

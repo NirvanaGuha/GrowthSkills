@@ -3,8 +3,8 @@ name: event-recap-blog-post-writer
 description: >
   Turns event raw material — agenda, speaker quotes, poll results, live Q&A, chat highlights,
   and attendance stats — into a 600–900 word recap blog post that earns long-tail search traffic,
-  re-engages attendees, and converts non-attendees into pipeline. Applies the SOAR Recap framework
-  (Scene → Outcomes → Aha moments → Reader payoff) so the post reads like a curated editorial
+  re-engages attendees, and converts non-attendees into pipeline. Applies our SOAR Recap checklist
+  (Scene → Outcomes → Aha moments → Reader payoff, a house mnemonic) so the post reads like a curated editorial
   piece, not a schedule dump. Calls brand-brain for voice and proof; calls on-page-seo-optimizer
   for keyword targeting; calls content-repurposer-atomizer when you also need social/email cuts
   from the same raw material. Output is a complete, publish-ready draft saved to ./events/ with
@@ -17,7 +17,7 @@ description: >
 
 A great recap is not a transcript. It is a curated editorial piece that makes the reader feel they missed something worth knowing — and gives them enough of it that they benefit from reading. It has a search angle (people look up topics, not event names), real quotes that prove humans said real things, and a payoff the non-attendee gets without attending.
 
-This skill applies the **SOAR Recap framework** — Scene, Outcomes, Aha moments, Reader payoff — to produce a 600–900 word post that extends the event's shelf-life into search, re-engages attendees for future events, and seeds nurture flows.
+This skill applies our **SOAR Recap checklist** (our working mnemonic, not an established model) — Scene, Outcomes, Aha moments, Reader payoff — to produce a 600–900 word post that extends the event's shelf-life into search, re-engages attendees for future events, and seeds nurture flows.
 
 ---
 
@@ -87,7 +87,7 @@ Map inputs to a concrete outline before writing a single sentence:
 
 ---
 
-## The SOAR Recap framework — craft notes
+## The SOAR Recap checklist (our working mnemonic) — craft notes
 
 **Scene** earns the click. It must signal the topic (keyword) and the stakes, not just the logistics. Bad: "We held our quarterly webinar on June 15." Good: "Retention is harder than it looks — here is what 400 eCommerce operators said about it live."
 

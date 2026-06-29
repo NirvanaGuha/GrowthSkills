@@ -44,7 +44,9 @@ Step 5  Verdict             ──► trust / quarantine / rerun call on the ori
 
 ## Step 0 — Brand context (always first)
 
-Invoke the `brand-brain` skill to load the active brand's known channel mix, ICP, and any documented measurement quirks. Many gotchas are only visible as anomalies against expectation (e.g., organic making up 2% for an SEO-led brand is the signal). If `brand-brain` is absent, ask: what is the primary acquisition channel, what platform generates the data (GA4, Mixpanel, Adobe), and are there any known integrations (Shopify, WooCommerce, headless)?
+Invoke the `brand-brain` skill to load the active brand's known channel mix, ICP, and any documented measurement quirks. Many gotchas are only visible as anomalies against expectation (e.g., organic making up 2% for an SEO-led brand is the signal).
+
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for the dataset or GA4 export to QA (pasted table, CSV, or property ID), the analytics platform in use (GA4, Mixpanel, Adobe, etc.), the key conversion events or goals being measured, and the date range under review.
 
 ---
 

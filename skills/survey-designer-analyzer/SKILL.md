@@ -142,7 +142,7 @@ For each closed question:
 2. **Cross-tab highlights** — break by the most decision-relevant dimension available (segment, persona, tenure, plan tier). Only report differences that are >10 percentage points AND the smaller cell has n ≥ 30.
 3. **Trend note** — if prior wave data exists, note directional change without fabricating statistical significance unless n supports a chi-square.
 
-Use the **STARR narrative frame** for each finding cluster:
+Use our **STARR narrative frame** (a house mnemonic for this skill — unrelated to the STARR interview format) for each finding cluster:
 - **Signal** — what the numbers show
 - **Tension** — where subgroups diverge or results contradict expectations
 - **Assumption risk** — what the data cannot tell you (nonresponse bias, self-report limits)
@@ -178,7 +178,7 @@ Respondent n: [total] | Filtered n (post quality audit): [n]
 Data quality flags: [list or "none"]
 
 ### Key findings
-[3–5 bullets, each one a STARR-framed insight]
+[3–5 bullets, each one a STARR-framed insight (our house mnemonic, above)]
 
 ### Detailed findings
 [per-question or per-theme breakdown]

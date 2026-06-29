@@ -6,8 +6,8 @@ description: >
   kickoff agenda, and a TTV tracking spec. Calls brand-brain for voice and positioning, composes
   onboarding-flow-builder for the in-product activation track, and welcome-onboarding-email-sequence-builder
   for the email drip — then layers on the human-touch layer (CSM cadence, kickoff, escalation triggers,
-  QBR format) that neither sibling covers. Built on the DARE framework (Define → Activate → Reach
-  value → Expand). Produces a deployable onboarding playbook: kickoff agenda, milestone scorecard,
+  QBR format) that neither sibling covers. Structured around DARE (Define → Activate → Reach
+  value → Expand), our working four-phase model for onboarding. Produces a deployable onboarding playbook: kickoff agenda, milestone scorecard,
   CSM contact-schedule, and TTV tracking spec saved to ./onboarding/<slug>-program.md.
   Use when the user says "design our onboarding," "reduce time to value," "new customer program,"
   "CSM playbook," "post-sale journey," "onboarding milestones," "kickoff agenda," "TTV tracking,"
@@ -91,9 +91,9 @@ product milestone map.
 
 ---
 
-## The DARE Framework
+## DARE: our working four-phase model
 
-Every program runs on four phases. Name them using the brand's own language where possible.
+Every program runs on four phases (DARE is a house mnemonic we use here, not an external standard). Name them using the brand's own language where possible.
 
 | Phase | Job | Done when… |
 |---|---|---|

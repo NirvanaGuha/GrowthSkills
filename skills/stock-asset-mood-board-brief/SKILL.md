@@ -39,7 +39,7 @@ This skill briefs. It does not search, scrape, or generate images. It makes the 
 ```
 Step 0  Load the brand     ──► call `brand-brain`; extract palette, voice, ICP
 Step 1  Establish the brief ──► confirm or draft the campaign concept + tone
-Step 2  Run the framework  ──► VASTE analysis (below) → creative directions
+Step 2  Run the checklist  ──► VASTE analysis (below) → creative directions
 Step 3  Write the stock-search brief  ──► per platform, per priority
 Step 4  Write the mood board brief    ──► 5–8 visual directions, each fully specified
 Step 5  Self-review and present
@@ -69,7 +69,7 @@ If the user hasn't supplied a concept, ask for it or call `campaign-brief-builde
 
 ---
 
-## Step 2 — VASTE Framework (the core methodology)
+## Step 2 — VASTE analysis (our working checklist)
 
 Every visual direction is built through five lenses. Work through each before writing output.
 

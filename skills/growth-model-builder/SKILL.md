@@ -6,7 +6,7 @@ description: >
   mix, pricing tier data, churn/retention numbers, cohort curves — and produces a documented growth
   model: the acquisition loop (how strangers become customers), the retention loop (how customers stay
   and expand), a prioritized lever map (what to pull and in what order), and a set of leading indicator
-  KPIs with owner assignments. Built on the Reforge Growth Accounting + Loop Framework so a junior
+  KPIs with owner assignments. Built on the Reforge Loop Framework so a junior
   marketer gets output a senior would sign off on. Does NOT generate channel copy, OKRs, or a full
   marketing plan — it produces the strategic growth architecture those tools build on top of.
   Use when the user says "build my growth model," "map our acquisition loop," "what are our growth
@@ -73,7 +73,7 @@ If none of these are provided, run the model qualitatively (directional, not qua
 
 ---
 
-## The framework: Reforge Growth Accounting + Loop Model
+## The framework: Reforge Loop Model
 
 Every durable growth model has two interlocking loops. Build both.
 

@@ -3,8 +3,8 @@ name: social-content-calendar-builder
 description: >
   Turns content themes, active campaigns, and a posting frequency into a ready-to-execute
   month-long social media calendar — one row per post, with date, platform, format, topic/angle,
-  copy status (stub / draft / approved), and the sibling skill that writes the post. Built on the
-  PLATFORM-THEME-CADENCE (PTC) framework: it maps each platform's native format and algorithm
+  copy status (stub / draft / approved), and the sibling skill that writes the post. Built on our
+  working PLATFORM-THEME-CADENCE (PTC) model: it maps each platform's native format and algorithm
   reward to the brand's content pillars, syncs campaign windows and evergreen slots without
   starving either, and lands on a realistic weekly rhythm the team can actually keep. It does NOT
   manage brand context — it calls `brand-brain` for voice, ICP, offer/destinations, banned words,
@@ -71,7 +71,7 @@ If the user hands over a brief or a content brief already, read it for themes an
 
 ---
 
-## The PTC Framework — Platform-Theme-Cadence
+## The PTC model — Platform-Theme-Cadence (our working framework)
 
 ### P — Platform × Format matrix
 
@@ -91,7 +91,7 @@ Pick the formats that match the brand's ICP awareness stage (from brand-brain). 
 
 ### T — Theme allocation (the Content Mix Rule)
 
-Allocate slots across pillars using a deliberate mix. A default starting split — adjust by brand's funnel shape:
+Allocate slots across pillars using a deliberate mix. A default starting split (~35/25/20/15/5 — a common rule-of-thumb, not a sourced benchmark `[verify]`) — adjust by brand's funnel shape:
 
 | Pillar type | Target share | What goes here |
 |---|---|---|

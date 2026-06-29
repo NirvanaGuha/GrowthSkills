@@ -71,9 +71,9 @@ When unsure, default to Quick and offer Spread at the end.
 
 ---
 
-## The HOOKED framework (every headline is scored on six dimensions)
+## HOOKED — our working scoring model (every headline is scored on six dimensions)
 
-A headline that wins is rarely the cleverest — it's the one that scores across all six. Use HOOKED both to *generate* (each letter is a lever to pull) and to *rank* (1–5 per dimension; the top total wins, with judgment).
+HOOKED is a house mnemonic we use here, not an established external framework. A headline that wins is rarely the cleverest — it's the one that scores across all six. Use HOOKED both to *generate* (each letter is a lever to pull) and to *rank* (1–5 per dimension; the top total wins, with judgment).
 
 | Letter | Dimension | The question | Failure mode it catches |
 |---|---|---|---|

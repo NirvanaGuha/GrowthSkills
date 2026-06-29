@@ -3,8 +3,8 @@ name: app-store-listing-aso-optimizer-ios-android
 description: >
   Produces keyword-optimized App Store (iOS) and Google Play (Android) listing copy for any app —
   title, subtitle, keyword field (iOS), short description (Android), long description, and developer
-  response notes — grounded in real search-volume data and competitive gap analysis. Applies the
-  AppFollow / MobileAction ASO ranking framework: keyword discovery → competitive gap analysis →
+  response notes — grounded in real search-volume data and competitive gap analysis. Applies
+  a standard ASO ranking workflow: keyword discovery → competitive gap analysis →
   metadata architecture → copy-layer optimization → localization readiness. Calls brand-brain for
   voice and positioning, keyword-research-clustering-suite for keyword volume/difficulty data, and
   competitive-intelligence-dossier for competitor store listings. Outputs a ready-to-submit metadata
@@ -36,6 +36,7 @@ Layer L33 · App Store & Mobile Marketing (ASO). This skill produces the copy ar
 
 ```
 Step 0  Load brand             ──► call brand-brain (voice, ICP, banned words, proof)
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for: app name, primary store category and genre (e.g., "Productivity — task management"), 3–5 seed keywords or direct competitors, 3 voice adjectives that describe the brand tone, and any banned words or phrases.
 Step 1  Build keyword pool     ──► call keyword-research-clustering-suite + competitive-intelligence-dossier
 Step 2  Rank & gap-score       ──► Relevance × Volume / Difficulty matrix; surface uncontested high-volume terms
 Step 3  Architect metadata     ──► assign keywords to iOS fields + Android fields per platform rules
@@ -49,7 +50,7 @@ Step 5  Self-review & score    ──► checklist pass; deliver metadata sheet 
 
 ## The ASO Framework: Relevance × Discoverability × Conversion
 
-This skill builds on the three-axis model used by [AppFollow, AppTweak, MobileAction — verify which the user has access to]:
+This skill builds on the industry-common three-axis ASO model — reflected in most ASO tools (e.g. AppFollow, AppTweak, MobileAction [verify which the user has access to]), but not proprietary to any one of them:
 
 | Axis | What it means | How this skill handles it |
 |---|---|---|

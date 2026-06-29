@@ -65,7 +65,7 @@ Identify the deck type and set the narrative mode:
 
 If the deck is a pitch or narrative deck, invoke **`positioning-messaging-architect`** to confirm the through-line aligns with current positioning before building the arc.
 
-### Step 2 — Build the arc (Story Spine)
+### Step 2 — Build the arc (Story Spine — Kenn Adams)
 
 Map the deck to a Story Spine before writing any slide:
 
@@ -84,7 +84,7 @@ Compress or expand slides to fit the requested count. A short deck (8–12 slide
 
 ### Step 3 — Write slides (Assertion-Evidence framework)
 
-Apply the Assertion-Evidence framework (Swarts, 2012) to every content slide:
+Apply the Assertion-Evidence framework (Alley & Neely, 2005) to every content slide:
 
 - **Title = assertion.** A full declarative sentence that stands alone as the slide's claim. Not a topic label ("Customer Data"), not a vague noun phrase — a testable statement ("Churn drops 34% when subscribers receive a triggered campaign within 24 hours of intent signal"). The audience should know the point before reading the body.
 - **Body = evidence.** 2–4 supporting items (data, examples, mechanism, quote) that prove the title assertion. Use bullets only when items are genuinely parallel. Prefer short prose when there are fewer than 3 items. Never use bullets to smuggle a whole argument the title should be making.

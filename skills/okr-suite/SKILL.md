@@ -75,8 +75,9 @@ without clear focus, call `prioritization-framework-suite` before drafting Objec
 
 ### 1. Draft Objectives (the "where are we going?" layer)
 
-Apply the **Objective test**: an Objective is a qualitative, inspiring, direction-setting
-statement — not a metric, not a project, not an output. Each Objective should:
+Apply the **Objective quality check** (the standard OKR Objective qualities): an Objective is a
+qualitative, inspiring, direction-setting statement — not a metric, not a project, not an output.
+Each Objective should:
 
 - Describe a meaningful *change in state* for the brand or the customer.
 - Be achievable in the quarter but non-trivially ambitious.
@@ -87,8 +88,8 @@ Limit: 3–5 Objectives per quarter. More is dilution.
 
 ### 2. Draft Key Results (the "how will we know?" layer)
 
-For each Objective, write 2–4 Key Results using the **Doerr test** and the
-**lagging-vs-leading audit** (see below):
+For each Objective, write 2–4 Key Results using the **KR quality gate** (our working checklist) and
+the **lagging-vs-leading audit** (see below):
 
 | KR quality gate | Pass criteria |
 |---|---|
@@ -126,7 +127,8 @@ For each KR, compute progress as:
 ```
 progress = (current − baseline) / (target − baseline) × 100%
 ```
-RAG assignment (Google's canonical thresholds, adapted):
+RAG assignment (our working thresholds — note these differ from Google's canonical 0.0–1.0 OKR
+grading scale, where ~0.7 is the target sweet spot):
 
 | Score | Status | RAG |
 |---|---|---|

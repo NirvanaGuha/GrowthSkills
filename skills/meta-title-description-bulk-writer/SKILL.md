@@ -3,9 +3,9 @@ name: meta-title-description-bulk-writer
 description: >
   Takes a list of URLs and their target keywords and returns optimized meta titles and
   meta descriptions for every URL in one pass — at scale, without sacrificing SEO craft.
-  Applies the Click-Through Optimization (CTO) framework: each title balances the primary
-  keyword, a hook that raises the click-rate, and a character envelope that survives SERP
-  truncation; each description closes with a value proposition and a call to action.
+  Applies our Click-Through Optimization (CTO) checklist — a house working model: each title
+  balances the primary keyword, a hook that raises the click-rate, and a character envelope
+  that survives SERP truncation; each description closes with a value proposition and a call to action.
   Brand voice and banned words come from brand-brain (Layer-0); keyword clusters and
   search-intent signals can be piped in from keyword-research-clustering-suite or
   on-page-seo-optimizer. Output is a ready-to-import CSV plus an inline table, enabling
@@ -38,7 +38,7 @@ This skill handles volume without sacrificing craft. It does not crawl, audit, o
 Step 0  Load the brand        ──► call brand-brain; receive voice + banned words
 Step 1  Intake                ──► URL list + keywords + optional context (page type, existing title)
 Step 2  Intent classification ──► assign intent type per URL (informational / navigational / commercial / transactional)
-Step 3  Write in bulk         ──► apply CTO Framework per URL
+Step 3  Write in bulk         ──► apply the CTO checklist (our working model) per URL
 Step 4  Truncation check      ──► flag any title >60 chars or description >158 chars
 Step 5  Output                ──► inline table + CSV saved to ./seo/meta-tags-[slug]-[date].csv
 ```
@@ -84,7 +84,7 @@ Write the intent type into the output table — it's the audit trail that justif
 
 ---
 
-## Step 3 — The CTO Framework (Click-Through Optimization)
+## Step 3 — CTO checklist (Click-Through Optimization — our working model)
 
 Every title and description passes through three lenses before it ships.
 

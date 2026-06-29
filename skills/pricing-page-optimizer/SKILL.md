@@ -5,8 +5,9 @@ description: >
   prioritized improvement plan covering the four levers that move pricing-page
   conversion: tier anchoring (decoy/champion/contrast), value communication
   (feature-to-benefit translation, value metric clarity), objection handling
-  (trust signals, FAQ gaps, risk reducers), and CTA placement + copy. Uses the
-  Madhavan Ramanujam / Simon-Kucher pricing-design framework combined with the
+  (trust signals, FAQ gaps, risk reducers), and CTA placement + copy. Uses
+  classic behavioral-economics anchoring (decoy effect, good-better-best
+  contrast) for tier structure combined with the
   Fogg Behavior Model (Motivation × Ability × Prompt) to score each finding by
   conversion impact. Outputs a structured audit table, ranked quick-wins, a
   diff-ready copy block for every weak CTA or headline, and a ready-to-run A/B
@@ -80,7 +81,7 @@ Run all four modules. Each finding gets an **impact score** (High / Medium / Low
 
 ## The Four Levers (audit framework)
 
-### Lever 1 — Tier Anchoring (Simon-Kucher / Ramanujam)
+### Lever 1 — Tier Anchoring (behavioral-economics anchoring: decoy effect, good-better-best)
 
 Pricing pages convert by structuring choice, not by listing options. Score:
 

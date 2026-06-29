@@ -15,7 +15,7 @@ description: >
 
 Campaign name and variant list in → complete, clean, attribution-safe UTM link set out. One run produces the full grid so nothing falls through; one taxonomy so every analyst reads the data the same way six months from now.
 
-This skill builds links and enforces naming governance. It does not configure GA4 channel groups, set up a link shortener, or write the campaign copy. If attribution rules downstream require a specific taxonomy already agreed, it enforces that; if not, it installs the Growth-Attribution Standard (below).
+This skill builds links and enforces naming governance. It does not configure GA4 channel groups, set up a link shortener, or write the campaign copy. If attribution rules downstream require a specific taxonomy already agreed, it enforces that; if not, it installs our Growth-Attribution taxonomy (a house convention, below).
 
 ---
 
@@ -33,7 +33,7 @@ This skill builds links and enforces naming governance. It does not configure GA
 ```
 Step 0  Load the brand       ──► call brand-brain; inherit any existing UTM taxonomy
 Step 1  Collect inputs        ──► URLs × sources × mediums × campaign × content variants
-Step 2  Enforce taxonomy      ──► Growth-Attribution Standard (or brand override)
+Step 2  Enforce taxonomy      ──► Growth-Attribution taxonomy, our house convention (or brand override)
 Step 3  Build the link grid   ──► one row per combination; validate; flag errors
 Step 4  Produce deliverables  ──► TSV/CSV block + audit-trail legend + gotcha notes
 Step 5  Self-review           ──► quality checklist before presenting
@@ -41,7 +41,7 @@ Step 5  Self-review           ──► quality checklist before presenting
 
 ### Step 0 — Load the brand (always first)
 
-Invoke the `brand-brain` skill (Skill tool, `skill: brand-brain`). It returns the active brand's digest and `brand.md`. Look for any existing UTM taxonomy block (`utm_taxonomy`, source allowlist, preferred `utm_campaign` slug format, shortener preference). If present, treat it as the override; document where the brand diverges from the Growth-Attribution Standard below.
+Invoke the `brand-brain` skill (Skill tool, `skill: brand-brain`). It returns the active brand's digest and `brand.md`. Look for any existing UTM taxonomy block (`utm_taxonomy`, source allowlist, preferred `utm_campaign` slug format, shortener preference). If present, treat it as the override; document where the brand diverges from our Growth-Attribution taxonomy (house convention) below.
 
 **Fallback if `brand-brain` is absent:** read `~/.brandbrain/brands/.active` + that brand's `brand.md`; if neither exists, ask the user to install `brand-brain` or confirm the taxonomy in a 3-question mini-setup (preferred campaign-slug format · source allowlist · shortener if any), then proceed.
 
@@ -63,9 +63,9 @@ When the user pastes a campaign brief, extract these fields directly. When input
 
 ---
 
-## The Growth-Attribution Standard (naming taxonomy)
+## Growth-Attribution taxonomy (our house naming convention)
 
-Use this when the brand has no existing taxonomy. It maps directly to GA4 default-channel-group rules, so links built here produce clean channel groupings out of the box — no custom-channel-group hacks required.
+Use this when the brand has no existing taxonomy. It's a working convention we use here, not an external standard. It's built to line up with GA4 default-channel-group rules, so links built here generally produce clean channel groupings out of the box — though GA4 keys on source + medium together, so confirm groupings in your own property.
 
 ### Naming rules (non-negotiable)
 
@@ -78,11 +78,13 @@ Use this when the brand has no existing taxonomy. It maps directly to GA4 defaul
 
 ### GA4 medium → default channel group mapping
 
-| `utm_medium` | GA4 default channel | Use for |
+GA4 classifies channels on `source` + `medium` (and sometimes `campaign`) together, not on medium alone — so the channel column below is the *typical* result for the listed medium, not a guaranteed medium-only mapping. Where source changes the outcome it's noted.
+
+| `utm_medium` | GA4 default channel (typical) | Use for |
 |---|---|---|
-| `cpc` | Paid Search / Paid Social | All paid click-based ads |
+| `cpc` | Paid Search or Paid Social — depends on `source` (e.g. `google`→Paid Search, `meta`→Paid Social) | All paid click-based ads |
 | `email` | Email | Any email campaign |
-| `push` | Other | Web/app push notifications |
+| `push` | Usually unmatched → lands in "Unassigned"/Other; no dedicated push channel exists [verify in your property] | Web/app push notifications |
 | `social` | Organic Social | Unpaid social posts |
 | `affiliate` | Affiliates | Partner / affiliate links |
 | `referral` | Referral | Manual referral links (not organic backlinks) |

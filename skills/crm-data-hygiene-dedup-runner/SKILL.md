@@ -6,8 +6,8 @@ description: >
   with merge confidence scores, field-standardization changes, stale records (no activity over a
   configurable threshold), blank mandatory fields, and an unused-field report that surfaces columns
   nobody is writing to. Works against any CRM (HubSpot, Salesforce, Pipedrive, ActiveCampaign,
-  custom) by adapting field logic to whatever schema is present. Applies the DAMA data-quality
-  framework (completeness, uniqueness, validity, timeliness) as its scoring spine. Produces three
+  custom) by adapting field logic to whatever schema is present. Applies four of the DAMA
+  data-quality dimensions (completeness, uniqueness, validity, timeliness) as its scoring spine. Produces three
   output artifacts: a cleaned CSV ready to re-import, a hygiene audit report, and a field-usage
   memo. Data-quality gate runs through `data-qa-measurement-gotcha-checker` before any output is
   declared clean. Use when the user says "clean my CRM," "deduplicate contacts," "merge duplicates,"
@@ -19,7 +19,7 @@ description: >
 
 Dirty CRM data compounds every downstream problem — bad segmentation, inflated unsubscribe rates, broken lead routing, double-outreach to the same account. This skill takes a raw export and returns three things: a **cleaned, import-ready file**, a **structured hygiene audit**, and a **field-usage memo**. It doesn't guess at your CRM's field schema — it reads what you give it and adapts.
 
-The scoring spine is **DAMA's four data-quality dimensions**: Completeness, Uniqueness, Validity, Timeliness. Every finding maps back to one of those four. That gives you a defensible quality score you can track over time and bring to a RevOps conversation.
+The scoring spine is **four of the DAMA data-quality dimensions**: Completeness, Uniqueness, Validity, Timeliness. (DAMA-DMBOK defines six core dimensions in all — these four are the ones this runner scores against.) Every finding maps back to one of those four. That gives you a defensible quality score you can track over time and bring to a RevOps conversation.
 
 ---
 

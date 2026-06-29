@@ -8,7 +8,7 @@ description: >
   line-level edits, a wire-formatting pass, and a distribution readiness score. Both modes
   load brand context from the `brand-brain` skill first and compose with the
   `press-release-social-blog-amplification-pack` skill for downstream amplification.
-  Built on the AP Stylebook + Golin/Hill+Knowlton structural conventions so a junior
+  Built on the AP Stylebook plus the standard inverted-pyramid wire-release structure so a junior
   marketer produces a release an editor would accept. Trigger phrases: "write a press
   release," "draft a PR," "review / critique this press release," "AP style pass,"
   "wire distribution formatting," "announcement copy," "format for PR Newswire / Business

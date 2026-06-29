@@ -6,7 +6,7 @@ description: >
   with success criteria so the hired party can't claim they didn't know what "done" looks like.
   Works for any engagement type: freelance copywriter, SEO agency, design studio, paid-ads shop,
   video producer, dev contractor, or full-service retainer. Handles single-project and
-  ongoing-retainer structures. The brief is built on the SCOPE-PROOF-GATE framework: Scope
+  ongoing-retainer structures. The brief is built on SCOPE-PROOF-GATE, our working checklist: Scope
   (what work, what outcome), Proof (how you'll know it succeeded), Gate (what the vendor must
   confirm before starting). Calls brand-brain to load voice, banned words, and positioning so
   the vendor brief itself is on-brand and can be attached alongside a brand guide. Composes with
@@ -22,7 +22,7 @@ description: >
 
 A brief that's vague at the top becomes a scope dispute at the invoice. This skill produces the brief that prevents that: one document a contractor or agency can act on without a follow-up call, that you can enforce without an awkward "that's not what I asked for."
 
-Built on the **SCOPE-PROOF-GATE framework** — the three failures that kill vendor relationships before the first delivery.
+Built on **SCOPE-PROOF-GATE** (our working model, not an external framework) — the three failures that kill vendor relationships before the first delivery.
 
 ---
 

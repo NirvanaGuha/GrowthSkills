@@ -18,7 +18,7 @@ description: >
 
 Raw inputs → a structured pack a new person can open on Day 1 and actually follow. Not a wiki dump. Not a list of links. A real ramp document with sequenced milestones, annotated tools, task ownership, and the tribal knowledge that would have taken three months of Slack archaeology to discover.
 
-The output is opinionated: it follows the **CORE onboarding framework** (Context → Orientation → Ramp → Execute) — four phases that mirror how a competent person actually gets productive, not how most companies think they do.
+The output is opinionated: it follows **CORE** (Context → Orientation → Ramp → Execute), our house working model — four phases that mirror how a competent person actually gets productive, not how most companies think they do.
 
 ---
 

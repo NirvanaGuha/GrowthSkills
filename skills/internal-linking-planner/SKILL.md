@@ -7,8 +7,9 @@ description: >
   linking plan: inbound links TO the target (from the highest-authority, most-topically-adjacent
   pages already on the site), outbound links FROM the target (to the pages it should be passing
   authority and relevance to), anchor-text recommendations for each, and a prioritized edit queue
-  so the SEO value lands in the right order. Built on Google's Reasonable Surfer Model and
-  Topic Authority Flow — a junior can execute it and get senior-level results. Also runs in
+  so the SEO value lands in the right order. Built on Google's Reasonable Surfer Model plus
+  Topic Authority Flow, our house working model for scoring topical proximity — a junior can
+  execute it and get senior-level results. Also runs in
   audit mode: hand it any existing page and it surfaces wasted links, over-optimized anchors,
   and orphaned supporting pages.
   Trigger phrases: "internal links," "link this post," "anchor text plan," "internal linking
@@ -20,7 +21,7 @@ description: >
 
 Internal links are PageRank distribution decisions. Every publish without a linking plan is a missed compounding event — authority that should flow to your target page disperses at random instead. This skill turns that into a deliberate, repeatable system.
 
-Framework: **Reasonable Surfer × Topic Authority Flow**. Google weights internal links by the probability a real user would click them (Reasonable Surfer) and by whether the linking page is topically adjacent (Topic Authority Flow). This skill operationalizes both: it scores every candidate link by click-probability + topical proximity, then routes equity toward your target or away from it deliberately.
+Framework: **Reasonable Surfer × Topic Authority Flow** (the latter is our working model, not an established named model). Google weights internal links by the probability a real user would click them (Reasonable Surfer) and, separately, topically adjacent linking amplifies authority transfer — which our Topic Authority Flow model scores. This skill operationalizes both: it scores every candidate link by click-probability + topical proximity, then routes equity toward your target or away from it deliberately.
 
 ---
 
@@ -82,9 +83,9 @@ Google's Reasonable Surfer patent weights internal links by the probability a hu
 
 **Only recommend links scoring RSM 4 or 5.** RSM 3 is acceptable for internal hubs. RSM 1–2 are noted in audit mode as low-equity links not worth relying on.
 
-### Topic Authority Flow (TAF) — topical proximity scoring
+### Topic Authority Flow (TAF) — topical proximity scoring (our working model)
 
-Links between topically adjacent pages amplify authority transfer for that topic cluster; links across unrelated clusters bleed relevance. Score topical proximity 1–5:
+"Topic Authority Flow" is our house name for this scoring step, not an externally established framework. The underlying idea is well-grounded: links between topically adjacent pages amplify authority transfer for that topic cluster; links across unrelated clusters bleed relevance. Score topical proximity 1–5:
 
 | TAF Score | Relationship |
 |---|---|

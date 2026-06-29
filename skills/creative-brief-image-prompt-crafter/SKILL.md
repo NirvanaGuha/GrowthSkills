@@ -4,7 +4,7 @@ description: >
   Turns a plain-English visual description, campaign brief, or concept note into a
   detailed, tool-specific generation prompt for Midjourney, DALL-E 3, or Stable Diffusion —
   fully grounded in the brand's palette, tone, and banned aesthetics, and structured around
-  the RECIPE framework (Reference style · Environment/setting · Character/subject · Image
+  RECIPE (our working scaffold: Reference style · Environment/setting · Character/subject · Image
   parameters · Palette/lighting · Exclusion list). Works in two modes: Single (one hero
   prompt, tuned and ready to paste) or Batch (a grid of prompt variants across angles,
   styles, or crops for fast visual exploration). Also accepts an existing weak prompt and
@@ -20,7 +20,7 @@ description: >
 
 # Creative Brief & Image Prompt Crafter
 
-A plain-English brief in; a production-ready generation prompt out. No more half-baked "a photo of a woman smiling" prompts that produce stock-photo mush. This skill applies the RECIPE framework to translate campaign intent, brand identity, and visual direction into the exact prompt syntax each tool expects — so the first generation is already in the right ballpark.
+A plain-English brief in; a production-ready generation prompt out. No more half-baked "a photo of a woman smiling" prompts that produce stock-photo mush. This skill applies RECIPE — our own working scaffold, not an external framework — to translate campaign intent, brand identity, and visual direction into the exact prompt syntax each tool expects — so the first generation is already in the right ballpark.
 
 Every prompt is grounded in the brand before a single token is written. If the brief contradicts the brand's visual identity, this skill flags it rather than silently working around it.
 
@@ -70,7 +70,7 @@ When unsure, default to Single and offer Batch at the end.
 
 ---
 
-## The RECIPE Framework
+## RECIPE — our working scaffold
 
 Every prompt, regardless of tool, is built from six components. Build each one against brand constraints before assembling.
 

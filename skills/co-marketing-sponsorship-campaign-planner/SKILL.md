@@ -6,9 +6,9 @@ description: >
   or sponsorship campaign plan. Outputs: aligned goals and success metrics (with clear ownership),
   an asset-split and responsibility matrix, a co-branded content and promotion calendar, a
   plain-language deal memo covering key terms (deliverables, timelines, cancellation, IP rights,
-  exclusivity), and a promotion timeline with activation checkpoints. Applies the GIVE/GET
-  Partnership Framework to ensure the value exchange is balanced and the audience overlap is real
-  before any asset production begins. Calls brand-brain for voice and positioning, then calls
+  exclusivity), and a promotion timeline with activation checkpoints. Applies a GIVE/GET value-exchange
+  diagnostic (this skill's own working model) to ensure the value exchange is balanced and the audience
+  overlap is real before any asset production begins. Calls brand-brain for voice and positioning, then calls
   competitive-intelligence-dossier if the partner brand is also a market player, and composes
   campaign-brief-builder + cta-variant-generator for on-brand asset briefs. Use whenever the user
   says "co-marketing plan," "sponsor this event / newsletter / podcast," "partner campaign,"
@@ -20,7 +20,7 @@ description: >
 
 A partner conversation without a plan is just a promise. This skill turns an inbound or outbound partnership opportunity into a full execution kit — goals, asset split, calendar, deal memo, and promotion timeline — so nothing falls through the cracks between "we should do something together" and the campaign going live.
 
-The anchor is the **GIVE/GET Framework**: before any asset production, it pressure-tests whether the value exchange is genuinely balanced, whether the audience overlap is real and sized, and whether the timing actually works for both sides. If it doesn't, the skill flags it rather than building a plan on a weak foundation.
+The anchor is the **GIVE/GET diagnostic** (our working model, not an industry-standard methodology): before any asset production, it pressure-tests whether the value exchange is genuinely balanced, whether the audience overlap is real and sized, and whether the timing actually works for both sides. If it doesn't, the skill flags it rather than building a plan on a weak foundation.
 
 ---
 
@@ -60,9 +60,9 @@ Fallback if brand-brain is absent or returns no brand: read `~/.brandbrain/brand
 
 ---
 
-## The GIVE/GET Framework
+## The GIVE/GET diagnostic
 
-The core diagnostic before any plan is built. Evaluate four dimensions:
+Our working model — a house diagnostic, not an established named framework. The core check before any plan is built. Evaluate four dimensions:
 
 ### 1. Value Balance (GIVE/GET audit)
 Map every deliverable to a side and assign a rough value (audience size × engagement rate × channel weight). A deal is worth building when the ratio sits between 0.7 and 1.3. Outside that range, either renegotiate or flag the imbalance explicitly.

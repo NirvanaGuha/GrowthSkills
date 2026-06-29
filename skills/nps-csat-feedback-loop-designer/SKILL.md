@@ -5,8 +5,9 @@ description: >
   closed-loop feedback system: a categorized response table that reveals the real drivers behind the
   score, a routing matrix that sends each respondent to the right owner and action, and on-brand
   follow-up sequences for detractors (recovery + churn save) and promoters (testimonial + referral
-  amplification). Built on the Inner Feedback Loop framework (Collect → Categorize → Route → Act →
-  Close) with Satmetrix/Bain NPS mechanics and Kano Model category logic baked in. Brand voice and
+  amplification). Structured around the inner-loop / outer-loop distinction from CX/VoC practice, rendered
+  as a five-stage working model (Collect → Categorize → Route → Act → Close), with Satmetrix/Bain NPS
+  mechanics and Kano Model category logic baked in. Brand voice and
   proof come from brand-brain; follow-up copy is composed from existing library skills rather than
   written from scratch. Use when someone says "what do I do with my NPS results," "close the loop
   on CSAT," "follow up with detractors," "respond to survey respondents," "NPS action plan,"
@@ -38,7 +39,7 @@ It does not conduct the survey, choose the platform, or set up integrations. It 
 ```
 Step 0  Load brand            ──► call brand-brain
 Step 1  Ingest & assess       ──► parse the export, identify gaps, confirm touchpoint
-Step 2  Categorize            ──► Inner Feedback Loop + Kano bucketing
+Step 2  Categorize            ──► inner-loop working model + Kano bucketing
 Step 3  Score & prioritize    ──► NPS / CSAT mechanics + impact weighting
 Step 4  Route                 ──► routing matrix per segment × category × owner
 Step 5  Sequence              ──► compose follow-up via churn-save + testimonial skills
@@ -73,10 +74,10 @@ If verbatims are absent, flag it — categories will be lower confidence and mar
 
 ---
 
-### Step 2 — Categorize (Inner Feedback Loop + Kano)
+### Step 2 — Categorize (inner-loop working model + Kano)
 
-**The Inner Feedback Loop framework** structures every closed-loop system around five stages:
-Collect → Categorize → Route → Act → Close. This skill owns stages 2–5; stage 1 (Collect) is upstream; stage 5 (Close) produces the product-update template.
+**Our inner-loop working model** structures every closed-loop system around five stages:
+Collect → Categorize → Route → Act → Close. (It renders the established CX/VoC inner-loop / outer-loop distinction as a stage sequence — the inner loop being individual respondent follow-up.) This skill owns stages 2–5; stage 1 (Collect) is upstream; stage 5 (Close) produces the product-update template.
 
 **Categorize verbatims** using two orthogonal lenses:
 
@@ -226,7 +227,7 @@ Owner: [CSM / Product Marketing / VP Product — per routing matrix]
 
 ## Frameworks used (quick reference)
 
-**Inner Feedback Loop** — Collect → Categorize → Route → Act → Close. The operational spine; every action maps to a stage.
+**Inner-loop working model (ours)** — Collect → Categorize → Route → Act → Close. Our five-stage rendering of the established CX/VoC inner-loop concept (individual respondent follow-up). The operational spine; every action maps to a stage.
 
 **Bain/Satmetrix NPS** — Promoter (9–10) / Passive (7–8) / Detractor (0–6); NPS = %P − %D. The score is a leading indicator of revenue retention, not a satisfaction score.
 

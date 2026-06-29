@@ -18,7 +18,7 @@ description: >
 
 Pressure-test messaging, copy, or positioning against your ICP — before spending money finding out what was wrong.
 
-This skill builds synthetic respondents from the brand's confirmed ICP context (loaded via `brand-brain`), then runs them through a structured interview or focus-group simulation using the **Pre-Suasion + Mental Contrasting (WOOP) framework**: each persona first states what they Want, then their Outcome expectation, then surfaces Obstacles, then reacts to the Plan (the stimulus being tested). That four-move structure ensures every response surfaces both the hopeful read and the realistic friction — which is where real research earns its money.
+This skill builds synthetic respondents from the brand's confirmed ICP context (loaded via `brand-brain`), then runs them through a structured interview or focus-group simulation using the **Mental Contrasting (WOOP) framework**: each persona first states their Wish, then their Outcome expectation, then surfaces Obstacles, then reacts to the Plan (the stimulus being tested). That four-move structure ensures every response surfaces both the hopeful read and the realistic friction — which is where real research earns its money.
 
 This skill simulates; it does not replace talking to real customers. When it flags a blind spot, book the real conversation.
 
@@ -40,7 +40,7 @@ This skill simulates; it does not replace talking to real customers. When it fla
 Step 0  Load brand context ──► call brand-brain (always first)
 Step 1  Build the panel     ──► construct 2–4 synthetic respondents from ICP + segment
 Step 2  Prime the stimulus  ──► what exactly is being tested, in what channel/context?
-Step 3  Run the WOOP passes ──► each persona goes through Want → Outcome → Obstacle → Plan
+Step 3  Run the WOOP passes ──► each persona goes through Wish → Outcome → Obstacle → Plan
 Step 4  Cross-panel summary ──► where did consensus cluster? where did it fracture?
 Step 5  Priority actions     ──► ranked list of fixes, each scoped to one change
 ```
@@ -95,7 +95,7 @@ If the user hands over a stimulus without context, ask: "What channel will this 
 
 For each persona, run the four-move WOOP sequence. Write each persona's voice distinctly — the economic buyer uses finance framing; the champion uses operational framing; the skeptic challenges the proof.
 
-#### W — Want
+#### W — Wish
 The persona states what they are hoping this stimulus will do for them. This surfaces the **expectation gap**: does the copy meet the reader where their hope actually lives, or does it pitch something adjacent?
 
 > *[Persona name] reads/sees the stimulus. Internal monologue:*
@@ -196,7 +196,7 @@ Schwartz's Awareness Ladder calibrates the Wish and Outcome moves: a Solution-aw
 - `brand-brain` called and active brand loaded (or bootstrapped) before any persona was constructed?
 - Panel has 2–4 distinct personas: at minimum one champion + one skeptic, with different awareness stages?
 - Stimulus primed: channel, context, and assumed awareness state stated before running?
-- Every persona completed all four WOOP moves (Want → Outcome → Obstacle → Plan)?
+- Every persona completed all four WOOP moves (Wish → Outcome → Obstacle → Plan)?
 - Obstacle move surfaced a real, specific blocker — not a generic one?
 - Cross-panel summary identifies consensus zones, fracture lines, highest-friction moment, and blind spots?
 - Priority actions are concrete, ranked, and each points to a specific element of the stimulus?

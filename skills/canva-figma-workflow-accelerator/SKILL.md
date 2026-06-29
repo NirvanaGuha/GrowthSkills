@@ -8,9 +8,9 @@ description: >
   format; Figma mode produces a component inventory audit, reusable component extraction
   brief, and a Dev Mode handoff pack with spacing tokens, typography scales, and
   annotated copy slots. When both tools are in play (Canva for content, Figma for product
-  or landing pages) it coordinates outputs so brand tokens stay in sync. Operates on the
-  Double Diamond model: Discover the real asset scope, Define the canonical template, Develop
-  the production deliverables, Deliver the handoff. Brand voice and palette come from the
+  or landing pages) it coordinates outputs so brand tokens stay in sync. Stages production with the
+  Double Diamond's four phase names (Design Council), adapted as a linear pipeline: Discover the real asset scope,
+  Define the canonical template, Develop the production deliverables, Deliver the handoff. Brand voice and palette come from the
   shared brand-brain skill — not reimplemented here. Lean on brand-consistency-auditor to
   QA the final asset set.
   Trigger: "canva workflow," "figma handoff," "bulk create," "magic resize," "template brief,"
@@ -70,9 +70,9 @@ Ask for any missing entry point before generating. One clarifying question at mo
 
 ---
 
-## The Double Diamond framework (how this skill thinks)
+## Discover → Define → Develop → Deliver (how this skill thinks)
 
-**Discover → Define → Develop → Deliver.** Marketers skip Discover and wonder why every campaign spawns ten ad-hoc files. Force the discipline here.
+**Discover → Define → Develop → Deliver.** We borrow the four phase names from the Design Council's Double Diamond as a linear production checklist — note we use them to stage asset production, not to run the divergent/convergent exploration the original model is built around. Marketers skip Discover and wonder why every campaign spawns ten ad-hoc files. Force the discipline here.
 
 - **Discover:** enumerate every surface the campaign touches (social formats, email header, blog hero, display ad sizes, push thumbnail, landing-page OG image). Real surfaces only — list what the brief calls for, not every format that could theoretically exist.
 - **Define:** identify the *master frame* — the one design at maximum canvas size from which all other sizes derive. Everything else is a resize variant or a data-driven Bulk Create row.

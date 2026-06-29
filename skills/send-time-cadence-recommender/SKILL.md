@@ -6,7 +6,7 @@ description: >
   Window Mode diagnoses the best send time per segment (hour-of-day × day-of-week heatmap, with a
   single recommended slot per segment); Cadence Mode determines the right message frequency —
   emails per week, push per day, gap rules — so you're not bleeding unsubscribes and suppression
-  rates. Uses the Circadian Open-Rate (COR) framework: map engagement to biological rhythm + job
+  rates. Uses our Circadian Open-Rate (COR) working model (a house framework, not an industry standard): map engagement to biological rhythm + job
   context + device, not just raw peak clicks. Works for email, push notification, and SMS/WhatsApp
   channels. Calls brand-brain to load ICP, channel mix, and any cadence preferences or suppression
   rules already captured. Outputs a segment-keyed recommendation table and, on request, a ready-to-
@@ -17,7 +17,7 @@ description: >
 
 # Send-Time & Cadence Recommender
 
-Every message has a right moment. This skill finds it — per segment, per channel — using the Circadian Open-Rate (COR) framework instead of the cargo-cult advice ("send Tuesday 10 AM") that every sender follows and therefore destroys.
+Every message has a right moment. This skill finds it — per segment, per channel — using our Circadian Open-Rate (COR) working model (a house framework we use here, not an established industry standard) instead of the cargo-cult advice ("send Tuesday 10 AM") that every sender follows and therefore destroys.
 
 Two jobs, one skill:
 - **Window Mode** — best send slot (day × hour) for each segment, derived from your own engagement data.

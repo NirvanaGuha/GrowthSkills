@@ -6,8 +6,8 @@ description: >
   soundbite — ready to paste into HARO / Connectively, Qwoted, SourceBottle, or a direct
   reporter email. Loads brand context (voice, proof, positioning, spokesperson bio) via
   brand-brain before writing a single word, so every pitch is on-brand and factually
-  grounded, never generic. Applies the three-part CAB formula (Credentials → Answer →
-  Bite) that editors and journalists expect. Also includes a self-review gate against
+  grounded, never generic. Applies a three-part CAB structure (Credentials → Answer →
+  Bite) — our working mnemonic for the three things journalists scan for. Also includes a self-review gate against
   common journalist pet-peeves: over-length, off-topic, unsubstantiated superlatives,
   and embargo-blind pitches. Saves approved responses to a log file so you can track
   placements and build a reusable source library. Use when the user says "write a HARO

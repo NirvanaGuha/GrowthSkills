@@ -65,7 +65,7 @@ When ambiguous, default to QA-only and offer Full Handoff at the end.
 
 ---
 
-## The QA Framework — 5 Gates (Nielsen + Brand Fit)
+## The QA Framework — 5 Gates (our purpose-built QA rubric)
 
 Run every gate in order. Each item is pass / fail / needs-clarification. Fail = block; needs-clarification = hold with a specific question.
 

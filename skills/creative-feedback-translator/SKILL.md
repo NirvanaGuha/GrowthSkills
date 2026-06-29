@@ -21,7 +21,7 @@ description: >
 
 Stakeholders feel things before they can name them. This skill bridges the gap — converting emotional, vague, or contradictory creative feedback into a precise design direction brief a designer or AI tool can execute without a back-and-forth loop.
 
-The framework underneath is **Ogilvian Diagnosis**: every piece of vague feedback maps to one or more design-principle failures (hierarchy, contrast, whitespace, typographic rhythm, color temperature, visual tension, copy-design alignment). Name the principle; prescribe the fix; stay on brand.
+The method underneath is a principle-mapping approach (our working model): every piece of vague feedback maps to one or more design-principle failures (hierarchy, contrast, whitespace, typographic rhythm, color temperature, visual tension, copy-design alignment). Name the principle; prescribe the fix; stay on brand.
 
 ---
 

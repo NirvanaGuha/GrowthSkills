@@ -3,8 +3,8 @@ name: newsletter-issue-builder
 description: >
   Turns a raw content feed — links, internal updates, hot takes, product news, curated
   articles, data points — into a fully structured, on-brand newsletter issue ready to
-  paste into your ESP or send through your publishing stack. Built around the
-  Story-Curation-Action (SCA) framework: each issue earns attention with a strong lede
+  paste into your ESP or send through your publishing stack. Built around our house
+  Story-Curation-Action (SCA) working model: each issue earns attention with a strong lede
   story, builds trust through curated signal, and converts with a single frictionless CTA.
   Brand voice, banned words, and ICP awareness level come from the shared `brand-brain`
   skill (Layer 0), so every issue sounds like the brand, not a content aggregator.
@@ -27,7 +27,7 @@ on-brand newsletter issue with a punchy subject line, a lede that earns the open
 sections that build authority, and one clear CTA. The work is architecture and craft — not
 content aggregation dressed up as copy.
 
-Every issue follows the **Story-Curation-Action (SCA) framework**: one owned lede that asserts
+Every issue follows our house **Story-Curation-Action (SCA) working model**: one owned lede that asserts
 a point of view, 2–4 curated sections that prove it or extend it, and a single action that
 converts the attention earned. The brand voice, audience awareness level, and proof come from
 `brand-brain` — this skill does not re-derive them.
@@ -63,7 +63,7 @@ converts the attention earned. The brand voice, audience awareness level, and pr
 Step 0  Load brand        ──► brand-brain (always first; blocks all copy)
 Step 1  Triage input      ──► classify, prioritize, reject weak links
 Step 2  Choose mode       ──► Standard (default) | Deep (long-form lede on request) | Digest (no lede; pure curation)
-Step 3  Build structure   ──► lede + sections + callouts via SCA framework
+Step 3  Build structure   ──► lede + sections + callouts via SCA working model
 Step 4  Envelope          ──► subject-line-preview-text-optimizer
 Step 5  CTA               ──► cta-variant-generator
 Step 6  Review pass       ──► lifecycle-email-push-copy-reviewer (on request)
@@ -117,7 +117,7 @@ When unsure, default to Standard. Offer Deep or Digest at the end.
 
 ---
 
-## The SCA Framework (the craft engine)
+## The SCA Working Model (our craft engine)
 
 ### Story — the lede
 

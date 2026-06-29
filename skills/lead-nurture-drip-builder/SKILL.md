@@ -6,8 +6,9 @@ description: >
   run. Accepts a persona description (or ICP notes), a declared funnel stage, and any available
   content assets (blog posts, case studies, feature pages, webinars, PDFs); outputs a ready-to-configure
   sequence with subject lines, preview text, body copy, CTA, send delay, and an explicit branch map
-  covering the main engagement and non-engagement paths. Built on the PASTA drip framework
-  (Problem → Agitate → Solution → Trust → Action), which keeps each email playing a distinct role
+  covering the main engagement and non-engagement paths. Built on PASTA (Problem → Agitate →
+  Solution → Trust → Action), our working drip model that extends the classic PAS copywriting
+  structure, which keeps each email playing a distinct role
   in the decision journey instead of repeating the same pitch in different fonts. Loads the active
   brand from `brand-brain` before writing a single word; obeys voice + banned words as hard
   overrides; maps real proof through `proof-vault`; pulls CTA copy from `cta-variant-generator`.
@@ -71,9 +72,9 @@ If funnel stage is vague, use the Awareness Ladder (below) to calibrate.
 
 ---
 
-## The PASTA Drip Framework
+## PASTA — our working drip model
 
-Every email in the sequence has a declared role. Map content assets into these roles; don't stack two emails in the same role back-to-back.
+PASTA is a house mnemonic, not an established framework — it extends the classic PAS (Problem-Agitate-Solution) copywriting structure with Trust and Action stages. Every email in the sequence has a declared role. Map content assets into these roles; don't stack two emails in the same role back-to-back.
 
 | Role | Job in the sequence | Typical email # | Trigger to move on |
 |---|---|---|---|

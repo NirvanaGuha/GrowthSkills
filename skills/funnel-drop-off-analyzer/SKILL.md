@@ -4,8 +4,8 @@ description: >
   GA4 funnel report, event list, or activation cohort data → ranked highest-leverage drop-off
   points with hypothesized causes and recommended tests. Accepts a GA4 exploration export, a
   pasted step table, a product-event list, or a plain description of the funnel and drop numbers.
-  Runs a structured AARRR-layer analysis to rank drop-offs by revenue impact, generates credible
-  hypotheses using the 5-layer friction model (Fogg B=MAT), and outputs a prioritized experiment
+  Ranks drop-offs by revenue impact, generates credible hypotheses using a 5-layer friction model
+  (built on Fogg's B=MAT, extended with two house layers), and outputs a prioritized experiment
   backlog (ICE-scored) ready to hand to a test designer. Flags all classic GA4 measurement
   gotchas before any diagnosis. Does NOT run A/B tests or manage experiment records — it calls
   sibling skills for those. Use when the user says "why is my funnel leaking," "find my biggest
@@ -143,9 +143,12 @@ Label top 1–3 as P1. Everything else is P2/P3. Focus the hypothesis and test w
 For each P1 drop-off, generate **3–5 hypotheses** using the five friction layers below. A
 hypothesis is a falsifiable causal claim, not a vague observation.
 
-**Framework: Fogg Behavior Model (B = Motivation × Ability × Trigger)**
-A user drops off because at least one of: motivation is insufficient, ability (ease) is
-insufficient, or the trigger is poorly timed or absent. Map each hypothesis to one or more layers:
+**Foundation: Fogg Behavior Model (B = Motivation × Ability × Trigger).** Fogg's model has
+exactly three factors. A user drops off because at least one of: motivation is insufficient,
+ability (ease) is insufficient, or the trigger is poorly timed or absent. The two extra layers
+below — **Trust** and **Confusion / Mismatch** — are a house extension, not part of Fogg's model;
+we add them because they show up repeatedly in funnel diagnosis. Map each hypothesis to one or
+more layers:
 
 | Layer | What it tests | Typical evidence signal |
 |---|---|---|

@@ -73,7 +73,7 @@ Ask all missing inputs in one batch. Never ask for something deducible from the 
 
 ---
 
-## The LEGO Framework (core formula/script methodology)
+## LEGO build order (our working model for formulas/scripts)
 
 LEGO = **Layer, Exact-reference, Gate, Output.** Every artifact follows this build order:
 

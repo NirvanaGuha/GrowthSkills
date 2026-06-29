@@ -4,9 +4,10 @@ description: >
   Takes a video transcript or outline plus channel context and produces a fully
   SEO-optimized YouTube description with timestamped chapters AND channel-level
   recommendations covering tags, playlists, end-screen CTAs, and keyword
-  clustering strategy. Runs the YouTube Description Framework (hook paragraph,
-  SEO keyword zone, chapters, social links, CTA stack) against YouTube's real
-  ranking signals — click-through rate anchors in the first 2 lines, keyword
+  clustering strategy. Runs our YouTube Description Framework — a house working
+  model (hook paragraph, SEO keyword zone, chapters, social links, CTA stack) —
+  against YouTube's real ranking signals — click-through rate anchors in the
+  first 2 lines, keyword
   density in the first 150 characters, chapter markers that extend session
   time, and tag/playlist signals that feed the recommendation algorithm.
   Brand context comes from the `brand-brain` skill; sibling skills
@@ -90,7 +91,7 @@ Call `keyword-research-clustering-suite` if available, passing the transcript to
 
 ---
 
-## Step 3 — The 5-Zone YouTube Description Framework
+## Step 3 — Our 5-Zone YouTube Description Framework (a house working model)
 
 Write each zone in order. Output them as a single copyable block (no zone headers inside the output block — those are for your reference only).
 

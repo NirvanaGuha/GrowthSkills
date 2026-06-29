@@ -19,7 +19,7 @@ description: >
 
 Your competitor's 1-star reviews are their roadmap leak. Their 5-star reviews tell you which pain points they've *decided not to talk about*. This skill cross-references both sides — what their reviewers say versus what the competitor actually claims — to surface the pains that are loud, real, and unclaimed. Those are gaps you can own.
 
-The framework is VOCA-Gap: **V**oiced Pain Frequency × **O**wner Absence × **C**redential Match × **A**ction Readiness. A gap scores highest when: reviewers raise it repeatedly, the competitor's messaging ignores it, your brand has real proof against it, and you can move on it within a quarter.
+Our working model here is VOCA-Gap (a house framework, not an external standard): **V**oiced Pain Frequency × **O**wner Absence × **C**redential Match × **A**ction Readiness. A gap scores highest when: reviewers raise it repeatedly, the competitor's messaging ignores it, your brand has real proof against it, and you can move on it within a quarter.
 
 ---
 

@@ -19,9 +19,17 @@ description: >
 
 Raw ESP and push exports in → a clear, decision-ready weekly status in two minutes. Not a
 spreadsheet recitation — a narrative that surfaces what moved, why it matters, and one
-thing to do about it. Built on the DELTA framework: Deltas (WoW changes), Exceptions
-(standout sends), Levers (what drove it), Trends (3-week direction), Action (one
-prioritized next step).
+thing to do about it. Built on DELTA, a house mnemonic we use here (not an established
+model): Deltas (WoW changes), Exceptions (standout sends), Levers (what drove it),
+Trends (3-week direction), Action (one prioritized next step).
+
+The job of a digest is to suppress the noise so the one real signal gets seen. The
+significance gate in Step 2 is therefore the core engine: every WoW delta is filtered
+through **both** a % band **and** a volume / absolute-count floor — because a rate is a
+proportion and its week-to-week noise scales with √(p(1-p)/n), so a 200-send segment and a
+40k blast that show the same %delta are not the same news. Small sends get labeled
+`[low volume — not significant]` instead of triggering a false alarm. Email and push each
+get their own bands, because push CTR runs lower and noisier on a different denominator.
 
 Every digest is calibrated to the brand's own baselines, not generic "industry benchmarks"
 that never match your list.
@@ -54,6 +62,11 @@ that never match your list.
   fatigue signals in unsubscribe rate) surfaces, call this skill for a structured
   recommendation.
 
+- **`sample-size-calculator`** (optional, Step 2) — when a WoW swing sits right on a band
+  edge and you need a real p-value or the minimum n that would make the move significant,
+  hand it the two weeks' counts rather than guessing. The Step 2 bands are the fast gate;
+  this is the precise read when the fast gate is ambiguous.
+
 ---
 
 ## How a run works
@@ -61,7 +74,7 @@ that never match your list.
 ```
 Step 0  Load the brand            ──► brand-brain (voice + baselines)
 Step 1  Parse the inputs           ──► normalize stats from any ESP / push format
-Step 2  Apply the DELTA framework  ──► compute deltas, flag exceptions, read trend
+Step 2  Apply the DELTA mnemonic   ──► compute deltas, flag exceptions, read trend
 Step 3  Draft the digest           ──► channel-correct format (Slack / Notion / email)
 Step 4  Self-review                ──► checklist before presenting
 Step 5  Save artifact              ──► ./email-push-reports/[brand]-[YYYY-WW].md
@@ -98,22 +111,68 @@ Accept any of these formats (raw paste, CSV, screenshot, or manual numbers):
 | Push | Impressions or reach, clicks (CTR), direct opens, opt-outs (if available) |
 | Both | Accept each channel's stats separately; compute a combined engagement summary |
 
-Normalize the data: if given raw counts, compute rates. If given rates without counts,
-note it — averages across unequal-size sends will be marked `[weighted avg not possible]`.
+Normalize the data: if given raw counts, compute rates. **Always carry the recipient
+count (n) and the engagement event counts alongside every rate** — Step 2's significance
+gate needs them, and a rate handed over with no n cannot be flagged Amber/Red at all (it
+defaults to `[low volume — not significant]` until the count is supplied). If given rates
+without counts, note it and ask for the denominators; averages across unequal-size sends
+are separately marked `[weighted avg not possible]`.
 
 Ask for prior-week numbers if not supplied — the delta is the product's whole value.
 If prior-week data is unavailable, note it and present current-week values only.
 
 ---
 
-### Step 2 — Apply the DELTA framework
+### Step 2 — Apply the DELTA mnemonic
 
 **D — Deltas (WoW changes)**
-Compute absolute and percentage WoW for every metric. Flag significance:
-- Green (within ±10% of baseline): normal variation, no action required.
-- Amber (±10–25% of baseline): worth watching, note probable cause.
-- Red (>±25% of baseline, or unsubscribe rate spike >0.5% for any single send): flag
-  prominently with a probable-cause hypothesis.
+Compute absolute and percentage WoW for every metric, then gate each delta through the
+significance bands below **before** flagging anything.
+
+**Why the gate exists.** A rate is a proportion, and every proportion carries sampling
+error. The noise in an observed rate scales with √(p(1-p)/n): the smaller the send (n), the
+wider the swing you'll see week to week with nothing actually changing. A flat ±% cutoff
+treats a 200-send segment and a 40k blast as equally trustworthy — they are not. On 200
+sends, a ±10–15% open-rate move is well inside normal sampling noise; on 40k, a 3% move is
+real. So every flag is gated on **both** the % delta **and** the send volume / absolute
+count behind it. (This is plain sampling-error logic, not a named framework. For a precise
+p-value or required-n when a swing sits on the line, hand the two weeks' counts to the
+`sample-size-calculator` sibling skill.)
+
+**Significance bands (gate on volume first, then %):**
+
+| Recipients (n) for the metric | Treat the metric as… | Band logic |
+|---|---|---|
+| **< 1,000** | low-volume | Label every WoW swing `[low volume — not significant]`. Never assign Red/Amber on % alone. The *only* flag allowed here is an absolute-count trigger (see unsub/opt-out rule below). |
+| **1,000–9,999** | normal | Green ≤ ±10% · Amber ±10–25% · Red > ±25% — **and** require the absolute change to clear the floor in the band table below before flagging Amber/Red. |
+| **≥ 10,000** | high-volume | Green ≤ ±7% · Amber ±7–20% · Red > ±20%. Larger n means smaller real moves matter; tighten the bands. |
+
+**Absolute-count floor (must clear alongside the %):** a flag also needs a real-count move,
+not just a ratio move. Require the engagement event count (opens, clicks) to shift by **≥ 30
+events** before an Amber/Red fires on a rate. Below that, label `[low volume — not
+significant]` regardless of the percentage.
+
+**Unsubscribe / opt-out spike — dual trigger (count AND rate):** flag Red only when the
+send clears **both** `> 0.5% of recipients` **and** `> 5 absolute unsubscribes`. A single
+extra unsubscribe on a 200-person segment is 0.5%+ but is one human clicking once — it
+never reads Red. On a 30k send, 0.5% is 150 people leaving and is a genuine Red.
+
+**Push gets its own bands (channel parity in the mechanics, not just the principle).** Push
+CTR runs lower and noisier than email, and the relevant volume is *delivered* notifications
+(reach), not subscribers on file. Apply this row to every push metric the same way the
+email table gates email:
+
+| Push metric | Volume gate (delivered / reach) | Green | Amber | Red |
+|---|---|---|---|---|
+| **Push CTR** | < 2,000 delivered → `[low volume — not significant]`; flag on % only at ≥ 2,000 | ≤ ±15% | ±15–30% | > ±30% |
+| **Click count floor** | — | — | — | needs **≥ 20 absolute clicks** moved to fire Amber/Red |
+| **Opt-out spike** (push analog of the email unsub rule) | — | — | — | Red only when **> 0.3% of delivered AND > 10 absolute opt-outs** |
+
+Push thresholds sit wider than email's on purpose: a baseline push CTR of ~3–5% on a few
+thousand deliveries swings more in raw % terms than a 25–40% open rate on a large list, so
+the same noise produces a bigger ratio. The opt-out gate is tighter on rate (0.3% vs 0.5%)
+because a push opt-out is a harder, more deliberate exit than an email unsubscribe — but it
+still requires a real absolute count so a 500-delivery test never reads Red on two taps.
 
 **E — Exceptions (standout sends)**
 Identify the single best-performing send (highest CTOR or CTR, or revenue if available)
@@ -166,9 +225,10 @@ text). Use `*bold*` for Slack-native emphasis.
 
 A structured document with:
 1. **Summary line** — one sentence with the week's headline metric and verdict.
-2. **Email performance table** — sends, OR, CTOR, CTR, revenue (if available), unsub rate,
-   WoW delta per metric, zone flag (Green/Amber/Red).
-3. **Push performance table** — same structure.
+2. **Email performance table** — sends (n), OR, CTOR, CTR, revenue (if available), unsub
+   rate, WoW delta per metric, zone flag (Green / Amber / Red / `low volume`). Show n so the
+   reader can see why a sub-1,000 send wasn't flagged.
+3. **Push performance table** — same structure, on push's own bands (delivered/reach as n).
 4. **Standout send** — subject line / title, segment, OR/CTOR/CTR, what made it work.
 5. **Trend** — 3-week sparkline (text: ↑ ↓ →) per core metric.
 6. **Action item** — bolded, with owner and due date if the user provides them.
@@ -182,7 +242,13 @@ for stakeholders who won't parse a table.
 
 Before presenting, check:
 - Brand-brain called and baselines / voice loaded (or fallback executed)?
-- WoW deltas computed; every metric with a Red flag has a probable-cause hypothesis?
+- WoW deltas computed; **every flag gated through the volume + absolute-count floor** before
+  it was assigned a band — no Amber/Red on a sub-1,000 send or a sub-30-event move?
+- Every sub-threshold swing labeled `[low volume — not significant]` rather than dropped or
+  flagged?
+- Push metrics scored on push's own bands (not the email cutoffs); push opt-out gated on
+  count AND rate?
+- Every metric with a Red flag has a probable-cause hypothesis?
 - Standout send identified with a structural reason, not a vague compliment?
 - Action is one specific thing, not a list of options?
 - Slack format is under 200 words; no raw table markup in Slack output?
@@ -205,6 +271,14 @@ file — append `_v2` if re-run on the same week.
   industry averages; its voice governs every word of the narrative.
 - **Deltas, not snapshots.** A metric without WoW context is close to meaningless. If
   prior data is absent, say so explicitly and ask for it.
+- **Volume before %.** Never flag a delta on percentage alone. A rate is a proportion; its
+  noise scales with √(p(1-p)/n). A swing on a small send is sampling noise until proven
+  otherwise — gate every flag on the recipient count and the absolute event move, and label
+  sub-threshold swings `[low volume — not significant]`. A false Red is worse than a missed
+  Amber: it spends a reader's trust on nothing.
+- **Each channel on its own bands.** Push CTR is a different metric on a different
+  denominator than email opens — it gets push thresholds, not email's. Parity means equal
+  rigor, not identical numbers.
 - **One action.** A digest that ends in a five-item to-do list is a report, not a decision
   tool. Name the single highest-leverage next step.
 - **Cause discipline.** State probable cause for any anomaly; distinguish "likely because"
@@ -212,7 +286,9 @@ file — append `_v2` if re-run on the same week.
 - **Truth only.** Real numbers from the export. If a number looks wrong (e.g., 0.0% open
   rate on a 10k send), flag it as a possible data-export error before including it.
 - **Channel parity.** Email and push are peers in this digest. Do not omit push metrics
-  because email is the primary channel — push CTR trend is often the leading indicator.
+  because email is the primary channel — push CTR trend is often the leading indicator. Parity
+  is enforced in Step 2's mechanics (push has its own bands and opt-out gate), not just
+  asserted here.
 
 ## What Not to Do
 
@@ -222,6 +298,10 @@ file — append `_v2` if re-run on the same week.
   headline number and the delta.
 - Do not generate a digest without at least one channel's data. If the user hasn't pasted
   stats, ask for them.
+- Do not flag Red/Amber on a small send. A 200-recipient segment moving 20% is noise, not
+  news — label it `[low volume — not significant]`. Do not fire the unsub/opt-out alarm on
+  one or two extra unsubscribes off a tiny list; it needs the absolute-count floor too.
+- Do not score push on email's cutoffs. Push CTR runs lower and noisier — use the push bands.
 - Do not call it a "good week" or "strong performance" without a number. Vague positivity
   corrodes trust in the digest.
 - Do not overwrite a previously saved artifact. Append `_v2`.
@@ -231,7 +311,11 @@ file — append `_v2` if re-run on the same week.
 ## Quality Checklist
 
 - Brand-brain called; baselines and voice loaded (or fallback completed)?
-- WoW delta computed for every reported metric; zone flags (Green/Amber/Red) assigned?
+- WoW delta computed for every reported metric; each delta gated on **volume + absolute
+  count** before a band was assigned (Green / Amber / Red / `low volume`)?
+- Sends under the volume floor labeled `[low volume — not significant]`, not flagged?
+- Unsub/opt-out flags cleared **both** the rate **and** the absolute-count trigger?
+- Push metrics scored on push's own bands, with recipient/reach n shown in the table?
 - At least one probable-cause hypothesis for every Amber or Red metric?
 - Standout send named with a structural insight (segment, timing, subject structure,
   offer mechanic) — not just "high open rate"?

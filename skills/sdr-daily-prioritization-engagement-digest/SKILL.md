@@ -3,7 +3,8 @@ name: sdr-daily-prioritization-engagement-digest
 description: >
   Turns raw CRM activity, intent signals, and engagement data into a ranked daily action list and a
   weekly account engagement digest that an SDR or BDR can act on without opening five tabs. Applies
-  the PACT prioritization model (Pipeline fit, Activity recency, Conversion signals, Timing/urgency)
+  a PACT prioritization rubric (Pipeline fit, Activity recency, Conversion signals, Timing/urgency) —
+  a lightweight working model we use here, not an established industry framework —
   to score and sort every prospect and account in the working set, then formats a clean daily digest
   (top-N accounts to touch, suggested next action per account, and the signal that triggered it) plus
   a weekly roll-up suitable for a manager 1:1 or team standup. The skill composes `intent-signal-
@@ -18,7 +19,7 @@ description: >
 
 # SDR Daily Prioritization & Engagement Digest
 
-An SDR's biggest productivity killer is not slow typing — it is the ten minutes per account spent deciding whether to touch it and how. This skill eliminates that decision cost. It takes your raw CRM activity, intent signals, and engagement data, runs them through the PACT scoring model, and hands back a ranked action list you can work from the top down.
+An SDR's biggest productivity killer is not slow typing — it is the ten minutes per account spent deciding whether to touch it and how. This skill eliminates that decision cost. It takes your raw CRM activity, intent signals, and engagement data, runs them through our PACT scoring rubric (a working model we use here, not an established industry framework), and hands back a ranked action list you can work from the top down.
 
 Two outputs on every run: a **Daily Digest** (ranked, opinionated, immediately actionable) and, on request or weekly cadence, a **Weekly Account Engagement Digest** suited for manager syncs or pipeline reviews.
 
@@ -54,9 +55,9 @@ Step 5   Weekly roll-up      ──► on request or weekly trigger
 
 ---
 
-## The PACT Scoring Model
+## The PACT Scoring Rubric (our working model)
 
-PACT scores each account on four dimensions (0–3 per dimension, max 12). It is deliberately lightweight — designed to run against CRM exports without a Salesforce admin.
+PACT is our house rubric, not an established industry framework. It scores each account on four dimensions (0–3 per dimension, max 12). It is deliberately lightweight — designed to run against CRM exports without a Salesforce admin.
 
 ### P — Pipeline Fit (0–3)
 How closely does the account match the brand's ICP?

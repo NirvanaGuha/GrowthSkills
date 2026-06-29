@@ -2,7 +2,7 @@
 name: notification-opt-in-prompt-optimizer
 description: >
   Web or app opt-in surface → optimized permission-prompt timing, two-step opt-in copy,
-  and trigger placement recommendations. Applies the PRIME-ASK-REDUCE framework: a native
+  and trigger placement recommendations. Applies PRIME-ASK-REDUCE, our working model: a native
   browser/OS permission dialog is a one-shot, unrepeatable ask — this skill engineers the
   pre-prompt (the custom "primer" screen), the placement trigger (page, event, scroll depth,
   session depth), and the friction-reducer microcopy so the user arrives at the native dialog
@@ -60,7 +60,7 @@ Fallback if brand-brain is absent or returns no brand: read `~/.brandbrain/brand
 
 ---
 
-## The PRIME-ASK-REDUCE Framework
+## PRIME-ASK-REDUCE (our working model)
 
 ### PRIME — build intent before the native dialog fires
 

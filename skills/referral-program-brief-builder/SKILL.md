@@ -20,7 +20,7 @@ description: >
 
 Give it product details and ICP notes, get a complete referral program brief. Not a vague "try a double-sided reward" suggestion — a full spec covering incentive mechanics, eligibility, share flow, fraud controls, and tracking requirements that an engineer or a platform like ReferralHero, Friendbuy, or Impact can implement without a second meeting.
 
-The framework is **Viral Loop Design**: size the virality opportunity first, then pick incentives, then cut friction, then define measurement. You can't optimize what you haven't specified.
+The framework is **Viral Loop Design** (our house name for the four-phase sequence below, not an external standard): size the virality opportunity first, then pick incentives, then cut friction, then define measurement. You can't optimize what you haven't specified.
 
 ---
 

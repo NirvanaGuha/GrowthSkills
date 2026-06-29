@@ -25,8 +25,8 @@ Custom GPT, n8n, or any agent runtime. This is an engineering skill, not a
 consulting deck: every output is a real artifact you can deploy in minutes, not
 guidance you need to go interpret.
 
-The framework underneath is **PACT** — Purpose, Actions, Constraints, Tone —
-a minimal four-axis design space that forces every agent decision to be
+Our working framework underneath is **PACT** — Purpose, Actions, Constraints, Tone —
+a house mnemonic: a minimal four-axis design space that forces every agent decision to be
 deliberate. A senior operator works through PACT once per agent, then writes
 the system prompt, tools, and test suite as a direct translation of those
 decisions.

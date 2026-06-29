@@ -22,7 +22,7 @@ description: >
 
 Forms are where intent dies. A prospect who clicked your CTA, read your copy, and reached the form is motivated — the form is the only thing standing between that motivation and a conversion. This skill audits that gap field by field, scores the friction, and hands you a ranked action list: what to remove, what to reorder, what to hide behind progressive disclosure, and what microcopy to fix.
 
-Framework: **Fogg Behavior Model** applied per-field — a form converts when motivation × ability × prompt are in alignment at the moment of fill. Every field that taxes ability (complexity, cognitive load, trust cost) without returning perceived value is a lever.
+Framework: this skill adapts the **Fogg Behavior Model** (B=MAP) into a per-field friction score (our working model) — Fogg's model describes whether a single behavior fires when motivation × ability × prompt align; here we repurpose its ability/cost factors into four additive per-field dimensions (cognitive load, trust tax, necessity, sequence). A form converts when motivation × ability × prompt are in alignment at the moment of fill, and every field that taxes ability (complexity, cognitive load, trust cost) without returning perceived value is a lever.
 
 ---
 
@@ -70,9 +70,9 @@ Clarify before proceeding if: the form's funnel stage is ambiguous (awareness vs
 
 ---
 
-## The Fogg Friction Matrix (the audit engine)
+## Fogg-derived friction matrix (our working audit engine)
 
-Score each field on four dimensions, each 1–3:
+A house scoring grid we use here, adapted from the Fogg Behavior Model's ability/cost factors — not a framework Fogg published. Score each field on four dimensions, each 1–3:
 
 | Dimension | Score 1 (low friction) | Score 2 (medium) | Score 3 (high friction) |
 |---|---|---|---|

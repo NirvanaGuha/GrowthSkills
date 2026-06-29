@@ -62,9 +62,9 @@ If the user pastes source material from a long article or blog post, call `conte
 
 ---
 
-## The HVPC framework (Hook → Value → Pattern Interrupt → CTA)
+## HVPC: our working spine (Hook → Value → Pattern Interrupt → CTA)
 
-Every high-performing short-form video follows this spine. Build the script around it; do not deviate.
+HVPC is our house mnemonic — a working model, not an externally established framework. Most high-performing short-form videos move through these four beats, so we build every script around this spine.
 
 | Beat | Purpose | Target timing (30 s) | Target timing (60 s) |
 |---|---|---|---|

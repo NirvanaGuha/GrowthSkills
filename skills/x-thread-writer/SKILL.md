@@ -60,7 +60,7 @@ When unsure, default to Draft and offer Repurpose at the end ("Want me to try a 
 
 ## The Hook-Stack-Punch framework
 
-This is the operating theory behind every thread this skill writes. A thread is not a numbered list — it's a retention machine where each tweet's job is to make the next tweet irresistible.
+This is the operating theory behind every thread this skill writes — a house framework coined here, not an established industry model. A thread is not a numbered list — it's a retention machine where each tweet's job is to make the next tweet irresistible.
 
 ### Hook tweet (Tweet 1)
 The entire thread lives or dies here. The hook has one job: stop the scroll and force a "wait, what?" or a "that's exactly my problem."

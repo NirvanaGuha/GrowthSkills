@@ -8,8 +8,8 @@ description: >
   channel/format with a clear A/B recommendation, and Full Battery for multi-channel variant sets
   across ≥6 motivation angles. Calls brand-brain for voice, ICP, and proof before writing a
   single word; calls cta-variant-generator for the action component rather than reimplementing CTA
-  craft. Applies the Eugene Schwartz Five Stages of Market Awareness + David Abbott's direct-
-  response copy principles as its core framework — so a junior produces output that a senior media
+  craft. Applies the Eugene Schwartz Five Stages of Market Awareness + a working checklist of
+  direct-response craft principles in the David Abbott tradition as its core framework — so a junior produces output that a senior media
   buyer can run without editing. Use when the user asks for "ad copy," "Google ads copy," "Meta ad
   variants," "ad creative," "write me ads," "headline variants for [campaign]," "paid copy,"
   "performance copy," or hands over a brief and asks what to test.
@@ -98,7 +98,7 @@ Most paid campaigns land in Solution-aware or Product-aware. Default there unles
 
 ### Abbott: the direct-response copy principles
 
-David Abbott's rules, operationalized for digital ads:
+Direct-response craft principles in the tradition of David Abbott (reader self-interest, specificity over superlatives, one idea, honesty), operationalized here for digital ads — a working checklist, not a canonical Abbott list:
 
 1. **One idea per ad.** If you need a comma to hold two claims together, cut one.
 2. **The first line buys the second.** In Meta primary text and YouTube hooks, the opening earns attention — it does not sell.

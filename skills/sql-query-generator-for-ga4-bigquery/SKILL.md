@@ -52,6 +52,8 @@ Step 5  Output + save offer   ──► query + explanation + validation query +
 
 Invoke `brand-brain` (Skill tool, `skill: brand-brain`). Retrieve the active brand's BigQuery project ID, dataset name (e.g. `analytics_313318114`), known event taxonomy (custom events defined by this brand), GA4 property ID, and any measurement quirks stored in `brand.md`. If the brand has no GA4/BQ config yet, ask for: BigQuery project ID, dataset name, and the key events relevant to the question. Do not write SQL until these are resolved.
 
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for the BigQuery project ID and dataset name (e.g. `my-project.analytics_313318114`), the plain-English question or metric to answer, the event names and key params relevant to the question (e.g. `purchase` with `value`, `add_to_cart`, custom experiment event names), and the date range to query.
+
 ---
 
 ## Query Class 1 — Funnel Analysis

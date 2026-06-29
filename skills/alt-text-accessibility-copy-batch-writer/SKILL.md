@@ -5,7 +5,7 @@ description: >
   or Figma frame names — and returns a production-ready alt-text string for every asset:
   SEO-optimized, WCAG 2.2 AA-compliant, and written in the brand's real voice. Works in
   two modes: Single Asset (quick, default) and Batch Table (one pass for all assets, saved
-  as a TSV handoff file). Applies the F.O.C.U.S. framework (Function → Object → Context →
+  as a TSV handoff file). Applies our house F.O.C.U.S. checklist (Function → Object → Context →
   Use-case → Suppress decorative) to guarantee every string is actionable, not just
   descriptive. Calls brand-brain so ICP vocabulary and banned words carry through into alt
   copy. Flags decorative images as empty-alt candidates so developers get the correct
@@ -66,9 +66,10 @@ Do not write a single alt string before it returns.
 
 ---
 
-## The F.O.C.U.S. Framework
+## F.O.C.U.S. — our working checklist
 
-Every alt string is written by walking five questions in order:
+F.O.C.U.S. is a house mnemonic we use here (not an external standard). Every alt string is
+written by walking its five questions in order:
 
 | Letter | Question | Why it matters |
 |--------|----------|----------------|

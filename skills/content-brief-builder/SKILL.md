@@ -43,7 +43,7 @@ Synthesize a section inline only when a needed component is unavailable.
 ```
 Step 0  Load the brand   ──► call the `brand-brain` skill (it bootstraps on first use)
 Step 1  Gather inputs    ──► keyword + SERP/research data (or trigger upstream research)
-Step 2  Build the brief  ──► run the IDEALS framework, section by section
+Step 2  Build the brief  ──► run the IDEALS checklist (our working model), section by section
 Step 3  Self-review against the checklist, then present and offer to persist
 ```
 
@@ -59,9 +59,9 @@ You need two things before you can brief: the **target keyword** and **real SERP
 
 ---
 
-## The IDEALS framework
+## IDEALS — our working brief checklist
 
-Every brief answers six questions, in order. Earlier answers constrain later ones — get intent wrong and the whole brief is wrong.
+IDEALS is our own organizing mnemonic for this skill, not an established industry framework. Every brief answers six questions, in order. Earlier answers constrain later ones — get intent wrong and the whole brief is wrong.
 
 | Letter | Question the brief answers | Output |
 |---|---|---|

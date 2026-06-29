@@ -6,8 +6,8 @@ description: >
   violation: wrong colors, wrong fonts, unapproved logo treatments, banned words, tone drift,
   and visual hierarchy breaks. Returns a structured violation report scored by severity (Critical /
   Major / Minor), with per-asset correction notes and a pass/fail summary a designer, copywriter,
-  or approver can act on in one sitting. Uses a named framework (the 5-Pillar Brand Consistency
-  Model) so a junior produces the same audit quality as a senior. Calls brand-brain to load the
+  or approver can act on in one sitting. Uses a consistent house checklist (our 5-Pillar Brand
+  Consistency model) so a junior produces the same audit quality as a senior. Calls brand-brain to load the
   active brand's real style rules — never re-derives them inline. Optionally composes with
   editorial-style-guide, brand-voice-codifier, or proof-vault when companion files are present.
   Use when the user says "audit these assets," "brand check," "is this on-brand," "QA these
@@ -17,7 +17,7 @@ description: >
 
 # Brand Consistency Auditor
 
-Stamp out off-brand drift before it ships. This skill takes an asset set — any mix of screenshots, URLs, copy, HTML, decks, or social posts — loads the active brand's real rules from `brand-brain`, and returns a severity-ranked violation report with actionable correction notes. Powered by the 5-Pillar Brand Consistency Model so every audit is structured, repeatable, and defensible.
+Stamp out off-brand drift before it ships. This skill takes an asset set — any mix of screenshots, URLs, copy, HTML, decks, or social posts — loads the active brand's real rules from `brand-brain`, and returns a severity-ranked violation report with actionable correction notes. It runs on a 5-pillar brand consistency checklist (our working house model) so every audit is structured, repeatable, and defensible.
 
 This skill audits. It does not redesign assets, rewrite full copy drafts, or rebuild brand rules from scratch — those live in the sibling skills it composes with.
 

@@ -3,8 +3,8 @@ name: transactional-email-copywriter
 description: >
   Writes production-ready transactional email copy — order confirmations, password resets,
   receipts, shipping notices, trial expirations, account alerts, welcome triggers — from a
-  trigger event spec and brand tone. Applies the FIRE framework (Functional clarity, Instructional
-  precision, Reassurance microcopy, Emotional temperature-setting) so every transactional email
+  trigger event spec and brand tone. Applies our FIRE working model (Functional clarity, Instructional
+  precision, Reassurance microcopy, Emotional temperature-setting), a house framework, so every transactional email
   both delivers its payload AND advances the brand relationship. Works at the email level (subject,
   preheader, salutation, body blocks, CTA, footer) rather than the sequence level. On request,
   produces a full trigger-event matrix covering an entire product lifecycle. Does NOT manage brand
@@ -20,7 +20,7 @@ description: >
 
 Transactional emails have an open rate 4–8× higher than marketing sends [verify exact multiple per ESP]. That makes them the most-read brand touchpoint most companies treat as an IT ticket.
 
-This skill applies the **FIRE framework** — Functional clarity, Instructional precision, Reassurance microcopy, Emotional temperature-setting — to every trigger email so it fulfills its functional job AND moves the relationship forward. The copy is production-ready: structured into labeled blocks, character-counted where limits matter, compliance-flagged before handoff.
+This skill applies **FIRE**, our working model (a house framework, not an industry standard) — Functional clarity, Instructional precision, Reassurance microcopy, Emotional temperature-setting — to every trigger email so it fulfills its functional job AND moves the relationship forward. The copy is production-ready: structured into labeled blocks, character-counted where limits matter, compliance-flagged before handoff.
 
 It writes individual emails, not full sequences. For multi-step drip or lifecycle sequences, compose this skill with `welcome-onboarding-email-sequence-builder`, `abandon-flow-writer`, or `usage-triggered-message-sequencer`.
 

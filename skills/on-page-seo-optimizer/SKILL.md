@@ -52,9 +52,9 @@ You need, at minimum: the **draft** (paste or path) and the **primary target key
 
 ---
 
-## The framework — TICED (the on-page audit-and-rewrite pass)
+## TICED — our working on-page audit-and-rewrite pass
 
-Run the draft through five lenses, in order. Each lens scores the current state, then drives a rewrite. TICED keeps a junior from doing the one thing that tanks on-page work: optimizing the title and metas while leaving the body's structure and semantics untouched.
+TICED is a house mnemonic we use here (not an industry-standard framework). Run the draft through its five lenses, in order. Each lens scores the current state, then drives a rewrite. TICED keeps a junior from doing the one thing that tanks on-page work: optimizing the title and metas while leaving the body's structure and semantics untouched.
 
 | Lens | Question it answers | What it governs |
 |---|---|---|

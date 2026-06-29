@@ -20,7 +20,7 @@ description: >
 
 Something moved. This skill tells you whether it's real, why it happened, and what to do — in that order.
 
-Most "traffic dropped" panics are measurement problems, not marketing ones. This skill runs a data-quality gate before reasoning about causes, so you don't rewrite your homepage because a tag broke. It applies Google's own Anomaly Detection framework (Z-score / IQR over a rolling baseline, adjusted for weekly seasonality) and encodes the classic GA4 measurement gotchas as first-pass checks — attribution windows, (not set) swells, sampling thresholds, self-referral, SRM in active experiments, and hostname pollution.
+Most "traffic dropped" panics are measurement problems, not marketing ones. This skill runs a data-quality gate before reasoning about causes, so you don't rewrite your homepage because a tag broke. It applies an independent statistical anomaly-detection method (Z-score / IQR over a rolling baseline, adjusted for weekly seasonality) and encodes the classic GA4 measurement gotchas as first-pass checks — attribution windows, (not set) swells, sampling thresholds, self-referral, SRM in active experiments, and hostname pollution.
 
 It does not query GA4 directly; it works from data you provide or pull via `~/ga4-query/` scripts. It reasons like a senior analyst, not a dashboard.
 
@@ -172,7 +172,7 @@ Save to `./analytics/anomaly-[brand]-[YYYY-MM-DD].md` if the user asks for a fil
 
 ## The anomaly-detection framework
 
-This skill applies a **rolling-baseline Z-score model with weekday-seasonality correction**, which is the method GA4's built-in anomaly detection uses internally (documented in the GA4 Insights API) but does not expose at the metric+dimension level.
+This skill applies a **rolling-baseline Z-score model with weekday-seasonality correction**. This is an independent statistical method, not a reproduction of GA4's own Intelligence/anomaly detection — Google's built-in detection uses a Bayesian state-space (probabilistic) model with a training period and forecast confidence band [verify], and does not expose anomaly scoring at the metric+dimension level. The Z-score approach here is a transparent, hand-checkable substitute.
 
 **Why not just WoW delta?** Week-over-week is the most common mistake. A Tuesday-vs-Tuesday comparison already has lower variance than a Tuesday-vs-Monday one, but it still misses: multi-week trend drift, holidays that shift day-of-week patterns, and slowly decaying metrics that never show a large single-week jump.
 

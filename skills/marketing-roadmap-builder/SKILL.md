@@ -3,8 +3,8 @@ name: marketing-roadmap-builder
 description: >
   Turns a raw initiative list, OKR set, or strategy doc into a structured marketing roadmap:
   a prioritized Now/Next/Later table, a quarter-by-quarter milestone schedule, and a clean
-  slide outline a junior marketer can drop into a deck or Notion page. Uses the Horizon
-  Planning framework (3 time horizons × effort/impact scoring) to rank initiatives before
+  slide outline a junior marketer can drop into a deck or Notion page. Uses a house
+  horizon-planning model (Now/Next/Later placement × effort/impact scoring) to rank initiatives before
   placing them, so the roadmap reflects strategic priority — not whoever shouted loudest in
   the last planning meeting. Reads the active brand's positioning, ICP, and offer via
   brand-brain so every initiative is anchored to real business context and not generic marketing
@@ -19,7 +19,7 @@ description: >
 
 # Marketing Roadmap Builder
 
-Raw initiative list in, decision-grade roadmap out. This skill does not just sort a backlog into a table — it uses the Horizon Planning framework to force explicit trade-offs, anchor every initiative to a measurable goal, and produce a roadmap that survives the first challenge from a skeptical CFO or a busy ops team.
+Raw initiative list in, decision-grade roadmap out. This skill does not just sort a backlog into a table — it uses our horizon-planning model (a house working model) to force explicit trade-offs, anchor every initiative to a measurable goal, and produce a roadmap that survives the first challenge from a skeptical CFO or a busy ops team.
 
 Output: a prioritized Now/Next/Later table, a quarter-by-quarter milestone schedule with owners + success metrics, and a five-section slide outline ready for the deck or Notion.
 
@@ -42,7 +42,7 @@ Output: a prioritized Now/Next/Later table, a quarter-by-quarter milestone sched
 Step 0  Load the brand              ──► call brand-brain
 Step 1  Diagnose if needed          ──► call growth-diagnostic-deep-dive when no initiative list
 Step 2  Collect + structure inputs  ──► intake form if missing
-Step 3  Score every initiative      ──► Horizon Planning framework
+Step 3  Score every initiative      ──► horizon-planning model (house)
 Step 4  Build the roadmap           ──► Now/Next/Later table + Q-schedule + slide outline
 Step 5  Validate OKR coverage       ──► call okr-suite; flag unanchored initiatives
 Step 6  Save + present              ──► ./roadmap/[slug]-roadmap.md
@@ -73,7 +73,7 @@ If the input already has some of these, don't re-ask — pull from context.
 
 ---
 
-## Horizon Planning framework (the engine)
+## Horizon-planning model (the engine — our house working model)
 
 Every initiative is scored before it is placed. Score on two axes:
 

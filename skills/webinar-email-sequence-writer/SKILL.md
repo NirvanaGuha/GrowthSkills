@@ -91,7 +91,7 @@ If registration details are handed over as a URL, read the page before asking.
 
 ### Step 2 — Sequence spine (the Pre-Event Ladder + Post-Event Arc)
 
-**The framework: Pre-Event Ladder + Post-Event Arc**
+**Our working model: the Pre-Event Ladder + Post-Event Arc** (a house structure, not an external framework)
 
 The Pre-Event Ladder builds anticipation and reduces no-shows. The Post-Event Arc converts
 registrant momentum into a product action, segmented by how invested each person actually was.

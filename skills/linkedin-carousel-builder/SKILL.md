@@ -3,8 +3,8 @@ name: linkedin-carousel-builder
 description: >
   Turns a key idea, article, data set, or rough brief into a fully written LinkedIn carousel
   deck — slide-by-slide copy, a numbered structure, and a native-document posting strategy.
-  Applies the Hook-Bridge-Value-CTA framework (the four-zone architecture every high-reach
-  carousel uses) so a junior marketer produces output that reads like a senior's best-performing
+  Applies our Hook-Bridge-Value-CTA working model (a four-zone structure for high-reach
+  carousels) so a junior marketer produces output that reads like a senior's best-performing
   post. Handles any carousel type: educational how-to, data story, personal story arc,
   listicle, counter-intuitive argument, case study snapshot. Calls brand-brain first so
   every slide is on-voice. Optionally calls headline-hook-generator for the title card and
@@ -82,9 +82,9 @@ Example spine (how-to, 9 slides):
 
 ---
 
-## The HBVC Framework (Hook → Bridge → Value → CTA)
+## HBVC: our working model (Hook → Bridge → Value → CTA)
 
-Every high-reach LinkedIn carousel uses this four-zone structure. Apply it as the organizing logic of the deck, not as literal labels on cards.
+This is a house framework — a four-zone structure we use to organize high-reach carousels, not an established industry standard. Apply it as the organizing logic of the deck, not as literal labels on cards.
 
 **Hook zone (slides 1–2):** The title card must earn the swipe. LinkedIn shows only the first slide in the feed. If the hook does not create a felt gap — curiosity, recognition, surprise, or a specific promised outcome — the carousel dies at zero opens. The second slide is the bridge: it validates the promise of slide 1 and gives the reader a reason to continue. Together these two slides are the highest-leverage real estate in the deck.
 

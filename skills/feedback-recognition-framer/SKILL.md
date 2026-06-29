@@ -94,7 +94,7 @@ Default to Constructive when the input describes something that went wrong.
 
 **The forward close (Constructive only):** after Impact, add a specific, concrete "what I'd
 like to see" — not "be better at X" but "next time, doing Y would help because Z." This is
-the SBI+1 extension used in CCL's coaching model.
+a forward-looking close we add to SBI here (our working extension); the underlying feed-forward idea is well established, but the "SBI+1" label is ours, not an established CCL term.
 
 **For Recognition:** SBI proves the praise. Without Situation + Behavior, a shoutout is just
 noise. Impact tells the audience *why it mattered*, which is what makes public recognition

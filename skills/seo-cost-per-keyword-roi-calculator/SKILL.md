@@ -22,7 +22,7 @@ spent to own each ranking), an estimated market value (what you would pay in CPC
 traffic), and a forward-looking payback period. The output is a defensible finance number, not an
 SEO vanity metric.
 
-The core framework is **Content Asset Economics**: treat each ranking URL as a capitalized asset,
+The working model here — call it **Content Asset Economics** (our house framing, not an established framework): treat each ranking URL as a capitalized asset,
 amortize its production cost over its useful life, and measure the traffic value it generates
 against that cost. Borrowed from the same P&L logic finance uses for SaaS cohorts — except the
 "cohort" is a content publish date and the "revenue" is avoided paid-search spend plus attributed

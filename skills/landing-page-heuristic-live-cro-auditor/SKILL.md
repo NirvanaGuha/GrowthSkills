@@ -82,12 +82,12 @@ tier: P1 (fix this week), P2 (next sprint), P3 (nice-to-have).
 
 ---
 
-## The seven heuristics (CLARITY-TRUST-FRICTION-URGENCY framework, extended)
+## The seven heuristics (our Clarity-Trust-Friction-Urgency working model, extended)
 
-This skill uses a named, opinionated framework rather than a generic checklist. The seven
-dimensions draw on the MECLABS Conversion Heuristic, Flint McGlaughlin's message-match model,
-and BJ Fogg's Behavior Model (motivation × ability). Weights reflect their typical share of
-conversion impact.
+This skill uses an opinionated, named-here checklist rather than a generic one — it is our own
+house synthesis, not an externally established framework. The seven dimensions draw directionally
+on the MECLABS Conversion Heuristic, Flint McGlaughlin's message-match model, and BJ Fogg's
+Behavior Model (motivation × ability). Weights reflect their typical share of conversion impact.
 
 | # | Dimension | Weight | What it tests |
 |---|---|---|---|

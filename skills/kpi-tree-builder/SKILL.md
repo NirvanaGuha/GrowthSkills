@@ -41,7 +41,7 @@ The output is owner-assigned, cadence-anchored, and measurement-readiness-audite
 ```
 Step 0  Load brand context   ──► call brand-brain (or fallback)
 Step 1  Anchor the north-star ──► confirm or derive the single north-star metric
-Step 2  Map the causal chain  ──► tier-1 drivers → tier-2 levers (Rockefeller Habits / Pirate + NSM framework)
+Step 2  Map the causal chain  ──► tier-1 drivers → tier-2 levers (causal hierarchy + Pirate Metrics / NSM framing)
 Step 3  Assign + cadence      ──► owner per node, reporting cadence
 Step 4  Measurement gate      ──► call data-qa-measurement-gotcha-checker; flag un-instrumented nodes
 Step 5  Compose math nodes    ──► ltv-cac-payback-calculator / channel-roi-scorecard where relevant
@@ -82,7 +82,7 @@ Present the proposed NSM and ask for confirmation before building down.
 
 ## Step 2 — Map the causal chain (the tree)
 
-Use the **Rockefeller Habits "KPI waterfall" + Pirate Metrics (AARRR) overlap** as the structural framework: every metric either lives in acquisition, activation, retention, referral, or revenue — and every child node is a causal antecedent (not a correlated indicator) of its parent.
+Build the tree as a **causal hierarchy**, using **Pirate Metrics (AARRR — Dave McClure)** as the bucketing scheme: every metric either lives in acquisition, activation, retention, referral, or revenue — and every child node is a causal antecedent (not a correlated indicator) of its parent.
 
 **Tree depth:** three tiers is the target. Four is acceptable for complex revenue trees. More than four signals the scope is too broad — split into sub-trees per business unit or funnel stage.
 

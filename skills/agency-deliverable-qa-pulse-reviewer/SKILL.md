@@ -57,7 +57,7 @@ Two outputs, one run:
 ```
 Step 0  Load the brand          ──► call brand-brain; get voice, ICP, banned words
 Step 1  Resolve the inputs      ──► deliverable + brief (reconstruct if missing)
-Step 2  Run the Redline Report  ──► line by line against the brief (TRACE framework)
+Step 2  Run the Redline Report  ──► line by line against the brief (TRACE checklist)
 Step 3  Run the Pulse Summary   ──► pattern analysis over time (DRIFT score)
 Step 4  Self-review + present   ──► structured report ready to attach to feedback email
 ```
@@ -94,9 +94,10 @@ only and note that a full Redline requires the actual deliverable.
 
 ---
 
-## Step 2 — Redline Report (TRACE framework)
+## Step 2 — Redline Report (TRACE checklist)
 
-Score every requirement from the brief using the **TRACE** lens:
+Score every requirement from the brief using the **TRACE** lens (a house checklist we
+use here, not an external standard):
 
 | Dimension | What to check |
 |---|---|
@@ -128,7 +129,7 @@ relationship-aware. Separate the two clearly.
 
 ---
 
-## Step 3 — Delivery-Drift Pulse (DRIFT score)
+## Step 3 — Delivery-Drift Pulse (DRIFT score, our working model)
 
 The Pulse is a pattern read, not a one-moment grade. It requires either a log of past
 deliveries (user-pasted, Notion/Asana export, or a history of prior Redline reports

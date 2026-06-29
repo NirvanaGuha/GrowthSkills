@@ -3,8 +3,8 @@ name: seo-to-ga4-gap-analysis
 description: >
   Cross-references an Ahrefs or Semrush ranking export against GA4 organic landing-page data
   to surface the ranking keywords that are not converting — or not even appearing — in GA4.
-  Applies the canonical SEO-measurement gap framework (keyword→landing-page→session→conversion
-  chain) to systematically diagnose where ranking signal breaks down: attribution failures,
+  Applies a SEO-measurement gap chain (keyword→landing-page→session→conversion)
+  to systematically diagnose where ranking signal breaks down: attribution failures,
   sampling artifacts, (not set) traps, GSC↔GA4 discrepancies, and genuine conversion
   voids. Output is a matched, prioritized gap list with per-gap root-cause labels and a
   remediation brief ranked by revenue-recovery potential. Also composes data-qa-measurement-

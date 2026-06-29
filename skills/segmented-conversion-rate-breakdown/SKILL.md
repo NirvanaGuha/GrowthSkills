@@ -21,7 +21,7 @@ description: >
 
 Your overall conversion rate is an average — and averages hide everything. A 2.4% blended CVR might mean mobile traffic converting at 0.8% while desktop converts at 5.1%, or that one source drives 60% of sessions but 10% of revenue. This skill slices the data, ranks the segments, and tells you exactly where to win and what to suppress.
 
-Framework: **Segment Contribution Analysis** — rank every segment by CVR, index against the site average, weight by session share, and flag high-volume/low-CVR segments as the primary optimization lever. Every conclusion passes a data-quality gate first; no action recommendation ships on corrupted or sparse data.
+Our working approach — segment contribution analysis (a house method, not an established named framework): rank every segment by CVR, index against the site average, weight by session share, and flag high-volume/low-CVR segments as the primary optimization lever. Every conclusion passes a data-quality gate first; no action recommendation ships on corrupted or sparse data.
 
 ---
 

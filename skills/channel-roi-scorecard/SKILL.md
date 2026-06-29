@@ -53,7 +53,7 @@ Invoke `brand-brain` (Skill tool, `skill: brand-brain`) before any calculation. 
 - **Trial/freemium mechanics** — signals whether CPA should be measured at trial-start, paid-conversion, or a blended activation gate
 - **ICP segment** — calibrates what a "good" CPA looks like against typical LTV for this customer
 
-If `brand-brain` is absent, ask the user for: (1) average revenue per acquired customer, (2) gross margin %, (3) whether you're measuring at trial or paid conversion. Don't guess margin.
+**Fallback if `brand-brain` is absent or returns no brand:** read `~/.brandbrain/brands/.active` and that brand's `brand.md` directly; if none exists, ask the user for: per-channel spend and attributed revenue/conversions for the period, gross margin %, average order or contract value (AOV/ACV), the conversion event that defines a "customer" for CPA purposes (trial start, paid conversion, or MQL), and the channel list to score.
 
 ---
 

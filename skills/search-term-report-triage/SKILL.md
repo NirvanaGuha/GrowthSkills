@@ -77,7 +77,7 @@ Apply the brand context from Step 0.
 - Term maps to an **irrelevant vertical** the brand doesn't serve (e.g., "push notifications app for food delivery" when brand only serves eCommerce) → ADD AS NEGATIVE.
 - Term contains a **banned angle** from brand.md → ADD AS NEGATIVE.
 
-#### Dimension 2 — Intent classification (Mikael Yang / standard SEM ladder)
+#### Dimension 2 — Intent classification (standard SEM intent ladder)
 Classify intent: **Transactional** (buy, pricing, trial, best X for Y) · **Commercial Investigation** (compare, reviews, alternatives, vs) · **Informational** (what is, how to, guide) · **Navigational** (brand + destination) · **Junk** (random, misspelled, unrelated).
 
 | Intent | Default verdict | Override condition |

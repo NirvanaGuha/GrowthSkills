@@ -36,7 +36,7 @@ This skill plans what to rank for. It does not write the article, audit existing
 ```
 Step 0  Load the brand    ──► call the `brand-brain` skill (it bootstraps on first use)
 Step 1  Ingest + normalize ──► seed topics + domain + export → one clean keyword table
-Step 2  Cluster            ──► group into pillar/cluster topics (the PILLAR method)
+Step 2  Cluster            ──► group into pillar/cluster topics (PILLAR — our working checklist)
 Step 3  Score + label      ──► volume · difficulty · intent · brand-fit per cluster
 Step 4  Prioritize         ──► the Quick-Win Quadrant → ranked opportunity list
 Step 5  Present + persist   ──► cluster map + quick-win list, offer to save
@@ -56,7 +56,7 @@ Step 5  Present + persist   ──► cluster map + quick-win list, offer to sav
 
 ---
 
-## Step 2 — Cluster: the PILLAR method
+## Step 2 — Cluster: PILLAR (our working checklist)
 
 Group keywords by the **job the searcher is doing**, not by string similarity. "best push notification software" and "push notification tools" are one cluster (same job, one page); "what is web push" is a different cluster (learn, not buy). Walk PILLAR:
 

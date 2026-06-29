@@ -3,9 +3,10 @@ name: cfp-abstract-speaker-outreach-writer
 description: >
   Speaker topic, conference, bio notes → polished abstract, session title, formatted bio,
   and personalized recruiter outreach with follow-up. Two modes: Submit (you're applying to
-  a CFP) and Recruit (you're sourcing speakers for your own event). Applies the Kirby Ferguson
-  "constraint as creative engine" framework — the tightest, most specific angle always beats
-  the broad one in programme committee review. Loads brand context via brand-brain so every
+  a CFP) and Recruit (you're sourcing speakers for your own event). Applies an angle-sharpening
+  method — narrow the thesis down a four-rung ladder (Topic → Claim → Constrained claim →
+  Proof-anchored claim) until it's the single most specific, proof-backed version, because the
+  tightest angle wins the programme-committee read. Loads brand context via brand-brain so every
   abstract and outreach lands in the right voice and proves the right proof points. Use
   whenever the user says "write my CFP abstract," "submit a conference talk," "speaker
   outreach," "find speakers," "CFP application," "recruit a speaker," "write a conference
@@ -72,11 +73,31 @@ When unclear, ask one question: "Are you submitting a talk or inviting a speaker
 
 Do not ask for all seven upfront. Check what the brand digest already supplies, infer conference audience from the URL if provided, and ask only the remaining gaps in one batch.
 
-### The framework: Angle Sharpening (after Ferguson / rhetorical narrowing)
+### The framework: Angle Sharpening (house model — rhetorical narrowing)
 
-1. **Identify the thesis.** A single falsifiable claim the talk proves — not a topic. "How we cut onboarding drop-off 40% by removing a field" is a thesis; "onboarding best practices" is a topic.
-2. **Sharpen the angle.** Apply one sharpening pass: Who specifically? What exact constraint or counterintuition? What proof makes it non-obvious? The sharpest version wins the committee slot.
-3. **Stress-test the title.** A programme committee member should be able to explain what they'll learn in one sentence from the title alone. Run `headline-hook-generator` on the title shortlist; pick the one that is specific, benefit-forward, and not a question (questions test poorly in CFP review data [verify]).
+This is the core method of the skill. A submission rarely fails because the topic is weak; it fails because the angle is broad — interchangeable with the dozen other submissions on the same topic. Sharpening is the act of walking a topic down four rungs until it's the single most specific, proof-backed claim the speaker can defend. Each rung discards generality and adds a constraint. Stop at the lowest rung the speaker can actually prove — that's the one that wins the slot.
+
+| Rung | What it is | Reviewer's reaction | Example |
+|---|---|---|---|
+| 1. Topic | The subject area. A noun phrase. | "Seen it. Forty of these." | Onboarding |
+| 2. Claim | An assertion with a position. | "Okay, but everyone says this." | Better onboarding reduces churn |
+| 3. Constrained claim | The claim, narrowed by *who*, *when*, or a counterintuition. | "Huh — that's a specific bet." | Removing form fields beats adding tooltips for activating self-serve B2B users |
+| 4. Proof-anchored claim | The constrained claim, fused to a named result. | "I want to be in that room." | We cut onboarding drop-off 40% by deleting one signup field — here's why the field mattered |
+
+**The sharpening pass — three questions, applied in order:**
+
+1. **Who, exactly?** Replace "users / teams / marketers" with the narrowest segment the talk actually serves (self-serve B2B, Series-A founders, RevOps leads). A talk for everyone is a talk for no committee.
+2. **What's the constraint or counterintuition?** The non-obvious turn — what the speaker did *instead of* the default move, or the limit they worked within. This is what makes rung 3 land differently from rung 2.
+3. **What proof makes it non-obvious?** The number, named company (or anonymized tier), and timeframe that move the claim to rung 4. No proof → the angle stalls at rung 3 and you flag it for the user.
+
+**Worked example (Submit mode):**
+
+> - **Topic:** "Lifecycle email." → generic, dead on arrival.
+> - **Claim:** "Lifecycle email drives retention." → true and useless; every reviewer agrees and forgets it.
+> - **Constrained claim:** "For low-touch SaaS, a single behavior-triggered email beats a five-email nurture for trial-to-paid." → now there's a bet a reviewer can argue with.
+> - **Proof-anchored claim → final title:** *"We Killed Our 5-Email Nurture and Trial Conversion Rose 18%"* → specific, falsifiable, and the room fills up.
+
+**Stress-test the title.** A committee member should be able to state what they'll learn in one sentence from the title alone. Run `headline-hook-generator` on the shortlist; pick the one that is specific, benefit-forward, and stated as a claim — not a question. Avoid question-form titles: they read as unresolved and push the work of guessing the payoff onto the reviewer.
 
 ### Deliverables
 
@@ -87,7 +108,7 @@ Do not ask for all seven upfront. Check what the brand digest already supplies, 
 Structure (Problem → Insight → Method → Proof → Takeaway):
 - **Hook sentence**: the counterintuitive observation or specific problem, not "In today's world…"
 - **Setup (2–3 sentences)**: the real stakes for *this* attendee persona
-- **Thesis/method (2–3 sentences)**: what the speaker actually did, the specific framework or decision, named if possible
+- **Thesis/method (2–3 sentences)**: the rung-4 proof-anchored claim from the sharpening ladder — what the speaker actually did, the specific constraint or decision, named if possible
 - **Proof anchor (1–2 sentences)**: the concrete result — number, company name or anonymized tier, timeframe. Mark unconfirmed figures `[verify]`.
 - **Takeaways (3 bullets)**: what attendees leave able to do, starting with a verb ("Diagnose," "Implement," "Avoid")
 - **Closing hook**: one sentence that makes the reader want to be in the room
@@ -162,7 +183,7 @@ One paragraph. Adds new information (updated lineup, confirmed sponsor, relevant
 - Don't reimplement brand scanning or voice derivation here — call `brand-brain`.
 - Don't write a bio that leads with the speaker's most prestigious credential if it's irrelevant to the talk's thesis.
 - Don't write recruiter outreach that opens with "We're huge fans" or "I hope this finds you well."
-- Don't omit the follow-up plan in Recruit mode — one-touch speaker sourcing underperforms significantly [verify].
+- Don't omit the follow-up plan in Recruit mode — a single touch is easy to miss or defer; a planned 2-touch cadence with a 7–10 day gap materially raises reply odds.
 - Don't pad the abstract to hit a word count — every sentence must earn its place.
 
 ---
@@ -172,7 +193,8 @@ One paragraph. Adds new information (updated lineup, confirmed sponsor, relevant
 - `brand-brain` called and brand digest loaded before any copy was written?
 - Voice adjectives honored; banned words absent from all deliverables?
 - All proof numbers real and attributed, or marked `[verify]`?
-- Session title: ≤10 words, specific outcome stated, no vague superlatives?
+- Angle sharpened to the lowest provable rung (rung 4 if proof exists, rung 3 flagged if not) — not left as a topic or bare claim?
+- Session title: ≤10 words, specific outcome stated, stated as a claim not a question, no vague superlatives?
 - Abstract: hook is specific (not a landscape statement); proof anchor present; takeaways start with verbs; within word limit?
 - Bio: third-person, present tense; leads with the credential most relevant to the talk's thesis?
 - Submit mode: reviewer-facing note offered for competitive conferences?

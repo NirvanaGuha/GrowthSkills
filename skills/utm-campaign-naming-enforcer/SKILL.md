@@ -19,7 +19,7 @@ description: >
 
 Dirty UTMs break attribution silently — "Email" and "email" look the same in a dashboard until you try to aggregate them and find two rows. This skill audits every parameter in a batch, flags each violation with its rule, emits a corrected value, and outputs a validated URL sheet. It also gives you the governance artifact — a canonical naming taxonomy — so the next trafficker doesn't invent a new convention.
 
-The underlying framework is Google Analytics' own UTM taxonomy best-practice layer: five required/optional parameters, a strict field-value contract, and a naming schema aligned to GA4's channel-grouping rules so your traffic doesn't land in "(other)."
+The underlying schema is a house UTM-naming standard built on top of GA4's real channel-grouping rules (there is no single official "Google UTM taxonomy" — Google publishes the channel-grouping definitions, not a canonical naming convention): five required/optional parameters, a strict field-value contract, and a naming schema aligned to GA4's channel-grouping rules so your traffic doesn't land in "(other)."
 
 ---
 
@@ -75,7 +75,7 @@ Unless the user provides their own convention, enforce these rules:
 | Parameter | Required | Allowed values / pattern | GA4 channel-grouping impact |
 |---|---|---|---|
 | `utm_source` | Always | Lowercase, no spaces, underscores only. Canonical values: `google`, `facebook`, `instagram`, `linkedin`, `twitter`, `tiktok`, `newsletter`, `partner_[slug]`, `direct` | Maps to Source |
-| `utm_medium` | Always | Must match GA4 default-channel definitions exactly (case-sensitive lowercase): `cpc`, `email`, `organic`, `referral`, `social`, `push`, `sms`, `affiliate`, `display`, `video` | A wrong medium lands traffic in "(other)" — highest-severity flag |
+| `utm_medium` | Always | Must match GA4 default-channel definitions exactly (case-sensitive lowercase): `cpc`, `email`, `organic`, `referral`, `social`, `push`, `sms`, `affiliate`, `display`, `video` | GA4 classifies on the source+medium combination (e.g. `cpc` resolves to Paid Search vs Paid Social by source), but an unrecognized medium lands traffic in "(other)" regardless of source [verify] — highest-severity flag |
 | `utm_campaign` | Always | Format: `[brand-slug]_[YYYYQQ]_[initiative]` or `[brand-slug]_[YYYYMMDD]_[initiative]` for one-off sends. Lowercase, underscores, no spaces, no special chars except hyphens within `[initiative]`. Max 80 chars. | Campaign dimension |
 | `utm_term` | Paid search only | Keyword, underscored, lowercase | Keyword dimension |
 | `utm_content` | A/B / creative differentiation | `[format]-[variant]`, e.g. `banner-blue`, `cta-v2`. No spaces. | Ad content dimension |

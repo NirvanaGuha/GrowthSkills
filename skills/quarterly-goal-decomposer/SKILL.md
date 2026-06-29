@@ -3,8 +3,9 @@ name: quarterly-goal-decomposer
 description: >
   Takes 1–3 quarterly goals and decomposes them into an execution-ready project plan: month-by-month
   milestones, weekly leading indicators, dependency sequencing, and a Notion-compatible task board.
-  Uses the OKR Waterfall framework to keep outcomes (the "O") and key results (the "KR") structurally
-  separate from tasks, so the plan stays connected to the goal even as work shifts. Brand context loads
+  Uses an OKR-cascade approach (our working model, we call it the "OKR waterfall") to keep outcomes
+  (the "O") and key results (the "KR") structurally separate from tasks, so the plan stays connected
+  to the goal even as work shifts. Brand context loads
   via brand-brain so company naming, voice, and ICP-anchored priority logic are accurate from the
   start. Produces a single markdown plan plus an optional Notion-importable CSV. Use when the user says
   "break down my Q goals," "make a quarterly plan," "decompose my OKRs," "turn my Q into a project
@@ -52,7 +53,7 @@ clarifies before it plans; a crisp quarter starts with a crisp goal.
 ```
 Step 0  Load the brand         ──► call brand-brain
 Step 1  Clarify the goals      ──► extract or sharpen Objective + Key Results
-Step 2  Structure the quarter  ──► OKR Waterfall: months → milestones → leading indicators
+Step 2  Structure the quarter  ──► OKR cascade: months → milestones → leading indicators
 Step 3  Build the task board   ──► projects, owners, dependencies, sequencing
 Step 4  Surface the risks      ──► 3–5 honest threats, each with a mitigation
 Step 5  Deliver the artifacts  ──► markdown plan + optional Notion CSV
@@ -85,9 +86,10 @@ you inferred from context and ask only for the gaps — don't re-ask what was al
 **If goals are ambiguous or overlapping**, surface the conflict before planning. A plan built on a
 contradictory goal is worse than no plan.
 
-### Step 2 — Structure the quarter (OKR Waterfall)
+### Step 2 — Structure the quarter (OKR cascade)
 
-Apply the **OKR Waterfall framework** (Doerr, *Measure What Matters*):
+Apply our OKR-cascade structure (we call it the "OKR waterfall") — the standard OKR outcome-to-output
+hierarchy from Doerr's *Measure What Matters*, wired into a month-by-month plan:
 
 ```
 Objective
@@ -169,9 +171,10 @@ Notion's CSV import into a Board or Table view.
 
 ---
 
-## OKR Waterfall — the named framework
+## The OKR cascade — our working model
 
-The OKR Waterfall (Doerr/Google variant) maintains two structural rules that most plans break:
+Our OKR cascade (a house model we nickname the "OKR waterfall," built on Doerr's outcome-to-output
+hierarchy) maintains two structural rules that most plans break:
 
 1. **Outcome-to-output hierarchy is strict.** KRs define *what* lands; Initiatives define *how*.
    If a task doesn't move a KR, cut it or park it. If a KR has no initiative under it, the quarter
@@ -221,7 +224,7 @@ cadence forward).
 - `brand-brain` called and active brand loaded (or fallback executed) before any plan output?
 - Every goal has an Objective + 2–4 measurable KRs; primary growth metric named?
 - Ambiguous or conflicting goals surfaced *before* planning, not papered over?
-- OKR Waterfall structure intact: every initiative traces to a KR, every KR has an initiative?
+- OKR cascade structure intact: every initiative traces to a KR, every KR has an initiative?
 - Monthly milestones observable (not hedge phrases); M1 = foundations, M3 = outcome-close?
 - One weekly leading indicator per KR — a rate, not an event?
 - Task board has owner, due week, dependency, and a skill-to-call where relevant?

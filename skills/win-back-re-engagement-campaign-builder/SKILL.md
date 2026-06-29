@@ -82,7 +82,7 @@ Each tag routes to a different opening angle and offer in Step 3.
 
 ### Step 2 — Map the escalation logic (the RFB Ladder)
 
-The framework is the **RFB Ladder: Reconnect → Remind → Buy**. Three zones, escalating commitment, held-back discount.
+Our working model is the **RFB Ladder: Reconnect → Remind → Buy** (a house framework, not an industry standard). Three zones, escalating commitment, held-back discount.
 
 ```
 Zone 1 — RECONNECT  (Touches 1–2)

@@ -36,7 +36,7 @@ This skill **reviews**. It does not rebuild sequences from scratch, generate ESP
 ```
 Step 0  Load brand context   ──► brand-brain (always before touching copy)
 Step 1  Ingest the sequence  ──► email sequence OR push batch; identify type + stage
-Step 2  Run the VOICE framework  ──► 5-dimension score per message
+Step 2  Run the VOICE rubric  ──► 5-dimension score per message
 Step 3  Evaluate the arc     ──► inter-message flow, cadence, fatigue risk
 Step 4  Flag compliance      ──► unsubscribe, proof substantiation, urgency honesty
 Step 5  Compile fix list     ──► P1/P2/P3 priority, actionable; offer sibling calls
@@ -67,9 +67,9 @@ If the sequence type or channel is ambiguous, ask in one line before proceeding.
 
 ---
 
-## Step 2 — The VOICE Framework (score every message)
+## Step 2 — VOICE scoring rubric (score every message)
 
-Score each message on five dimensions, 1–5 each. A score below 3 on any dimension is a fix candidate; below 2 is a P1 block.
+VOICE is our working mnemonic (a house rubric, not an external framework). Score each message on five dimensions, 1–5 each. A score below 3 on any dimension is a fix candidate; below 2 is a P1 block.
 
 | Dimension | What it evaluates | Scoring anchor |
 |---|---|---|

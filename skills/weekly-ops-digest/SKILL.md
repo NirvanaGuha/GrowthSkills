@@ -5,7 +5,7 @@ description: >
   task logs, and carry-over items — into a single owned weekly plan: a status-and-decision
   recap for last week, a prioritized initiative list with owner and due-date for this week,
   a risks-and-blockers register, and a Slack-ready status ping for stakeholders. Uses the
-  Weekly Planning Triangle framework (Review → Decide → Commit) to prevent the most common
+  Weekly Planning Triangle (Review → Decide → Commit) — a house working model — to prevent the most common
   ops failure modes: half-finished last week bleeding into this week unacknowledged, initiatives
   running without a named owner, and blockers sitting invisible until they become crises.
   Calls brand-brain for voice on stakeholder-facing outputs; calls meeting-agenda-action-item-builder
@@ -77,7 +77,7 @@ If the input contains a raw transcript, call `meeting-agenda-action-item-builder
 
 ---
 
-## The Weekly Planning Triangle (the framework)
+## The Weekly Planning Triangle (our working model)
 
 Every run produces exactly three passes in sequence. Each has a gate condition: you do not move to the next until the current one is complete.
 

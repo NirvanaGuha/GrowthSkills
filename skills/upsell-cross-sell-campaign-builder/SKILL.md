@@ -19,7 +19,7 @@ description: >
 
 Revenue expansion from existing customers is the highest-ROI motion in SaaS and eCommerce. This skill builds multi-touch email + in-app campaigns that move the right customers toward the right upgrade at the right moment — using the brand's real offer mechanics, real proof, and a commitment ladder calibrated to customers who already trust the product.
 
-The controlling framework is **ACRA**: **Anchor** (reinforce existing value), **Create a Gap** (surface the limit they're hitting), **Resolve the Gap** (show the upgrade closes it), **Act** (CTA sized to the evidence). Every touchpoint earns its place on this ladder — no cold pitching inside a relationship.
+The working model used here is **ACRA** (our own house mnemonic, not an established framework): **Anchor** (reinforce existing value), **Create a Gap** (surface the limit they're hitting), **Resolve the Gap** (show the upgrade closes it), **Act** (CTA sized to the evidence). Every touchpoint earns its place on this ladder — no cold pitching inside a relationship.
 
 ---
 

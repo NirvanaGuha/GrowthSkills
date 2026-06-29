@@ -5,8 +5,8 @@ description: >
   brief that a nano-, micro-, or mid-tier creator can act on immediately without a briefing call.
   Outputs a complete deliverable spec (format, dimensions, duration, file-type, caption length),
   platform-correct hooks and talking-point rails, explicit dos/don'ts, brand-safe language guide,
-  usage-rights clause language, and a review/approval workflow. Built on the Agency-Model UGC
-  Brief Framework: Mandate → Hook Rails → Guardrails → Deliverable Spec → Rights. Brand context
+  usage-rights clause language, and a review/approval workflow. Built on our house UGC brief
+  structure: Mandate → Hook Rails → Guardrails → Deliverable Spec → Rights. Brand context
   loads from `brand-brain` so every brief is on-voice without re-deriving the brand from scratch.
   Calls `icp-persona-builder` for audience context when no persona is available, and
   `campaign-brief-builder` when the campaign itself is not yet scoped. Outputs are saved to
@@ -40,7 +40,7 @@ This skill writes briefs. It does not negotiate rates, vet creator audiences, or
 Step 0  Load the brand      ──► call brand-brain (bootstraps on first use)
 Step 1  Gather inputs       ──► campaign goal · product · platform · creator tier · any existing persona
 Step 2  Fill gaps           ──► call icp-persona-builder if no persona; call campaign-brief-builder if no goal scoped
-Step 3  Write the brief     ──► Agency-Model UGC Brief Framework (see below)
+Step 3  Write the brief     ──► our house UGC brief structure (see below)
 Step 4  Self-review         ──► checklist pass; flag any missing field or off-brand element
 Step 5  Save + deliver      ──► write to ./ugc-briefs/[brand-slug]-[handle-or-tier]-brief.md; present inline summary
 ```
@@ -73,7 +73,7 @@ Neither blocks the run if the user provides enough context directly.
 
 ---
 
-## Agency-Model UGC Brief Framework
+## Agency-Model UGC Brief Structure (our house framework)
 
 Five mandatory sections; every brief ships all five. No section is optional; a brief missing any section requires a revision.
 

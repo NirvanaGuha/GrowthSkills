@@ -5,8 +5,8 @@ description: >
   quantified ROI model and a champion-ready executive note — in one pass. Two
   modes: Quick (single metric, fast time-to-value dollar figure) and Full Model
   (multi-lever spreadsheet-ready model with payback period, NPV, and a
-  signed-off sensitivity table). Uses the McKinsey Value Framework to bucket
-  every lever into Revenue Growth, Cost Reduction, or Capital Efficiency so the
+  signed-off sensitivity table). Uses the standard value-driver tripartition to
+  bucket every lever into Revenue Growth, Cost Reduction, or Capital Efficiency so the
   number lands credibly with a CFO, not just a champion. Every unconfirmed
   benchmark is marked [verify]; every confirmed number is cited to source. The
   model saves to a project-relative path so it travels with the deal. Calls
@@ -21,7 +21,7 @@ description: >
 
 # ROI & Business Case Calculator
 
-Give it a prospect's metrics and a set of impact levers, get a defensible ROI model and a champion-ready executive note. The model is structured around McKinsey's three value buckets — Revenue Growth, Cost Reduction, Capital Efficiency — so the math survives a CFO's first question. Every input is labeled (confirmed vs. benchmarked vs. assumed), every benchmark is sourced or flagged `[verify]`, and the sensitivity table shows the champion exactly what to argue about.
+Give it a prospect's metrics and a set of impact levers, get a defensible ROI model and a champion-ready executive note. The model is structured around the three classic value-driver buckets — Revenue Growth, Cost Reduction, Capital Efficiency — so the math survives a CFO's first question. Every input is labeled (confirmed vs. benchmarked vs. assumed), every benchmark is sourced or flagged `[verify]`, and the sensitivity table shows the champion exactly what to argue about.
 
 This skill quantifies and structures. It does not invent proof, inflate benchmarks, or paper over a thin value proposition. If the inputs don't support a credible number, it says so and tells the user what data to collect.
 
@@ -43,7 +43,7 @@ This skill quantifies and structures. It does not invent proof, inflate benchmar
 Step 0  Load the brand          ──► call brand-brain; get voice + confirmed proof
 Step 1  Gate the inputs         ──► data-qa check on any pasted data; flag dirty inputs
 Step 2  Scope the mode          ──► Quick (single lever, fast answer) | Full Model
-Step 3  Build the model         ──► McKinsey three-bucket structure
+Step 3  Build the model         ──► three-bucket value-driver structure
 Step 4  Sensitivity table       ──► conservative / base / optimistic scenarios
 Step 5  Write the executive note ──► champion-ready, brand-voice, proof-cited
 Step 6  Save artifacts          ──► ./roi/[slug]-roi-model.md (Full Model)
@@ -73,7 +73,7 @@ If unclear, default to Quick and offer Full Model at the end.
 
 ---
 
-## The McKinsey Value Framework (shared by both modes)
+## The three value-driver buckets (shared by both modes)
 
 Every lever maps to exactly one bucket. This is not decoration — it determines which executive owns the number and how hard it is to challenge.
 
@@ -124,7 +124,7 @@ Collect (or confirm already provided):
 
 ### 2. Model structure
 
-Build one table per McKinsey bucket containing levers that apply. Within each lever:
+Build one table per value-driver bucket containing levers that apply. Within each lever:
 
 ```
 Lever name | Baseline | Impact % | Annual $ impact | Source / confidence | Bucket
@@ -211,7 +211,7 @@ Full Model output saves to `./roi/[brand-slug]-[prospect-slug]-roi-model.md`. Qu
 - [ ] brand-brain called and returned before any customer-facing copy was written?
 - [ ] data-qa run on any pasted input data; flags addressed or disclosed?
 - [ ] Every input labeled: confirmed / benchmarked / assumed?
-- [ ] Every lever mapped to exactly one McKinsey bucket; no double-counting?
+- [ ] Every lever mapped to exactly one value-driver bucket; no double-counting?
 - [ ] Conservative anchor used as the base; optimistic reserved for sensitivity table?
 - [ ] Payback period and 3-yr NPV calculated (Full Model)?
 - [ ] Sensitivity table covers the highest-variance lever with three scenarios?

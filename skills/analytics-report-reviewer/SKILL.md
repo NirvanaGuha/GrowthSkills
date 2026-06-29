@@ -127,8 +127,9 @@ Flag each that applies:
 
 - **Attribution window mismatch** — compare ad platform windows vs GA4 session/event attribution;
   discrepancies must be disclosed and reconciled or explicitly noted as unreconciled.
-- **GA4 sampling** — GA4 Explorer reports sample above ~500K sessions; flag if the report uses
-  an Exploration surface without noting potential sampling.
+- **GA4 sampling** — GA4 Explorer reports sample above ~500K sessions [verify] (thresholds vary
+  by surface and property tier, with 360 higher); flag if the report uses an Exploration surface
+  without noting potential sampling.
 - **`(not set)` volume** — if `(not set)` exceeds ~3% of a key dimension (source/medium, landing
   page, campaign), data quality is compromised; flag.
 - **Self-referral / hostname pollution** — GA4 counts cross-domain self-referral as a traffic
@@ -218,8 +219,8 @@ Save to `./reports/[brand-slug]-analytics-review-[YYYY-MM-DD].md`.
 
 ## The Analytics Report Audit Framework
 
-This skill applies the **CEMVA** framework: Claim/Evidence, Exclusions/MECE, Measurement Validity,
-Visualization, Action-Readiness. Reviewers/auditors in this library (this skill,
+This skill applies **CEMVA** (our house working model, not an external standard): Claim/Evidence,
+Exclusions/MECE, Measurement Validity, Visualization, Action-Readiness. Reviewers/auditors in this library (this skill,
 `validity-threat-checker`, `ad-to-landing-page-message-match-auditor`) review siblings' output —
 they don't rebuild it. Each axis has a specific failure mode list; every finding gets a severity
 and a fix, not a vague suggestion.
